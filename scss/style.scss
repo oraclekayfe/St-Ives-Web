@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Lato', serif;
   font-size: 1rem;
   line-height: 1.4;
   background: var(--secondary-color);
@@ -48,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway'!important, sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin-bottom: 0.55rem;
   line-height: 1.3;
 }
@@ -149,8 +149,8 @@ video {
       width: 100%;
       left: 0;
       right: 0;
-      color: white;
-      background: #333;
+      color: var(--dark-color);
+      background: var(--light-color);
       padding: 30px;
       animation-duration: 0.1s;
 
@@ -836,3 +836,4 @@ video {
     }
   }
 }
+
