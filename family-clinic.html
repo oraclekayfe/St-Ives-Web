@@ -30,29 +30,29 @@
     <nav class="navbar navbar-expand-lg navbar-split py-3">
       <div class="container">
         <a class="navbar-brand" style="z-index: 3;">
-          <img src="img/svg/st_ives_family1.svg" alt="St Ives Family" class="logo" width='100px'/>
+          <img src="img/svg/st_ives_family1.svg" alt="St Ives Family" class="animated tada" width='100px'/>
         </a>
         <div class="navbar-nav text-base d-none d-lg-flex">
           <div class="nav-item px-3">
             <div class="media">
-              <i class="circle fas fa-map-marker-alt fa-1x mr-2 text-white"></i>
+              <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2 text-white"></i>
               <div class="media-body text-white">
                 <ul class="list-unstyled">
-                  <li class="circle"><h5 class="mb-1">Address:</h5></li>
-                  <p class="mb-0 circle">126 Akowonjo road, Egbeda, <br> Lagos.</p>
-                  <p class="mb-0 circle">Ibarra Estate, Abeokuta</p>
+                  <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
+                  <p class="mb-0 animated bounce">126 Akowonjo road, Egbeda, <br> Lagos.</p>
+                  <p class="mb-0 animated bounce">Ibarra Estate, Abeokuta</p>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="circle nav-item border-left px-3">
+          <div class="animated bounce nav-item border-left px-3">
             <div class="media">
-              <i class="circle fas fa-mobile-alt fa-1x mr-2 text-white"></i>
+              <i class="animated bounce fas fa-mobile-alt fa-1x mr-2 text-white"></i>
               <div class="media-body text-white">
                 <ul class="list-unstyled">
-                  <li class="circle"><h5 class="fs-0 mb-1">Phone Appointment</h5></li>
-                  <li class="nav-item circle">07081575872</li>
-                  <li class="nav-item circle">07015012635</li>
+                  <li class="animated bounce"><h5 class="fs-0 mb-1">Phone Appointment</h5></li>
+                  <li class="nav-item animated bounce">07081575872</li>
+                  <li class="nav-item animated bounce">07015012635</li>
                 </ul>
               </div>
             </div>
@@ -82,6 +82,25 @@
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown menu-area">
+                  <a href="javascript:void(0)" class="nav-link" id="mega-one" data-toggle="dropdown">Services</a>
+                  <div class="dropdown-menu mega-area animated fadeInDown" aria-labelledby="mega-one">
+                      <div class="row">
+                          <div class="d-none d-lg-block col-lg-4">
+                              <img src="img/AuHtHGbaak.jpg" class="img-fluid" alt="St Ives Family Clinic">
+                          </div>
+                          <div class="col-sm-6 col-lg-4">
+                              <a class="dropdown-item" href="fertility.html"><i class="fas fa-chevron-right mr-3"></i>Fertility Unit</a>
+                              <a class="dropdown-item" href="fertility-services.html"><i class="fas fa-chevron-right mr-3"></i>Fertility Services</a>
+                              <a class="dropdown-item" href="pharmacy.html"><i class="fas fa-chevron-right mr-3"></i>St Ives Pharmacy</a>
+                          </div>
+                          <div class="d-none d-lg-block col-lg-4">
+                              <h5>St Ives Blood Bank Services</h5>
+                              <p class="text-justify">St Ives Blood Bank is a high-tech and state of the art Registered Blood Bank, that collects, separate and stores whole blood and blood components.</p>
+                          </div>
+                      </div>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a href="about.html" class="nav-link">About</a>
@@ -735,7 +754,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
 
 
  <!-- Get the current year for the copyright -->
@@ -808,14 +826,6 @@
      }, false);
  })();
  </script>
-
-<script>
-
-  var tl = gsap.timeline();
-
-  tl.from(".logo", 1.5, {opacity:0, scale:.6, rotationX:60, rotationY:25, rotation:40});
-  tl.from(".circle", {duration: 1, opacity: 0, y: 150, stagger: 0.25}, 0);
-</script>
 
 
 </body>
