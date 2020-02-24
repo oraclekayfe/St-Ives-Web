@@ -21,20 +21,22 @@ html {
 body {
   font-family: 'Lato', serif;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   background: var(--secondary-color);
 }
 
 .bg-red {
   background: white;
-  color: var(--primary-color);
+  color: var(--dark-color);
   margin-bottom: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .bg-white {
-  background: var(--light-color);
-  color: var(--primary-color);
+  background: white;
+  color: var(--dark-color);
+  margin-bottom: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 a {
@@ -81,13 +83,14 @@ ul .cus::before {
 
 .card-footer {
   background: white;
-  color: var(--primary-color);
-  border-top: 1px solid var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  border-radius: 25%;
   &:hover {
-    background: var(--primary-color);
+    background: var(--dark-color);
     color: white;
     transition: all 0.1s;
+    border: 1px solid var(--dark-color);
   }
 }
 
@@ -771,7 +774,7 @@ video {
   align-items: center;
 
   & .share-button {
-    width: 140px;
+    width: 200px;
     height: 50px;
     background: var(--light-color);
     display: flex;
