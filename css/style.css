@@ -74,14 +74,11 @@ ul .cus::before {
 
 .card-footer {
   background: white;
-  color: var(--dark-color);
-  border: 1px solid var(--dark-color);
-  border-radius: 25%; }
+  color: var(--dark-color); }
   .card-footer:hover {
     background: var(--dark-color);
     color: white;
-    transition: all 0.1s;
-    border: 1px solid var(--dark-color); }
+    transition: all 0.1s; }
 
 .sticky {
   position: fixed;
@@ -186,6 +183,17 @@ video {
     -webkit-transform: translateY(-0.125rem);
     -ms-transform: translateY(-0.125rem);
     transform: translateY(-0.125rem); }
+
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.5; }
 
 /* Footer */
 #main-footer {
@@ -350,36 +358,6 @@ video {
 #myBtn:hover {
   background-color: #555; }
 
-/*
-@media only screen and (max-width:1500px) {
-    .carousel-caption {
-        padding-bottom: 8%;
-    }
-}
-
-@media only screen and (max-width:1199px) {
-    .carousel-caption h3 {
-        font-size: 32px;
-    }
-    .carousel-caption p {
-        font-size: 18px;
-    }    
-}
-
-@media only screen and (max-width:991px) {
-    .carousel-caption p {
-        display:none;
-    }   
-}
-
-@media only screen and (max-width:575px) {
-    #carouselFull {
-        display:none;
-    }
-    #about {
-        margin-top: 80px;
-    }
-}*/
 @media only screen and (max-width: 991px) {
   .carousel-caption {
     padding-bottom: 0; }
@@ -489,18 +467,7 @@ video {
 .simplebar-content-wrapper {
   overflow: auto; }
 
-.drk:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  opacity: 0.5; }
-
-/* Showcase2 */
+/* Blog Start */
 #showcase2 {
   color: #fff;
   background: #333;
@@ -570,7 +537,7 @@ video {
   background-color: var(--dark-primary) !important;
   border-color: var(--dark-primary) !important; }
 
-/* Showcase */
+/* Showcase Start*/
 #showcase {
   color: #fff;
   background: #333;

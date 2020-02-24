@@ -84,13 +84,10 @@ ul .cus::before {
 .card-footer {
   background: white;
   color: var(--dark-color);
-  border: 1px solid var(--dark-color);
-  border-radius: 25%;
   &:hover {
     background: var(--dark-color);
     color: white;
     transition: all 0.1s;
-    border: 1px solid var(--dark-color);
   }
 }
 
@@ -238,6 +235,21 @@ video {
     transform: translateY(-0.125rem);
   }
 }
+
+// Dark Overlay
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.5;
+}
+// Dark Overlay End
+
 
 /* Footer */
 #main-footer {
@@ -455,37 +467,6 @@ video {
   background-color: #555;
 }
 
-/*
-@media only screen and (max-width:1500px) {
-    .carousel-caption {
-        padding-bottom: 8%;
-    }
-}
-
-@media only screen and (max-width:1199px) {
-    .carousel-caption h3 {
-        font-size: 32px;
-    }
-    .carousel-caption p {
-        font-size: 18px;
-    }    
-}
-
-@media only screen and (max-width:991px) {
-    .carousel-caption p {
-        display:none;
-    }   
-}
-
-@media only screen and (max-width:575px) {
-    #carouselFull {
-        display:none;
-    }
-    #about {
-        margin-top: 80px;
-    }
-}*/
-
 @media only screen and (max-width: 991px) {
   .carousel-caption {
     padding-bottom: 0;
@@ -523,11 +504,11 @@ video {
 }
 
 
+// flip Card Start
 #services .container .row .card-body:nth-child(odd) .flip-card-front {
- color: black !important;
+  color: black !important;
 }
 
-// flip card
 .flip-card {
   background-color: transparent;
   min-width: 170px;
@@ -573,7 +554,10 @@ video {
   transform: rotateY(180deg);
   padding: 15px;
 }
+// Flip Card End
 
+
+// Accordion Start
 .accordion {
   background-color: var(--dark-color);
   color: white;
@@ -616,7 +600,10 @@ video {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+// Accordion End
 
+
+// Simple Scrollbar
 .simplebar-scrollbar {
   margin-right: 2px;
 }
@@ -630,20 +617,10 @@ video {
 .simplebar-content-wrapper {
   overflow: auto;
 }
+// Simple Scrollbar End
 
-.drk:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  opacity: 0.5;
-}
 
-/* Showcase2 */
+/* Blog Start */
 #showcase2 {
   color: #fff;
   background: #333;
@@ -719,6 +696,8 @@ video {
   }
 }
 
+// Blog End
+
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
@@ -731,7 +710,7 @@ video {
 }
 
 
-/* Showcase */
+/* Showcase Start*/
 #showcase {
   color: #fff;
   background: #333;
@@ -764,9 +743,10 @@ video {
 #showcase .showcase-content p {
   margin-bottom: 1rem;
 }
+// Showcase End
 
 
-// tester
+// Tester Start
 
 #tester {
   display: flex;
@@ -838,6 +818,7 @@ video {
     }
   }
 }
+// Tester End
 
 // Course ware
 .aprapa {
