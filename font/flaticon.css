@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 22/01/2020 18:17
+  	Creation date: 26/02/2020 01:20
   	*/
 
 @font-face {
@@ -31,16 +31,21 @@ margin-left: 20px;
 }
 
 .flaticon-doctor:before { content: "\f100"; }
-.flaticon-syringe:before { content: "\f101"; }
+.flaticon-nurse:before { content: "\f101"; }
 .flaticon-vagina:before { content: "\f102"; }
 .flaticon-microscope:before { content: "\f103"; }
-.flaticon-chest-pain:before { content: "\f104"; }
+.flaticon-pharmacy:before { content: "\f104"; }
 .flaticon-hospital:before { content: "\f105"; }
-.flaticon-pharmacy:before { content: "\f106"; }
-.flaticon-pregnancy:before { content: "\f107"; }
-.flaticon-fertilization:before { content: "\f108"; }
-.flaticon-cold:before { content: "\f109"; }
-.flaticon-ultrasound:before { content: "\f10a"; }
-.flaticon-healthcare:before { content: "\f10b"; }
-.flaticon-infection:before { content: "\f10c"; }
-.flaticon-diagnosis:before { content: "\f10d"; }
+.flaticon-results:before { content: "\f106"; }
+.flaticon-medical-history:before { content: "\f107"; }
+.flaticon-sperm-1:before { content: "\f108"; }
+.flaticon-insemination:before { content: "\f109"; }
+.flaticon-cold:before { content: "\f10a"; }
+.flaticon-ultrasound:before { content: "\f10b"; }
+.flaticon-sperm:before { content: "\f10c"; }
+.flaticon-fetus:before { content: "\f10d"; }
+.flaticon-syringe:before { content: "\f10e"; }
+.flaticon-blogging:before { content: "\f10f"; }
+.flaticon-appointment:before { content: "\f110"; }
+.flaticon-blood-bank:before { content: "\f111"; }
+.flaticon-chest-pain:before { content: "\f112"; }
