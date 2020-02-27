@@ -76,12 +76,6 @@ ul .cus::before {
   height: 30px;
 }
 
-/* Make the image fully responsive */
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-}
-
 .card-footer {
   background: white;
   color: var(--dark-color);
@@ -167,14 +161,16 @@ video {
     }
   }
 
-  #navbar .navbar-nav .nav-link {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--dark-color);
-    border-bottom: 2px transparent solid;
-    padding: 0.75rem;
-    transition: all 0.1s;
+  #navbar .navbar-nav .nav-item {
+    margin-right: .5rem;
+
+    & .nav-link {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--dark-color);
+      border-bottom: 2px transparent solid;
+      transition: all 0.1s;
+    }
 
     &:hover {
       border-bottom: 2px solid var(--primary-color);
@@ -247,7 +243,7 @@ video {
   left: 0;
   right: 0;
   background: #000;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 // Dark Overlay End
 
@@ -444,6 +440,14 @@ margin-left: 20px;
 #myBtn:hover {
   background-color: #555;
 }
+
+
+/* Make the image fully responsive */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
 
 @media only screen and (max-width: 991px) {
   .carousel-caption {
@@ -814,12 +818,46 @@ margin-left: 20px;
   }
 
   & .btn-outline-light {
+    width: 100%;
+    border: none;
+    font-weight: 500;
     padding: 1rem;
     font-size: 1rem;
 
     &:hover {
+      font-weight: 600;
       background: white;
       color: var(--dark-color);
     }
   }
+}
+
+#appointment {
+  color: var(--dark-color);
+  font-weight: 500;
+
+  &:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transition: all 0.1s;
+  }
+
+  & i:before {
+    font-size: 2rem;
+  } 
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(23, 22, 22);
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: opacity 0.3s linear;
 }

@@ -26,6 +26,14 @@
 
 <body id='home' data-spy="scroll" data-target="#mainNav">
 
+<!-- Preloader Start -->
+<div class="preloader">
+    
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
+  
+</div>
+<!-- Preloader Ends -->
+
   <!-- First Navigaion -->
   <header >
     <nav class="navbar navbar-expand-lg navbar-split py-3">
@@ -74,8 +82,10 @@
               <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
               <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
               <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-              <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="far fa-calendar-check ml-3 p-2 mb-1"></i></a>
             </div>
+
+            <a id="appointment" href="javascript:void(0)" class="p-2 mb-1" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="flaticon-appointment"></i></a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbars" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -105,22 +115,8 @@
                       </div>
                   </div>
                 </li>
-                <li class="nav-item dropdown menu-area">
-                  <a href="javascript:void(0)" class="nav-link" id="mega-two" data-toggle="dropdown">Family Clinic</a>
-                  <div class="dropdown-menu mega-area animated fadeInDown" aria-labelledby="mega-two">
-                      <div class="row">
-                          <div class="d-none d-lg-block col-lg-4">
-                              <img src="img/AuHtHGbaak.jpg" class="img-fluid" alt="St Ives Family clinic">
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                            <a class="dropdown-item" href="family-clinic.html"><i class="fas fa-chevron-right mr-3"></i>St Ives Family Clinic</a>
-                          </div>
-                          <div class="d-none d-lg-block col-lg-4">
-                              <h5 class="text-danger">St Ives Blood Bank Services</h5>
-                              <p class="text-justify">St Ives Blood Bank is a high-tech and state of the art Registered Blood Bank, that collects, separate and stores whole blood and blood components.</p>
-                          </div>
-                      </div>
-                  </div>
+                <li class="nav-item">
+                  <a href="family-clinic.html" class="nav-link">Clinic</a>
                 </li>
                 <li class="nav-item">
                   <a href="blog.html" class="nav-link">Blog</a>
@@ -250,7 +246,6 @@
               <div class="card-body">
                 <h2 class="card-title ">St Ives Blood Bank</h2>
                 <p class="card-text text-justify ">St Ives Blood Bank is a high-tech and state of the art Registered Blood Bank, that collects, separate and stores whole blood and blood components.</p>
-  
                 <a href="javascript:void(0)" class="btn btn-outline-light" data-toggle="modal" data-target=".bd-example-modal-lg">Book Appointment</a>
               </div>
             </div>
@@ -769,6 +764,24 @@
     });
     }, false);
 })();
+</script>
+
+<script>
+  const preloader = document.querySelector('.preloader');
+
+const fadeEffect = setInterval(() => {
+  // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 200);
+
+window.addEventListener('load', fadeEffect);
 </script>
 
 
