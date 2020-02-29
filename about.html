@@ -48,7 +48,7 @@
               <div class="media-body text-white">
                 <ul class="list-unstyled">
                   <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
-                  <p class="mb-1 animated bounce">12 Salvation Road, Opebi,<br /> Ikeja, Lagos.</p>
+                  <p id="factDisplay" class="mb-1 animated bounce"></p>
                 </ul>
               </div>
             </div> 
@@ -255,7 +255,7 @@
       </div>
     </section>
 
-  <div class="divider d-none d-md-block"></div>
+  <div class="divider"></div>
 
 <!-- Ives Doctors -->
  <section id="stivesdoctors">
@@ -435,7 +435,7 @@
             <img src="img/aVKlpiiO7u.jpg" alt="Gynecologists" class="card-img-top"/>
             <div class="card-body">
               <h5 class="card-title">
-                <a href="article1.html"
+                <a href="gynecologists_When_to_visit.html"
                   >Gynecologists: When to visit and what to expect</a
                 >
               </h5>
@@ -451,7 +451,7 @@
            <img src="img/U87ijiyG3B.jpg" alt="Sperm Count" class="card-img-top"/>
            <div class="card-body">
              <h5 class="card-title">
-               <a href="article3.html"
+               <a href="the_best_ways_to_increase_sperm_count.html"
                  >What are the best ways to increase sperm count?</a
                >
              </h5>
@@ -467,7 +467,7 @@
           <img src="img/QRFc3GlS0d.jpg" alt="Ovulation Bleeding" class="card-img-top"/>
           <div class="card-body">
             <h5 class="card-title">
-              <a href="article6.html"
+              <a href="ovulation_bleeding.html"
                 >Ovulation bleeding: What to know</a
               >
             </h5>
@@ -483,7 +483,7 @@
           <img src="img/UkRg6MnAKR.jpg" alt="Onions" class="card-img-top"/>
           <div class="card-body">
             <h5 class="card-title">
-              <a href="article2.html"
+              <a href="why_are_onions_good_for_you.html"
                 >Why are onions good for you?</a
               >
             </h5>
@@ -499,7 +499,7 @@
            <img src="img/ahehIVUjK2.jpg" alt="Breastfeeding Mother" class="card-img-top"/>
            <div class="card-body">
              <h5 class="card-title">
-               <a href="article5.html"
+               <a href="egg_donation_process.html"
                  >How does the egg donation process work?</a
                >
              </h5>
@@ -515,7 +515,7 @@
           <img src="img/hLVtZBLVSm.jpg" alt="Symptoms of Infertility" class="card-img-top"/>
           <div class="card-body">
             <h5 class="card-title">
-              <a href="article4.html"
+              <a href="novel_coronavirus.html"
                 >Novel coronavirus: Your questions, answered</a
               >
             </h5>
@@ -782,6 +782,14 @@ const fadeEffect = setInterval(() => {
 }, 200);
 
 window.addEventListener('load', fadeEffect);
+</script>
+
+<script>
+  (function newFact() {
+  var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi'];
+  var randomFact = Math.floor(Math.random() * facts.length);
+  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+  })();
 </script>
 
 

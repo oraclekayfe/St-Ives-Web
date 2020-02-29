@@ -512,6 +512,7 @@ video {
   margin-bottom: 1rem; }
 
 .post-preview > a {
+  font-family: 'Lato', 'Open Sans', serif;
   color: #444; }
 
 .post-preview > a:focus, .post-preview > a:hover {
@@ -529,6 +530,7 @@ video {
   margin: 0 0 10px; }
 
 .post-preview > .post-meta {
+  font-family: 'Lato', 'Open Sans', serif;
   font-size: 1.2rem;
   font-style: italic;
   margin-top: 0;
