@@ -695,9 +695,6 @@ video {
   background: #333;
   padding: 2rem;
   position: relative; }
-  #showcase3 #appointment-form-icon i:hover {
-    transform: scale(1.4);
-    transition: all .2s; }
 
 #showcase3:before {
   content: '';

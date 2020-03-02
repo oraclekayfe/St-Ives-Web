@@ -105,6 +105,7 @@
                               <a class="dropdown-item" href="fertility.html"><i class="fas fa-chevron-right mr-3"></i>Fertility Unit</a>
                               <a class="dropdown-item" href="fertility-services.html"><i class="fas fa-chevron-right mr-3"></i>Fertility Services</a>
                               <a class="dropdown-item" href="pharmacy.html"><i class="fas fa-chevron-right mr-3"></i>St Ives Pharmacy</a>
+                              <a class="dropdown-item" href="blood-bank.html"><i class="fas fa-chevron-right mr-3"></i>St Ives Blood Bank</a>
                           </div>
                           <div class="d-none d-lg-block col-lg-4">
                               <h5>St Ives Blood Bank Services</h5>
@@ -136,6 +137,7 @@
 
       <!-- Carousel Section -->
     <section id="carousel-section">
+       <div class="container">
         <div id="demos" class="carousel slide" data-ride="carousel">
           <ul class="carousel-indicators">
             <li data-target="#demos" data-slide-to="0" class="active"></li>
@@ -209,6 +211,7 @@
             <span class="carousel-control-next-icon"></span>
           </a>
         </div>
+       </div>
     </section>
 
     <div class="divider"></div>
@@ -223,7 +226,7 @@
             <div class="row">
               <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
                 <div class="flip-card text-center">
-                <a href="fertility-services.html">
+                <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg">
                   <div class="flip-card-inner">
                     <div class="flip-card-front bg-primary">
                       <i class="flaticon-chest-pain"></i>
@@ -305,7 +308,7 @@
               </div>
               <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
                 <div class="flip-card">
-                  <a href="javascript:void(0)">
+                  <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg">
                     <div class="flip-card-inner">
                       <div class="flip-card-front bg-warning">
                         <i class="flaticon-ultrasound"></i>
@@ -859,13 +862,11 @@ window.addEventListener('load', fadeEffect);
 
 <script>
   (function newFact() {
-  var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi'];
+  var facts = ['129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '3, Olatunde Abudu Close, Ibarra <br/> Housing Estate, Abeokuta'];
   var randomFact = Math.floor(Math.random() * facts.length);
   document.getElementById('factDisplay').innerHTML = facts[randomFact];
   })();
 </script>
-
-
 
 </body>
 </html>
