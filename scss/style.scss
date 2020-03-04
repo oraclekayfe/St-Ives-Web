@@ -811,27 +811,15 @@ margin-left: 20px;
 
 // St Ives Blood Bank Adv
 #blood-bank-adv {
-  background-image: linear-gradient( 107.2deg,  rgba(150,15,15,1) 10.6%, rgba(247,0,0,1) 91.1% );
-  color: white !important;
+  background: #CC95C0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: var(--dark-color);
 
   & .flaticon-blood-bank:before {
-    color: white;
+    color: var(--primary-color);
     font-size: 93px;
-    
-  }
-
-  & .btn-outline-light {
-    width: 100%;
-    border: none;
-    font-weight: 500;
-    padding: 1rem;
-    font-size: 1rem;
-
-    &:hover {
-      font-weight: 600;
-      background: white;
-      color: var(--dark-color);
-    }
   }
 }
 

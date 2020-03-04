@@ -638,21 +638,16 @@ video {
         transition-delay: .4s; }
 
 #blood-bank-adv {
-  background-image: linear-gradient(107.2deg, #960f0f 10.6%, #f70000 91.1%);
-  color: white !important; }
+  background: #CC95C0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--dark-color); }
   #blood-bank-adv .flaticon-blood-bank:before {
-    color: white;
+    color: var(--primary-color);
     font-size: 93px; }
-  #blood-bank-adv .btn-outline-light {
-    width: 100%;
-    border: none;
-    font-weight: 500;
-    padding: 1rem;
-    font-size: 1rem; }
-    #blood-bank-adv .btn-outline-light:hover {
-      font-weight: 600;
-      background: white;
-      color: var(--dark-color); }
 
 #appointment {
   color: var(--dark-color);
