@@ -424,7 +424,7 @@ margin-left: 20px;
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 120px;
   right: 5px;
   z-index: 99;
   font-size: 1.2rem;
@@ -450,6 +450,7 @@ margin-left: 20px;
 
 
 @media only screen and (max-width: 991px) {
+ 
   .carousel-caption {
     padding-bottom: 0;
 
@@ -476,7 +477,7 @@ margin-left: 20px;
     }
 
     & p {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     & a {
@@ -886,8 +887,7 @@ margin-left: 20px;
 }
 
 #showcase3 .showcase3-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;

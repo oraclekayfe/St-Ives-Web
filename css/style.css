@@ -353,7 +353,7 @@ video {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 120px;
   right: 5px;
   z-index: 99;
   font-size: 1.2rem;
@@ -388,7 +388,7 @@ video {
     .carousel-caption h4 {
       font-size: 14px; }
     .carousel-caption p {
-      font-size: 12px; }
+      font-size: 14px; }
     .carousel-caption a {
       display: none; } }
 #services .container .row .card-body:nth-child(odd) .flip-card-front {
@@ -701,8 +701,7 @@ video {
   height: 100%; }
 
 #showcase3 .showcase3-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; }
