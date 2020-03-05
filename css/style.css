@@ -138,9 +138,9 @@ video {
       color: var(--dark-color);
       border-bottom: 2px transparent solid;
       transition: all 0.1s; }
-    .banner-area #navbar .navbar-nav .nav-item:hover {
-      border-bottom: 2px solid var(--primary-color);
-      color: var(--primary-color); }
+      .banner-area #navbar .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: 2px solid var(--primary-color);
+        color: var(--primary-color); }
 
 .navbar-split {
   overflow: hidden;
