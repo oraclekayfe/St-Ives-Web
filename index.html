@@ -40,7 +40,7 @@
     <nav class="navbar navbar-expand-lg navbar-split py-3">
       <div class="container">
         <a href="index.html" class="navbar-brand" style="z-index: 3;">
-          <img src="img/svg/st_ives_specialist1.svg" class="animated tada" alt="St Ives Specialist Hospital" width='100px'/>
+          <img src="img/svg/st_ives_healthcare2.svg" class="animated tada" alt="St Ives Specialist Hospital" width='100px'/>
         </a>
         <div class="navbar-nav text-base d-none d-lg-flex">
           <div class="nav-item px-3">
@@ -85,32 +85,25 @@
               <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
             </div>
 
-            <a id="appointment" href="javascript:void(0)" class="p-2 mb-1" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="flaticon-appointment"></i></a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbars" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown menu-area">
-                  <a href="javascript:void(0)" class="nav-link" id="mega-one" data-toggle="dropdown">Services</a>
-                  <div class="dropdown-menu mega-area animated fadeInDown" aria-labelledby="mega-one">
-                      <div class="row">
-                          <div class="d-none d-lg-block col-lg-4">
-                            <h2 class="text-danger">St Ives Services</h2>
-                              <img src="img/banner.jpg" class="img-fluid" alt="St Ives Family Clinic">
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                            <div class="d-none d-lg-block p-4 m-1"></div>
-                              <a class="dropdown-item" href="fertility.html"><i class="fas fa-chevron-right mr-3"></i>Fertility Unit</a>
-                              <a class="dropdown-item" href="blood-bank.html"><i class="fas fa-chevron-right mr-3"></i>Blood Bank</a>
-                              <a class="dropdown-item" href="pharmacy.html"><i class="fas fa-chevron-right mr-3"></i>St Ives Pharmacy</a>
-                          </div>
-                      </div>
-                  </div>
+                <li class="nav-item">
+                  <a href="specialist.html" class="nav-link">Specialist</a>
                 </li>
                 <li class="nav-item">
-                  <a href="family-clinic.html" class="nav-link">Clinic</a>
+                  <a href="family-clinic.html" class="nav-link">Family Clinic</a>
+                </li>
+                <li class="nav-item">
+                  <a href="fertility.html" class="nav-link">Fertility Unit</a>
+                </li>
+                <li class="nav-item">
+                  <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blood-bank.html" class="nav-link">Blood Bank</a>
                 </li>
                 <li class="nav-item">
                   <a href="about.html" class="nav-link">About</a>
@@ -256,13 +249,13 @@
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="single-service text-center">
-            <a href="about.html" style="text-decoration: none;"><i class="flaticon-doctor"></i></a>
+            <a href="specialist.html" style="text-decoration: none;"><i class="flaticon-doctor"></i></a>
 
             <p>We are Healthcare Professionals commited to the Best Quality of Life.
               <br><hr>
             </p>
 
-            <h3><a href="about.html">Specialist</a></h3>
+            <h3><a href="specialist.html">Specialist</a></h3>
 
           </div>
         </div>
@@ -860,7 +853,7 @@ window.addEventListener('load', fadeEffect);
 
 <script>
   (function newFact() {
-  var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi'];
+  var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '3, Olatunde Abudu Close, Ibarra <br/> Housing Estate, Abeokuta'];
   var randomFact = Math.floor(Math.random() * facts.length);
   document.getElementById('factDisplay').innerHTML = facts[randomFact];
   })();
