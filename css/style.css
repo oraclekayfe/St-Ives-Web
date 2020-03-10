@@ -97,11 +97,12 @@ video {
   width: 100%;
   z-index: 900; }
   .banner-area #navbar .navbar-nav .nav-item {
+    font-family: "Raleway", serif;
     margin-right: .5rem; }
     .banner-area #navbar .navbar-nav .nav-item .nav-link {
       font-size: 1rem;
       font-weight: 600;
-      color: var(--dark-color);
+      color: #737373;
       border-bottom: 2px transparent solid;
       transition: all 0.1s; }
       .banner-area #navbar .navbar-nav .nav-item .nav-link:hover {
@@ -688,8 +689,9 @@ video {
   background: var(--secondary-color); }
 
 .sidenav {
-  font-size: 1.2rem;
-  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Raleway", serif;
   background: var(--secondary-color);
   color: var(--dark-color);
   height: 100%;
@@ -722,10 +724,12 @@ video {
   .sidenav #sidebar ul li a {
     padding: .8rem;
     font-size: 1.1em;
-    display: block; }
+    display: block;
+    font-weight: 500; }
   .sidenav #sidebar ul li a:hover {
     color: white;
-    background: var(--primary-color); }
+    background: var(--primary-color);
+    font-weight: 600; }
     .sidenav #sidebar ul li a:hover i {
       transform: rotate(90deg) scale(0.8); }
   .sidenav #sidebar ul li.active > a,
@@ -788,7 +792,7 @@ video {
   text-align: center;
   text-decoration: none;
   border-radius: 10%;
-  color: var(--dark-color);
+  color: grey;
   transition: all 0.1s; }
   .social i:hover {
     color: var(--light-color);

@@ -112,12 +112,13 @@ video {
   z-index: 900;
 
   #navbar .navbar-nav .nav-item {
+    font-family: "Raleway", serif;
     margin-right: .5rem;
 
     & .nav-link {
       font-size: 1rem;
       font-weight: 600;
-      color: var(--dark-color);
+      color: #737373;
       border-bottom: 2px transparent solid;
       transition: all 0.1s;
 
@@ -862,8 +863,9 @@ margin-left: 20px;
 
 // Side Navigation
 .sidenav {
-  font-size: 1.2rem;
-  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Raleway", serif;
   background: var(--secondary-color);
   color: var(--dark-color);
   height: 100%;
@@ -907,10 +909,12 @@ margin-left: 20px;
     padding: .8rem;
     font-size: 1.1em;
     display: block;
+    font-weight: 500;
   }
   #sidebar ul li a:hover {
     color: white;
     background: var(--primary-color);
+    font-weight: 600;
 
     & i {
       transform: rotate(90deg) scale(.8);
@@ -1000,7 +1004,7 @@ margin-left: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 10%;
-    color: var(--dark-color);
+    color: grey;
     transition: all 0.1s;
 
     &:hover {
