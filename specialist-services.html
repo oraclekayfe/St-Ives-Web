@@ -33,6 +33,76 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
 </div>
 <!-- Preloader Ends -->
 
+
+<!-- Side Bar Starts -->
+<div id="mySidenav" class="sidenav" data-simplebar>
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a style="z-index: 3;">
+        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='80px'/>
+      </a> 
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+    </div>
+    
+    
+    <ul class="list-unstyled components">
+      <li>
+        <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li>
+            <a href="specialist.html">Specialist Services</a>
+          </li>
+          <li>
+            <a href="family-clinic.html">Family Clinic</a>
+          </li>
+          <li>
+            <a href="fertility.html">Fertility Services</a>
+          </li>
+          <li>
+            <a href="pharmacy.html">Saint Ives Pharmacy</a>
+          </li>
+          <li>
+            <a href="blood-bank.html">St Ives Blood Bank</a>
+          </li>
+        </ul> 
+      </li>
+      
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li>
+            <a href="specialist-services.html">Specialist Services</a>
+          </li>
+          <li>
+            <a href="family-services.html">Family Clinic</a>
+          </li>
+          <li>
+            <a href="fertility-services.html">Fertility Services</a>
+          </li>
+        </ul> 
+      </li>
+      <li>
+        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+    
+    <ul class="list-unstyled CTAs">
+      <li>
+        <a href="blog.html" class="bloger">St Ives Blog</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Side Bar Ends -->
+
   <!-- First Navigaion -->
   <header >
     <nav class="navbar navbar-expand-lg navbar-split py-3">
@@ -76,6 +146,7 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light py-3">
+
             <div class="social nav">
               <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
               <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
@@ -83,13 +154,9 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
               <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
             </div>
 
-            <a id="appointment" href="javascript:void(0)" class="p-2 mb-1" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="flaticon-appointment"></i></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbars" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                   <a href="specialist.html" class="nav-link">Home</a>
                 </li>
@@ -97,10 +164,16 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
                   <a href="family-clinic.html" class="nav-link">Clinic</a>
                 </li>
                 <li class="nav-item">
+                  <a href="fertility.html" class="nav-link">Fertility</a>
+                </li>
+                <li class="nav-item">
                   <a href="pharmacy.html" class="nav-link">Pharmacy</a>
                 </li>
                 <li class="nav-item">
                   <a href="blood-bank.html" class="nav-link">Blood Bank</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
                   <a href="blog.html" class="nav-link">Blog</a>
@@ -113,6 +186,9 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
                 </li>
               </ul>
             </div>
+            <button id="navbar-toggler" class="navbar-toggler animated fadeIn ml-auto" type="button" onclick="openNav()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         </nav>
         </div>
       </div>
@@ -721,26 +797,30 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
 
 
 <!-- Header Scroll -->
- <script>
- $(function(){
-  var mainNav = $('.banner-area');
-  sticky = 'sticky';
-  headerHeight = $('header').height();
+<script>
+  $(function(){
+   var mainNav = $('.banner-area');
+       sticky = 'sticky';
+       headerHeight = $('header').height();
 
-  $(window).scroll(function(){
-    if($(this).scrollTop() > headerHeight){
-      mainNav.addClass(sticky);
-    }else {
-      mainNav.removeClass(sticky);
-    }
-    if($(this).scrollTop() > (headerHeight * 3)) {
-      mainNav.addClass('inView');
-    }else {
-      mainNav.removeClass('inView');
-    }
+ 
+   $(window).scroll(function(){
+     if($(this).scrollTop() > headerHeight){
+       mainNav.addClass(sticky);
+     }else {
+       mainNav.removeClass(sticky);
+     }
+     if($(this).scrollTop() > (headerHeight * 3)) {
+       mainNav.addClass('inView');
+       document.getElementById("navbar-toggler").style.display = "block";
+     }else {
+       mainNav.removeClass('inView');
+       document.getElementById("navbar-toggler").style.display = "none";
+     }
+   })
   })
- })
-</script>
+ </script>
+ <!-- Header Scroll Ends -->
 
 
 <script>
@@ -811,6 +891,17 @@ window.addEventListener('load', fadeEffect);
     var randomFact = Math.floor(Math.random() * facts.length);
     document.getElementById('factDisplay').innerHTML = facts[randomFact];
     })();
+</script>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 </script>
 
 

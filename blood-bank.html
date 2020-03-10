@@ -33,6 +33,76 @@
 </div>
 <!-- Preloader Ends -->
 
+
+<!-- Side Bar Starts -->
+<div id="mySidenav" class="sidenav" data-simplebar>
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a style="z-index: 3;">
+        <img src="img/svg/st_ives_blood1.svg" alt="St Ives Blog" width='80px'/>
+      </a> 
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+    </div>
+    
+    
+    <ul class="list-unstyled components">
+      <li>
+        <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li>
+            <a href="specialist.html">Specialist Services</a>
+          </li>
+          <li>
+            <a href="family-clinic.html">Family Clinic</a>
+          </li>
+          <li>
+            <a href="fertility.html">Fertility Services</a>
+          </li>
+          <li>
+            <a href="pharmacy.html">Saint Ives Pharmacy</a>
+          </li>
+          <li>
+            <a href="blood-bank.html">St Ives Blood Bank</a>
+          </li>
+        </ul> 
+      </li>
+      
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li>
+            <a href="specialist-services.html">Specialist Services</a>
+          </li>
+          <li>
+            <a href="family-services.html">Family Clinic</a>
+          </li>
+          <li>
+            <a href="fertility-services.html">Fertility Services</a>
+          </li>
+        </ul> 
+      </li>
+      <li>
+        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+    
+    <ul class="list-unstyled CTAs">
+      <li>
+        <a href="blog.html" class="bloger">St Ives Blog</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Side Bar Ends -->
+
   <!-- First Navigaion -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-split py-3">
@@ -76,39 +146,31 @@
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light py-3">
+
             <div class="social nav">
               <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
               <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
               <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
               <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbars" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+
+
             <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item dropdown menu-area">
-                  <a href="javascript:void(0)" class="nav-link" id="mega-one" data-toggle="dropdown">Services</a>
-                  <div class="dropdown-menu mega-area animated fadeInDown" aria-labelledby="mega-one">
-                      <div class="row">
-                          <div class="d-none d-lg-block col-lg-4">
-                            <h2 class="text-danger">St Ives Services</h2>
-                              <img src="img/banner.jpg" class="img-fluid" alt="St Ives Family Clinic">
-                          </div>
-                          <div class="col-sm-6 col-lg-4">
-                              <div class="d-none d-lg-block p-4 m-1"></div>
-                              <a class="dropdown-item" href="specialist.html"><i class="fas fa-chevron-right mr-3"></i>Specialist Unit</a>
-                              <a class="dropdown-item" href="fertility.html"><i class="fas fa-chevron-right mr-3"></i>Fertility Unit</a>
-                              <a class="dropdown-item" href="pharmacy.html"><i class="fas fa-chevron-right mr-3"></i>St Ives Pharmacy</a>
-                          </div>
-                      </div>
-                  </div>
+                <li class="nav-item">
+                  <a href="specialist.html" class="nav-link">Specialist</a>
                 </li>
                 <li class="nav-item">
                   <a href="family-clinic.html" class="nav-link">Clinic</a>
+                </li>
+                <li class="nav-item">
+                  <a href="fertility.html" class="nav-link">Fertility</a>
+                </li>
+                <li class="nav-item">
+                  <a href="pharmacy.html" class="nav-link">Pharmacy</a>
                 </li>
                 <li class="nav-item">
                   <a href="about.html" class="nav-link">About</a>
@@ -124,6 +186,9 @@
                 </li>
               </ul>
             </div>
+            <button id="navbar-toggler" class="navbar-toggler animated fadeIn ml-auto" type="button" onclick="openNav()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         </nav>
         </div>
       </div>
@@ -131,20 +196,22 @@
   </div>
   <!-- End of Second Navigation -->
 
-         <!-- Showcase3 -->
-         <header id="showcase3">
-          <div class="container drk">
-            <div class="row showcase3-container">
-              <div class="col-sm-9 ml-auto showcase3-content text-center">
-                <h1 class="animated fadeInUp" style="animation-delay: 1s;">St Ives Blood Bank</h1>
-                <p class="animated fadeInUp lead" style="animation-delay: 2s;"> St Ives Blood Bank is a High-Tech and State of the Art Registered Blood Bank, that Collects, Separate and Stores whole blood and blood components.</p>
-                <hr class="animated fadeInUp" style="animation-delay: 2s;">
-                <p class="animated fadeInUp" style="animation-delay: 3s;">“A Single Pint can save Three Lives, a Single Gesture can create a Million Smiles”</p>
-                <button class="animated fadeInUp btn btn-outline-light py-2" data-toggle="modal" data-target=".bd-example-modal-lg" style="animation-delay: 4s;">Start Here</button>
-              </div>
+    <!-- Showcase3 -->
+    <div class="container">
+      <header id="showcase3">
+        <div class="container drk">
+          <div class="row showcase3-container">
+            <div class="col-sm-9 ml-auto showcase3-content text-center">
+              <h1 class="animated fadeInUp" style="animation-delay: 1s;">St Ives Blood Bank</h1>
+              <p class="animated fadeInUp lead" style="animation-delay: 2s;"> St Ives Blood Bank is a High-Tech and State of the Art Registered Blood Bank, that Collects, Separate and Stores whole blood and blood components.</p>
+              <hr class="animated fadeInUp" style="animation-delay: 2s;">
+              <p class="animated fadeInUp" style="animation-delay: 3s;">“A Single Pint can save Three Lives, a Single Gesture can create a Million Smiles”</p>
+              <button class="animated fadeInUp btn btn-outline-light py-2" data-toggle="modal" data-target=".bd-example-modal-lg" style="animation-delay: 4s;">Start Here</button>
             </div>
           </div>
-        </header>
+        </div>
+    </header>
+    </div>
 
    <div class="divider"></div>
     
@@ -442,12 +509,15 @@
      }
      if($(this).scrollTop() > (headerHeight * 3)) {
        mainNav.addClass('inView');
+       document.getElementById("navbar-toggler").style.display = "block";
      }else {
        mainNav.removeClass('inView');
+       document.getElementById("navbar-toggler").style.display = "none";
      }
    })
   })
  </script>
+ <!-- Header Scroll Ends -->
  
  
  <script>
@@ -510,6 +580,17 @@ const fadeEffect = setInterval(() => {
 }, 200);
 
 window.addEventListener('load', fadeEffect);
+</script>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 </script>
 
 

@@ -34,6 +34,75 @@
 </div>
 <!-- Preloader Ends -->
 
+<!-- Side Bar Starts -->
+<div id="mySidenav" class="sidenav" data-simplebar>
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a style="z-index: 3;">
+        <img src="img/svg/st_ives_blog1.svg" alt="St Ives Blog" width='80px'/>
+      </a> 
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+    </div>
+    
+    
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li>
+            <a href="specialist.html">Specialist Services</a>
+          </li>
+          <li>
+            <a href="family-clinic.html">Family Clinic</a>
+          </li>
+          <li>
+            <a href="fertility.html">Fertility Services</a>
+          </li>
+          <li>
+            <a href="pharmacy.html">Saint Ives Pharmacy</a>
+          </li>
+          <li>
+            <a href="blood-bank.html">St Ives Blood Bank</a>
+          </li>
+        </ul> 
+      </li>
+      
+      <li>
+        <a href="about.html">About</a>
+      </li>
+      <li>
+        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li>
+            <a href="specialist-services.html">Specialist Services</a>
+          </li>
+          <li>
+            <a href="family-services.html">Family Clinic</a>
+          </li>
+          <li>
+            <a href="fertility-services.html">Fertility Services</a>
+          </li>
+        </ul> 
+      </li>
+      <li>
+        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+    
+    <ul class="list-unstyled CTAs">
+      <li>
+        <a href="blog.html" class="bloger">St Ives Blog</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Side Bar Ends -->
+
   <!-- First Navigaion -->
   <header >
     <nav class="navbar navbar-expand-lg navbar-split py-3">
@@ -83,323 +152,66 @@
                 <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
                 <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
               </div>
-
-              <a id="appointment" href="javascript:void(0)" class="p-2 mb-1" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="flaticon-appointment"></i></a>
-
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbars" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              
               <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mx-auto">
                   <li class="nav-item">
-                    <a href="blog.html" class="nav-link">Home</a>
-                  </li>
-                  <li class="nav-item dropdown menu-area">
-                    <a href="javascript:void(0)" class="nav-link" id="mega-one" data-toggle="dropdown">Services</a>
-                    <div class="dropdown-menu mega-area animated fadeInDown" aria-labelledby="mega-one">
-                        <div class="row">
-                            <div class="d-none d-lg-block col-lg-4">
-                              <h2>St Ives Services</h2>
-                                <img src="img/AuHtHGbaak.jpg" class="img-fluid" alt="St Ives Family Clinic">
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                              <div class="d-none d-lg-block p-4 m-1"></div>
-                                <a class="dropdown-item" href="fertility.html"><i class="fas fa-chevron-right mr-3"></i>Fertility Unit</a>
-                                <a class="dropdown-item" href="blood-bank.html"><i class="fas fa-chevron-right mr-3"></i>Blood Bank</a>
-                                <a class="dropdown-item" href="pharmacy.html"><i class="fas fa-chevron-right mr-3"></i>St Ives Pharmacy</a>
-                            </div>
-                            
-                        </div>
-                    </div>
+                    <a href="blog.html" class="nav-link animated fadeIn">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a href="family-clinic.html" class="nav-link">Clinic</a>
+                    <a href="specialist.html" class="nav-link animated fadeIn">Specialist</a>
                   </li>
                   <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
+                    <a href="family-clinic.html" class="nav-link animated fadeIn">Clinic</a>
                   </li>
                   <li class="nav-item">
-                    <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link">Ives Medicare</a>
+                    <a href="fertility.html" class="nav-link animated fadeIn">Fertility</a>
                   </li>
                   <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="pharmacy.html" class="nav-link animated fadeIn">Pharmacy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="blood-bank.html" class="nav-link animated fadeIn">Blood Bank</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link animated fadeIn">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link animated fadeIn">Ives Medicare</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link animated fadeIn">Contact</a>
                   </li>
                 </ul>
               </div>
+              <button id="navbar-toggler" class="navbar-toggler animated fadeIn" type="button" onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+              </button>
           </nav>
           </div>
         </div>
       </div>
     </div>
     <!-- End of Second Navigation -->
-<div class="divider"></div>
+
+
   <!-- Main Content -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 mx-md-auto">
-            <div class="card border-0 p-5">
-              <img src="img/QRFc3GlS0d.jpg" alt="Ovulation bleeding" class="card-img-top">
-                <div class="card-body">
+<section id="starter" style="height: 100vh;">
+  <div class="container">
+    <div class="row jumbo">
+      <div class="col-md-6 text-center">
 
-                  <h1 class=" card-title"> Ovulation bleeding: What to know
-                  </h1>
-                  <div class="my-4">
-                    <ul class="nav">
-                      <li class="nav-item"><a class="nav-link border-right py-2" href="#link1">Overview</a></li>
-                      <li class="nav-item"><a class="nav-link border-right -p-2" href="#link2">Other types of bleeding</a></li>
-                      <li class="nav-item"><a class="nav-link border-right -p-2" href="#link3">When to see a doctor</a></li>
-                      <li class="nav-item"><a class="nav-link border-right -p-2" href="#link4">Summary</a></li>
-                    </ul>
-                  </div>
-                   <p class="lead">
-                    Ovulation bleeding is vaginal bleeding during or
-                    immediately before or after ovulation, which occurs
-                    roughly in the middle of a menstrual cycle.
-                   </p>
-                   <p>
-                    Changes in estrogen levels are often the cause of this type of bleeding,
-                    and light spotting around ovulation does not usually signal a serious
-                    problem. Some people refer to ovulation bleeding as “estrogen
-                    breakthrough bleeding.”
-                </p>
-                   <p>
-                    In this article, learn more about ovulation bleeding and other types of
-                    bleeding between periods. We also explain when to see a doctor.
-
-                </p>
-                       
-                    <h2 id="link1" class=" py-3"> What is ovulation bleeding?</h2>
-
-                    <p>
-                    Ovulation bleeding generally refers to bleeding that occurs around the
-                    time of ovulation, which is when the ovary releases an egg.
-
-                    </p>
-                    <p>
-                        In the days leading up to ovulation, estrogen levels steadily rise. After the
-                        release of an egg, the estrogen levels dip, and progesterone levels begin to increase.
-                    </p>
-                    <p>
-                        This shift in the balance between estrogen and progesterone levels can cause light bleeding, which is usually much lighter than a regular period.
-                    </p>
-
-                    <p>
-                        In most cases, it does not cause any other symptoms.
-                    </p>
-
-                    <p>
-                        If a person experiences other symptoms, such as cramping, alongside the bleeding or it lasts longer than a few days, something other than ovulation bleeding may be the underlying cause.
-                    </p>
-
-                    <p>
-                        People who do not regularly ovulate may have unusual bleeding patterns, such as bleeding very lightly for many days or only getting a period every few months. Numerous medical conditions, including polycystic ovary syndrome (PCOS) and endometriosis, can cause irregular cycles.
-                    </p>
-
-                    <h2 id="link2" class="py-3 ">Other types of bleeding</h2>
-
-                    <p>
-                        Ovulation bleeding is just one of many types of atypical vaginal bleeding. While bleeding that relates to ovulation is usually harmless, it is important to ensure that there is no underlying medical cause.
-                    </p>
-
-                    <p>
-                        Some hallmarks of bleeding during ovulation include:
-                    </p>
-
-                    <ul class="list-unstyled px-3">
-                        <li class="cus py-1">
-                            The bleeding happens around ovulation. On average, ovulation
-                            occurs 14 days after the last period began, although many people
-                            ovulate earlier or later. People can use ovulation testing kits or
-                            monitor their basal body temperature to help pinpoint the time of
-                            ovulation.
-                        </li>
-                        <li class="cus py-1">
-                            The bleeding occurs only once during each month at around the
-                            same time.
-                        </li>
-                        <li class="cus py-1">
-                            The bleeding stops on its own within a couple of days and is not
-                            heavy or painful.
-                        </li>
-                    </ul>
-
-                    <p>
-                        Bleeding that does not follow this pattern could be due to:
-                    </p>
-
-                    <ul class="list-unstyled px-3">
-                        <li class="cus py-1">
-                            <strong>Implantation bleeding</strong>. After a sperm fertilizes an egg, the egg must
-                            implant in the lining of the uterus. Implantation usually occurs about
-                            10 days after ovulation. Some people experience light spotting,
-                            called implantation bleeding, around this time.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Pregnancy-related bleeding</strong>. Bleeding early in pregnancy is
-                            common, and it can be due to a number of causes, ranging from a
-                            relatively harmless condition called a subchorionic hemorrhage to a
-                            potentially life-threatening ectopic pregnancy.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Anovulatory cycles</strong>. Anovulatory cycles are monthly cycles during
-                            which a person does not ovulate. A wide range of medical
-                            conditions can cause a person not to ovulate. Irregular bleeding is
-                            common during an anovulatory cycle.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Structural abnormalities</strong>. Structural problems with the uterus or problems with blood clothing, leading to abnormal bleeding.
-                        </li>
-                        <li class="cus py-1"><strong>Thyroid issues</strong>. The thyroid releases hormones that help regulate
-                        the menstrual cycle. Too much or too little thyroid hormone can
-                        cause bleeding between periods.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Hormone treatments</strong> . Various hormones, including birth control pills and fertility drugs, may cause bleeding between cycles.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Drugs and medications</strong>. Some prescription medications, such as
-                            anticonvulsants and antipsychotics, can cause abnormal bleeding.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Pituitary diseases</strong> . The pituitary gland helps regulate hormones that
-                            affect the menstrual cycle, including estrogen and progesterone.
-                            Conditions that affect the pituitary gland, such as Cushing’s disease,
-                            may cause unusual bleeding.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Infection</strong> . Sexually transmitted infections, such as gonorrhea or
-                            chlamydia, may cause the cervical tissue to become inflamed and
-                            bleed easily.
-                        </li>
-                        <li class="cus py-1">
-                            <strong>Tumors</strong> . Ovarian tumors, especially those that produce estrogen,
-                            may cause unusual bleeding. Although rare, abnormal bleeding may
-                            be a symptom of cervical or endometrial cancer.
-                        </li>
-                    </ul>
-
-                    <p>
-                        In people with very irregular cycles, it can be difficult to tell the difference
-                        between irregular bleeding and the normal monthly period. Anyone
-                        whose periods do not follow a predictable pattern should talk to a doctor.
-
-                    </p>
-
-                    <h2 id="link3" class=" py-3">When to see a doctor
-                    </h2>
-                    <p>
-                        Light spotting in the middle of the cycle is not usually harmful, especially if it occurs at the same time each month.
-
-                    </p>
-
-                    <p>
-                        However, it is important to discuss any unusual bleeding with a doctor,
-                        particularly if other symptoms occur alongside it. Charting the bleeding —
-                        including what time it usually occurs and how long it lasts — can help a
-                        doctor identify the cause.
-                    </p>
-
-                    <p>
-                        People who experience the following should speak to a doctor:
-
-                    </p>
-
-                    <ul class="list-unstyled px-3">
-                        <li class="cus py-1">
-                            changes in the usual pattern of bleeding, for example, periods being
-                            less than 21 days or more than 35 days apart
-                        </li>
-                        <li class="cus py-1">
-                            bleeding becoming much heavier or lighter than usual
-                        </li>
-                        <li class="cus py-1">
-                            excessive bleeding, such as soaking a tampon or pad every 2 hours
-                            or passing large blood clots
-                        </li>
-                        <li class="cus py-1">
-                            additional symptoms, such as painful periods, difficulty getting
-                            pregnant, pelvic pain during or after sex, shortness of breath,
-                            lightheadedness, dizziness, or chest pain
-                        </li>
-                        <li class="cus py-1">
-                            bleeding after menopause
-                        </li>
-                    </ul>
-
-                    <p>
-                        A person should seek urgent medical attention if:
-
-                    </p>
-
-                    <ul class="list-unstyled px-3">
-                        <li class="cus py-1">
-                            the bleeding is extremely heavy, soaking through a large pad or
-                            tampon every hour
-                        </li>
-                        <li class="cus py-1">
-                            they develop a fever or other symptoms of an infection
-                        </li>
-                        <li class="cus py-1">
-                            they have a bleeding disorder and experience heavy bleeding that
-                            does not stop
-                        </li>
-                    </ul>
-
-
-                    <h2 id="link4" class=" py-3">Summary.
-                    </h2>
-                    <p>
-                        Bleeding between periods is common, affecting 9–14% of females
-                        between menarche — when periods begin — and menopause.
-                    </p>
-                    <p>
-                        While ovulation bleeding is a common reason for bleeding between
-                        periods, it is not the only potential cause. Therefore, it is important to
-                        monitor the bleeding and talk to a doctor about any bothersome
-                        symptoms.
-                    </p>
-                    <p>
-                        As everyone’s menstrual cycle can be different, a person may wish to
-                        track their cycle to determine the usual cycle length and the typical day of
-                        ovulation. This information can often help a doctor determine whether
-                        ovulation or something else is causing the bleeding.
-                    </p>
-                   
-                  
-                    <h4 class="">References</h4>
-                    <p>https://www.medicalnewstoday.com/articles/320010</p>
-                    <p>To find out about how St Ives Specialist Hospital can assist you, book an appointment with us today. </p>
-
-                    <ul class="list-unstyled px-3">
-                      <li class="cus">Email: info@stiveshealthcare.com</li>
-                      <li class="cus">Call: 08039494531, 07088727358 </li>
-                      <li class="cus">Whatsapp: +234 (0)8039494531.</li>
-                      <li class="cus">Visit: 12 Salvation road, Opebi, Ikeja</li>
-                    </ul>
-
-                    <div class="my-4">
-                        <span class="badge badge-pill badge-secondary p-2"> Fertility</span>
-                        <span class="badge badge-pill badge-secondary p-2">Pregnancy/Obsterics</span>
-                        <span class="badge badge-pill badge-secondary p-2">Urology / Nephrology</span>
-                        <span class="badge badge-pill badge-secondary p-2">Women's Health / Gynecology</span>
-                    </div>
-
-                    <div id="tester">
-                      <div class="share-button ml-auto">
-                        <span><i class="fas fa-share-alt"></i> Share!</span>
-                        <a href="javascript:void(0)" onclick="printPage()"><i class="fas fa-print p-2 mb-1"></i></a>
-                        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
-                        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
-                        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
-                        <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="col-md-6 text-center">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <div class="divider"></div>
 
@@ -553,6 +365,7 @@
   </div>
   <!-- Large Modal 1 End -->
   
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -581,13 +394,15 @@
      }
      if($(this).scrollTop() > (headerHeight * 3)) {
        mainNav.addClass('inView');
+       document.getElementById("navbar-toggler").style.display = "block";
      }else {
        mainNav.removeClass('inView');
+       document.getElementById("navbar-toggler").style.display = "none";
      }
    })
   })
  </script>
- 
+ <!-- Header Scroll Ends -->
  
  <script>
   //Get the button
@@ -663,6 +478,17 @@ window.addEventListener('load', fadeEffect);
   var randomFact = Math.floor(Math.random() * facts.length);
   document.getElementById('factDisplay').innerHTML = facts[randomFact];
   })();
+</script>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 </script>
 
 
