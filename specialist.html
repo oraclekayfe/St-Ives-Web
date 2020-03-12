@@ -40,10 +40,13 @@
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='80px'/>
+        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()">
+        <i class="fas fa-long-arrow-alt-left"></i>
+      </a>
+      
     </div>
     
     
@@ -142,19 +145,15 @@
   <!-- End of First Navigaion -->
 
   <!-- Second Navigation -->
-  <div id="mainNav" class="banner-area bg-white">
+  <div id="mainNav" class="banner-area">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light py-3">
 
-            <div class="social nav">
-              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
-              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
-              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
-              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-            </div>
-
+            <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
 
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav mx-auto">
@@ -190,9 +189,14 @@
                 </li>
               </ul>
             </div>
-            <button id="navbar-toggler" class="navbar-toggler animated fadeIn ml-auto" type="button" onclick="openNav()">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="social nav">
+              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
+              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
+              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
+              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
+            </div>
+
         </nav>
         </div>
       </div>
@@ -415,6 +419,17 @@
                     Why St Ives Specialist Hospital
                   </h2>
                   <div class="card-body">
+
+                    <p class="text-justify">
+                      We offer dedicated specialist services in all matters of women, children and family health, managed and delivered by a group of consultants in obstetrics and gynecology, pediatrics, medicine and surgery. 
+                    </p>
+                    <p class="text-justify">
+                     Each operational arm is situated at seperate locations, well equipped with modern facilities, and well staffed with qualified specialists and professionals who are abrest of modern trends, global best practices and developments in their various specialties
+                    </p>
+                    <p class="text-justify">
+                      St. Ives also provides referrals to affiliate medical experts abroad on occasions when required.
+                    </p>
+
                     <ul class="list-unstyled px-3">
                       <li class="cus">
                         First Class Specialists
@@ -451,13 +466,14 @@
                   Vision & Mission 
                 </h3>
                 <div class="card-body">
-                  <h4>Mission</h4>
+                  <h4 class="text-danger">Mission</h4>
                   <p class="text-justify">To provide an advanced competitive IVF and Fertility service of international standard with a high pregnancy rate at an affordable cost to the couples.</p>
-                  <div class="divider"></div>
-                  <h4>Vision </h4>
+                  
+                  <h4 class="text-danger">Vision </h4>
                   <p class="text-justify">To be the healthcare organization of first choice for women, children and the family</p>
+               </div>
               </div>
-              </div>
+
               <div class="divider"></div>
               <div class="card border-0">
                 <h2 class="bg-red p-3">
@@ -479,11 +495,12 @@
             </div>
   
             <div class="col-sm-12 col-md-4">
-  
-              <div class="d-none d-md-block card border-0">
+              <div class="d-none d-md-block card border-0 mb-4 hvr-shadow">
                 <img src="img/01-landing-copy.jpg" class="card-img-top" alt="Request Appointment">
                 <div class="card-body">
-                  <h5 class="card-title ">Request Appointment</h5>
+                  <h5>
+                    <a class="text-decoration-none text-dark" href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg">Request Appointment</a>
+                  </h5>
                   <p class="card-text">Book Appointment online ahead of time to avoid waiting in line. Walk-ins also welcome.</p>
                 </div>
                 <a class="text-dark" style="text-decoration: none;">
@@ -493,31 +510,48 @@
                   </div>
                   </a>
               </div>
-  
-              <div class="divider"></div>
-  
-              <div class="card border-0">
+              <div class="divider d-none d-md- block"></div>
+              
+              <div class="card border-0 hvr-shadow ">
                 <img src="img/pharmacyopebi2.JPG" alt="St Ives Blood Bank" class="img-fluid card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title ">St Ives Pharmacy</h5>
-                  <p class="card-text">The St Ives brand now have a new pharmacy, The Saint Ives Pharmacy opened to serve you; Our vision is be the first choice pharmacy at your service for Women, Children and the whole Family, so we extended the scope of our pharmacy to include a superstore, The St Kiks Superstore to serve you better.</p>
+                  <h5>
+                    <a class="text-decoration-none text-dark" href="pharmacy.html">St Ives Pharmacy
+                    </a>
+                  </h5>
+                  <p class="card-text text-justify">The St Ives brand now have a new pharmacy, The Saint Ives Pharmacy opened to serve you; Our vision is be the first choice pharmacy at your service for Women, Children and the whole Family, so we extended the scope of our pharmacy to include a superstore, The St Kiks Superstore to serve you better.</p>
                 </div>
+                <a href="pharmacy.html" class="text-dark" style="text-decoration: none;">
+                  <div class="card-footer bg-light-red">
+                    <strong>Learn More <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+                    </strong>
+                  </div>
+                </a>
               </div>
              
               <div class="divider"></div>
-  
-              <div id="blood-bank-adv" class="card text-center">
-                <i class="flaticon-blood-bank d-flex justify-content-center"></i>
+      
+              <div class="card border-0 hvr-shadow ">
+                <img src="img/blood-donation-4151721_1920.jpg" alt="St Ives Blood Bank" class="img-fluid card-img-top">
                 <div class="card-body">
-                  <h2 class="card-title ">St Ives Blood Bank</h2>
-                  <p class="card-text text-justify ">St Ives Blood Bank is a high-tech and state of the art Registered Blood Bank, that collects, separate and stores whole blood and blood components.</p>
-                  <a href="blood-bank.html" class="btn btn-outline-dark px-3">Book Appointment</a>
+                  <h5>
+                    <a class="text-decoration-none text-dark" href="blood-bank.html">St Ives Blood Bank
+                    </a>
+                  </h5>
+      
+                  <p class="card-text text-justify">St Ives Blood Bank is a high-tech and state of the art registered blood bank, that collects, separate and stores whole blood and blood components.</p>
                 </div>
+                <a href="blood-bank.html" class="text-dark" style="text-decoration: none;">
+                  <div class="card-footer bg-light-red">
+                    <strong>Learn More <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+                    </strong>
+                  </div>
+                </a>
               </div>
-  
+      
             </div>
-              </div>
-            </section>
+            </div>
+          </section>
         
   <div class="divider"></div>
 

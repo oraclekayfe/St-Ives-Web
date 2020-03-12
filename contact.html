@@ -40,10 +40,13 @@
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st_ives_healthcare2.svg" alt="St Ives Blog" width='80px'/>
+        <img src="img/svg/st_ives_healthcare2.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+    <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()">
+      <i class="fas fa-long-arrow-alt-left"></i>
+    </a>
+
     </div>
     
     
@@ -142,18 +145,16 @@
   <!-- End of First Navigaion -->
 
     <!-- Second Navigation -->
-    <div id="mainNav" class="banner-area bg-white">
+    <div id="mainNav" class="banner-area">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <nav class="navbar navbar-expand-lg navbar-light py-3">
 
-              <div class="social nav">
-                <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
-                <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
-                <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
-                <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-              </div>
+
+              <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </a>
 
           
               <div class="collapse navbar-collapse" id="navbar">
@@ -187,9 +188,14 @@
                   </li>
                 </ul>
               </div>
-              <button id="navbar-toggler" class="navbar-toggler animated fadeIn ml-auto" type="button" onclick="openNav()">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              
+              <div class="social nav">
+                <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
+                <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
+                <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
+                <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
+              </div>
+
           </nav>
           </div>
         </div>
@@ -283,15 +289,37 @@
                 <p class="card-text">The St Ives brand now have a new pharmacy, The Saint Ives Pharmacy opened to serve you; Our vision is be the first choice pharmacy at your service for Women, Children and the whole Family, so we extended the scope of our pharmacy to include a superstore, The St Kiks Superstore to serve you better.</p>
               </div>
             </div>
+
+            <div class="divider"></div>
+    
+                <div class="card hvr-shadow">
+                  <img class="card-img-top" src="img/doctors/DrObodoSP1-36h5e97loqeeopybvp648w.png" alt="" />
+                <div class="card-body bg-200">
+                  <h5><a class="text-decoration-none text-dark" href="specialist.html">St Ives Specialist Services</a></h5>
+                  <p class="mb-0 text-justify"> We are Healthcare Professionals, Commited to the Best Quality of
+                    Live, Through Preventative and Clinical Medicine, For Total Health
+                    and Wellbeing.</p>
+                </div>
+    
+                <a href="specialist.html" class="text-dark" style="text-decoration: none;">
+                  <div class="card-footer bg-light-red">
+                    <strong>Book Appointment <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+                    </strong>
+                  </div>
+                </a>
+                
+                </div>
            
             <div class="divider"></div>
 
-             <div id="blood-bank-adv" class="card text-center">
-              <i class="flaticon-blood-bank d-flex justify-content-center"></i>
+             <div id="blood-bank-adv" class="card text-center border-0">
               <div class="card-body">
-                <h2 class="card-title ">St Ives Blood Bank</h2>
+                <a href="blood-bank.html">
+                  <h3 class="card-title ">St Ives Blood Bank</h3>
+                </a>
+                
                 <p class="card-text text-justify ">St Ives Blood Bank is a high-tech and state of the art Registered Blood Bank, that collects, separate and stores whole blood and blood components.</p>
-                <a href="blood-bank.html" class="btn btn-outline-dark px-3">Book Appointment</a>
+               
               </div>
             </div>
 

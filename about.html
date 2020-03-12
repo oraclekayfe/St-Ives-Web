@@ -40,10 +40,10 @@
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='80px'/>
+        <img src="img/svg/st_ives_healthcare2.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
     </div>
     
     
@@ -70,7 +70,7 @@
       </li>
       
       <li>
-        <a href="about.html"  class="active">About</a>
+        <a href="about.html">About</a>
       </li>
       <li>
         <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
@@ -142,18 +142,15 @@
   <!-- End of First Navigaion -->
 
    <!-- Second Navigation -->
-   <div id="mainNav" class="banner-area bg-white">
+   <div id="mainNav" class="banner-area">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light py-3">
 
-            <div class="social nav">
-              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
-              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
-              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
-              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-            </div>
+            <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
 
            
             <div class="collapse navbar-collapse" id="navbar">
@@ -190,9 +187,14 @@
                 </li>
               </ul>
             </div>
-            <button id="navbar-toggler" class="navbar-toggler animated fadeIn ml-auto" type="button" onclick="openNav()">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="social nav">
+              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
+              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
+              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
+              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
+            </div>
+
         </nav>
         </div>
       </div>
@@ -221,7 +223,7 @@
     <section id="about-us">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-8 d-flex flex-column">
             <div class="card">
                 <h2 class="bg-red p-3 my-2">
                     About St Ives Specialist Hospital
@@ -240,61 +242,54 @@
                   <p class="text-justify">
                   We offer dedicated specialist services in all matters of women, children and family health, managed and delivered by a group of consultants in Obstetrics and Gynecology, Pediatrics, Medicine and Surgery. St. Ives also provides referrals to affiliate medical experts abroad on occasions when required.
                   </p>
+                  <p class="text-justify">Our specialist practice provides first class maintenance and improvement of health via the reliable diagnosis, treatment, and prevention of diseases, illnesses, injuries, and other physical and mental impairments. Our specialist hospitals are located in Ikoyi and Ikeja in Lagos.</p>
                 </div>
             </div>
-            <div class="divider"></div>
-            <div class="card">
-              <h3 class="bg-red p-3">ST IVES SPECIALIST HOSPITAL</h3>
+            
+            <div class="card my-3">
+              <h3 class="bg-red p-3">St Ives Family Clinic</h3>
               <div class="card-body">
-                <p class="text-justify p-2">Our specialist practice provides first class maintenance and improvement of health via the reliable diagnosis, treatment, and prevention of diseases, illnesses, injuries, and other physical and mental impairments. Our specialist hospitals are located in Ikoyi and Ikeja in Lagos.</p>
+                <p class="text-justify p-2">Our Family Clinics provide the best first line of care for all members of the family using top of the range facilities and first-class family health physicians with the expertise and commitment to all aspects of family health issues relating to women, children and the men in their lives.</p>
               </div>
             </div>
-            <div class="divider"></div>
+            
             <div class="card">
-              <h3 class="bg-red p-3">ST IVES FAMILY CLINIC</h3>
+              <h3 class="bg-red p-3">St Ives Fertility Unit</h3>
               <div class="card-body">
-                <p class="text-justify p-2">Our family clinics provide the best first line of care for all members of the family using top of the range facilities and first-class family health physicians with the expertise and commitment to all aspects of family health issues relating to women, children and the men in their lives.</p>
+                <p class="text-justify p-2">Dedicated to the provision of Advanced IVF and Fertility Services for the attainment of Pregnancy and Conception needs of expectant couples at affordable costs. Our fertility unit started in 2007 and we boast one of the highest IVF success rates in the world with over 2000 successful IVF births in 10 years.</p>
               </div>
             </div>
-            <div class="divider"></div>
-            <div class="card">
-              <h3 class="bg-red p-3">ST IVES FERTILITY UNIT</h3>
+            
+            <div class="card my-3">
+              <h3 class="bg-red p-3">St Ives Pharmacy</h3>
               <div class="card-body">
-                <p class="text-justify p-2">Dedicated to the provision of advanced IVF and fertility services for the attainment of pregnancy and conception needs of expectant couples at affordable costs. Our fertility unit started in 2007 and we boast one of the highest IVF success rates in the world with over 2000 successful IVF births in 10 years.</p>
-              </div>
-            </div>
-            <div class="divider"></div>
-            <div class="card">
-              <h3 class="bg-red p-3">ST IVES PHARMACY</h3>
-              <div class="card-body">
-                <p class="text-justify p-2">We operate modern pharmaceutical outlet, the SAINT STORE, retailing genuine, up to date, NAFDAC registered and industry approved drugs with the aim of ensuring our patients and stakeholders have trusted access to genuine medications. Our pharmacy operation is another testament of our corporate focus on TOTAL HEALTHCARE.</p>
+                <p class="text-justify p-2">We operate modern pharmaceutical outlet, the Saint Store, retailing genuine, up to date, NAFDAC registered and industry approved drugs with the aim of ensuring our patients and stakeholders have trusted access to genuine medications. Our pharmacy operation is another testament of our corporate focus on Total Healthcare.</p>
               </div>
             </div>
 
-            <div class="divider"></div>
+            
             <div class="card">
               <h3 class="bg-red p-3">
                 Vision & Mission 
               </h3> 
               <div class="card-body">
                 <div class="mb-2">
-                <h5>Mission Statement</h5>
+                <h5 class="text-danger">Mission Statement</h5>
                 <p class="text-justify">To provide an advanced competitive IVF and Fertility service of international standard with a high pregnancy rate at an affordable cost to the couples.</p>
                 </div >
                 <div>
-                  <h5>Vision</h5>
+                  <h5 class="text-danger">Vision</h5>
                   <p class="text-justify">To be the healthcare organization of first choice for women, children and the family</p>
                   </div >
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-
-            <div class="card">
+          <div class="col-sm-12 col-md-4">
+            <div class="d-none d-md-block card border-0 mb-4">
               <img src="img/01-landing-copy.jpg" class="card-img-top" alt="Request Appointment">
               <div class="card-body">
-                <h5 class="card-title">Request Appointment</h5>
+                <h5 class="card-title ">Request Appointment</h5>
                 <p class="card-text">Book Appointment online ahead of time to avoid waiting in line. Walk-ins also welcome.</p>
               </div>
               <a class="text-dark" style="text-decoration: none;">
@@ -304,18 +299,47 @@
                 </div>
                 </a>
             </div>
+            <div class="divider d-none d-md- block"></div>
+    
+            <div class="card hvr-shadow">
+              <img class="card-img-top" src="img/rwLHIPU2Ub.jpg" alt="Doctor" />
+            <div class="card-body bg-200">
+              <h5><a class="text-decoration-none text-dark" href="specialist.html">St Ives Specialist Services</a></h5>
+              <p class="mb-0 text-justify"> We are healthcare professionals, commited to the best quality of
+                live, through preventative and clinical medicine, for total health
+                and wellbeing.</p>
+            </div>
+    
+            <a href="specialist.html" class="text-dark" style="text-decoration: none;">
+              <div class="card-footer bg-light-red">
+                <strong>Learn More <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+                </strong>
+              </div>
+            </a>
+            
+            </div>
            
             <div class="divider"></div>
-
+            
+            <div class="card border-0">
+              <img src="img/pharmacyopebi2.JPG" alt="St Ives Blood Bank" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h5 class="card-title ">St Ives Pharmacy</h5>
+                <p class="card-text text-justify">The St Ives brand now have a new pharmacy, The Saint Ives Pharmacy opened to serve you; Our vision is be the first choice pharmacy at your service for Women, Children and the whole Family, so we extended the scope of our pharmacy to include a superstore, The St Kiks Superstore to serve you better.</p>
+              </div>
+            </div>
+           
+            <div class="divider"></div>
+    
             <div id="blood-bank-adv" class="card text-center">
               <i class="flaticon-blood-bank d-flex justify-content-center"></i>
               <div class="card-body">
                 <h2 class="card-title ">St Ives Blood Bank</h2>
-                <p class="card-text text-justify ">St Ives Blood Bank is a high-tech and state of the art Registered Blood Bank, that collects, separate and stores whole blood and blood components.</p>
-                <a href="blood-bank.html" class="btn btn-outline-dark px-3">Book Appointment</a>
+                <p class="card-text text-justify ">St Ives Blood Bank is a high-tech and state of the art registered blood bank, that collects, separate and stores whole blood and blood components.</p>
+                <a href="blood-bank.html" class="btn btn-outline-dark px-3">Learn More</a>
               </div>
             </div>
-
+    
           </div>
         </div>
       </div>

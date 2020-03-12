@@ -39,10 +39,13 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='80px'/>
+        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()">
+        <i class="fas fa-long-arrow-alt-left"></i>
+      </a>
+      
     </div>
     
     
@@ -141,18 +144,15 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
   <!-- End of First Navigaion -->
 
   <!-- Second Navigation -->
-  <div id="mainNav" class="banner-area bg-white">
+  <div id="mainNav" class="banner-area">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="navbar navbar-expand-lg navbar-light py-3">
 
-            <div class="social nav">
-              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
-              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
-              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
-              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-            </div>
+            <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
 
 
             <div class="collapse navbar-collapse" id="navbar">
@@ -186,9 +186,14 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
                 </li>
               </ul>
             </div>
-            <button id="navbar-toggler" class="navbar-toggler animated fadeIn ml-auto" type="button" onclick="openNav()">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+
+            <div class="social nav">
+              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
+              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
+              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
+              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
+            </div>
+
         </nav>
         </div>
       </div>
@@ -206,8 +211,9 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
       <div class="col-md-8">
       <h1 class="p-3 shadow mb-1" style="background: white;">Specialist Services</h1>
       <div class="card border-0 p-3">
+        <img src="img/gbqNIDOCuG.jpg" alt="Checkup" class="card-img-top">
         <div class="card-body">
-          <h4>Comprehensive Health Checks</h4>
+          <h3 class="card-title">Comprehensive Health Checks</h3>
           <p class="card-text text-justify">
             We have a proprietary St. Ives Health Screening Program (SIHSP) is an assortment of essential medical assessment programs that leave no stones unturned in our commitment to helping our patients (corporate and individual) go after their life goals at home or at work with unwavering peace of mind and absolutely no worries.
           </p>
@@ -246,14 +252,15 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
         </div>
     </div>
 
-      <!--  -->
-      <button class="accordion mb-2">Medical Diagnostics</button>
-      <div class="panel">
-        <div class="card-body">
-          <h3>Medical Diagnostics</h3>
-          <img src="img/hm7p1U2qsk.jpg" alt="laboratory" class="card-img-top">
-          <div class="divider"></div>
-          <p>The accurate identification of ailments and impairments is fundamental to effective healthcare solutions delivery; therefore, we offer a full complementary set of distinctive medical diagnostic services i.e. the processes and techniques of determining which disease or condition explains a person’s symptoms and signs.
+    <div class="divider"></div>
+
+    <div class="card border-0 p-3">
+      <img src="img/hm7p1U2qsk.jpg" alt="laboratory" class="card-img-top">
+      <div class="card-body">
+        <h3 class="card-title">
+          Medical Diagnostics
+        </h3>
+        <p>The accurate identification of ailments and impairments is fundamental to effective healthcare solutions delivery; therefore, we offer a full complementary set of distinctive medical diagnostic services i.e. the processes and techniques of determining which disease or condition explains a person’s symptoms and signs.
           We deploy cutting edge technology, tools, techniques and procedures to unravel the nature, likely causes and implications of medical problems and conditions.
           </p>
           <ul class="list-unstyled px-3">
@@ -274,8 +281,9 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
               For more on our laboratory and diagnostic services including our proprietary St. Ives Health Checks and assessment Program, please chat with us online or get in touch with us on any of our digital platforms. Or call our hotlines today…
             </p>
           </ul>
-        </div>
       </div>
+    </div>
+      <!--  -->
 
       <!--  -->
       <button class="accordion mb-2">Surgical Services</button>
@@ -449,44 +457,82 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
       </div>
       </div>
 
-        <div class="col-md-4">
-
-          <div class="card border-0">
-            <img src="img/01-landing-copy.jpg" class="card-img-top" alt="St Ives Family Clinic">
-            <div class="card-body">
-              <h5 class="card-title">Request Appointment</h5>
-              <p class="card-text">Book Appointment online ahead of time to avoid waiting in line. Walk-ins also welcome.</p>
-            </div>
-            <a class="text-dark" style="text-decoration: none;">
-              <div class="card-footer bg-light-red" data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;">
-                <strong>Book Appointment <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
-                </strong>
-              </div>
-              </a>
+      <div class="col-sm-12 col-md-4">
+        <div class="d-none d-md-block card border-0 mb-4 hvr-shadow">
+          <img src="img/01-landing-copy.jpg" class="card-img-top" alt="Request Appointment">
+          <div class="card-body">
+            <h5>
+              <a class="text-decoration-none text-dark" href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg">Request Appointment</a>
+            </h5>
+            <p class="card-text">Book Appointment online ahead of time to avoid waiting in line. Walk-ins also welcome.</p>
           </div>
-
-          <div class="divider"></div>
-
-          <div class="card border-0">
-            <img src="img/pharmacyopebi2.JPG" alt="St Ives Blood Bank" class="img-fluid card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">St Ives Pharmacy</h5>
-              <p class="card-text">The St Ives brand now have a new pharmacy, The Saint Ives Pharmacy opened to serve you; Our vision is be the first choice pharmacy at your service for Women, Children and the whole Family, so we extended the scope of our pharmacy to include a superstore, The St Kiks Superstore to serve you better.</p>
+          <a class="text-dark" style="text-decoration: none;">
+            <div class="card-footer bg-light-red" data-toggle="modal" data-target=".bd-example-modal-lg" style="cursor: pointer;">
+              <strong>Book Appointment <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+              </strong>
             </div>
-          </div>
-         
-          <div class="divider"></div>
-          
-          <div id="blood-bank-adv" class="card text-center">
-            <i class="flaticon-blood-bank d-flex justify-content-center"></i>
-            <div class="card-body">
-              <h2 class="card-title ">St Ives Blood Bank</h2>
-              <p class="card-text text-justify ">St Ives Blood Bank is a high-tech and state of the art Registered Blood Bank, that collects, separate and stores whole blood and blood components.</p>
-              <a href="blood-bank.html" class="btn btn-outline-dark px-3">Book Appointment</a>
-            </div>
-          </div>
-
+            </a>
         </div>
+        <div class="divider d-none d-md- block"></div>
+
+        <div class="card hvr-shadow">
+          <img class="card-img-top" src="img/rwLHIPU2Ub.jpg" alt="Doctor" />
+        <div class="card-body bg-200">
+          <h5><a class="text-decoration-none text-dark" href="specialist.html">St Ives Specialist</a></h5>
+          <p class="mb-0 text-justify"> We are healthcare professionals, commited to the best quality of
+            live, through preventative and clinical medicine, for total health
+            and wellbeing.</p>
+        </div>
+
+        <a href="specialist.html" class="text-dark" style="text-decoration: none;">
+          <div class="card-footer bg-light-red">
+            <strong>Learn More <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+            </strong>
+          </div>
+        </a>
+        
+        </div>
+       
+        <div class="divider"></div>
+        
+        <div class="card border-0 hvr-shadow ">
+          <img src="img/pharmacyopebi2.JPG" alt="St Ives Blood Bank" class="img-fluid card-img-top">
+          <div class="card-body">
+            <h5>
+              <a class="text-decoration-none text-dark" href="pharmacy.html">St Ives Pharmacy
+              </a>
+            </h5>
+            <p class="card-text text-justify">The St Ives brand now have a new pharmacy, The Saint Ives Pharmacy opened to serve you; Our vision is be the first choice pharmacy at your service for Women, Children and the whole Family, so we extended the scope of our pharmacy to include a superstore, The St Kiks Superstore to serve you better.</p>
+          </div>
+          <a href="pharmacy.html" class="text-dark" style="text-decoration: none;">
+            <div class="card-footer bg-light-red">
+              <strong>Learn More <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+              </strong>
+            </div>
+          </a>
+        </div>
+       
+        <div class="divider"></div>
+
+        <div class="card border-0 hvr-shadow ">
+          <img src="img/blood-donation-4151721_1920.jpg" alt="St Ives Blood Bank" class="img-fluid card-img-top">
+          <div class="card-body">
+            <h5>
+              <a class="text-decoration-none text-dark" href="blood-bank.html">St Ives Blood Bank
+              </a>
+            </h5>
+
+            <p class="card-text text-justify">St Ives Blood Bank is a high-tech and state of the art registered blood bank, that collects, separate and stores whole blood and blood components.</p>
+          </div>
+          <a href="blood-bank.html" class="text-dark" style="text-decoration: none;">
+            <div class="card-footer bg-light-red">
+              <strong>Learn More <span class="float-right"><i class="fas fa-chevron-right fa-lg fa-va"></i></span>
+              </strong>
+            </div>
+          </a>
+        </div>
+
+      </div>
       </div>
     </section>
 

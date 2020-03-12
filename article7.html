@@ -20,11 +20,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-  <title>St Ives Healthcare | Blog</title>
+  <title>St Ives Healthcare | St Ives Blood Bank</title>
 </head>
 
 <body id='home' data-spy="scroll" data-target="#mainNav">
-
 
   <!-- Preloader Start -->
 <div class="preloader">
@@ -34,20 +33,21 @@
 </div>
 <!-- Preloader Ends -->
 
+
 <!-- Side Bar Starts -->
 <div id="mySidenav" class="sidenav" data-simplebar>
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st_ives_blog1.svg" alt="St Ives Blog" width='80px'/>
+        <img src="img/svg/st_ives_blood1.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
     </div>
     
     
     <ul class="list-unstyled components">
-      <li class="active">
+      <li>
         <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
           <li>
@@ -72,7 +72,8 @@
         <a href="about.html">About</a>
       </li>
       <li>
-        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i>
+        </a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
           <li>
             <a href="specialist-services.html">Specialist Services</a>
@@ -104,11 +105,11 @@
 <!-- Side Bar Ends -->
 
   <!-- First Navigaion -->
-  <header >
+  <header>
     <nav class="navbar navbar-expand-lg navbar-split py-3">
       <div class="container">
-        <a class="navbar-brand" style="z-index: 3;">
-          <img src="img/svg/st_ives_blog1.svg" class="animated tada" alt="St Ives Blog" width='100px'/>
+        <a href="blood-bank.html" class="navbar-brand" style="z-index: 3;">
+          <img src="img/svg/st_ives_blood1.svg" class="animated tada" alt="Blood Bank" width='100px'/>
         </a>
         <div class="navbar-nav text-base d-none d-lg-flex">
           <div class="nav-item px-3">
@@ -117,7 +118,7 @@
               <div class="media-body text-white">
                 <ul class="list-unstyled">
                   <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
-                  <p id="factDisplay" class="mb-1 animated bounce"></p>
+                  <p class="mb-1 animated bounce"> 6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi</p>
                 </ul>
               </div>
             </div> 
@@ -140,91 +141,205 @@
   </header>
   <!-- End of First Navigaion -->
 
-    <!-- Second Navigation -->
-    <div id="mainNav" class="banner-area bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light py-3">
-              <div class="social nav">
-                <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
-                <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
-                <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
-                <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-              </div>
-              
-              <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a href="blog.html" class="nav-link animated fadeIn">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="specialist.html" class="nav-link animated fadeIn">Specialist</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="family-clinic.html" class="nav-link animated fadeIn">Clinic</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="fertility.html" class="nav-link animated fadeIn">Fertility</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pharmacy.html" class="nav-link animated fadeIn">Pharmacy</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="blood-bank.html" class="nav-link animated fadeIn">Blood Bank</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="about.html" class="nav-link animated fadeIn">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link animated fadeIn">Ives Medicare</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="contact.html" class="nav-link animated fadeIn">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <button id="navbar-toggler" class="navbar-toggler animated fadeIn" type="button" onclick="openNav()">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          </nav>
-          </div>
+  <!-- Second Navigation -->
+  <div id="mainNav" class="banner-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg py-3">
+
+            <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="specialist.html" class="nav-link">Specialist</a>
+                </li>
+                <li class="nav-item">
+                  <a href="family-clinic.html" class="nav-link">Clinic</a>
+                </li>
+                <li class="nav-item">
+                  <a href="fertility.html" class="nav-link">Fertility</a>
+                </li>
+                <li class="nav-item">
+                  <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link">Ives Medicare</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="social nav">
+              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
+              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
+              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
+              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
+            </div>
+
+        </nav>
         </div>
       </div>
     </div>
-    <!-- End of Second Navigation -->
-
-
-  <!-- Main Content -->
-<section id="starter" style="height: 100vh;">
-  <div class="container">
-    <div class="row jumbo">
-      <div class="col-md-6 text-center">
-
-      </div>
-      <div class="col-md-6 text-center">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
-    </div>
   </div>
-</section>
+  <!-- End of Second Navigation -->
+
+    <!-- Showcase3 -->
+    <div class="container">
+      <header id="showcase3">
+        <div class="container drk">
+          <div class="row showcase3-container">
+            <div class="col-sm-9 ml-auto showcase3-content text-center">
+              <h1 class="animated fadeInUp" style="animation-delay: 1s;">St Ives Blood Bank</h1>
+              <p class="animated fadeInUp lead" style="animation-delay: 2s;"> St Ives Blood Bank is a High-Tech and State of the Art Registered Blood Bank, that Collects, Separate and Stores whole blood and blood components.</p>
+              <hr class="animated fadeInUp" style="animation-delay: 2s;">
+              <p class="animated fadeInUp" style="animation-delay: 3s;">“A Single Pint can save Three Lives, a Single Gesture can create a Million Smiles”</p>
+              <button class="animated fadeInUp btn btn-outline-light py-2" data-toggle="modal" data-target=".bd-example-modal-lg" style="animation-delay: 4s;">Start Here</button>
+            </div>
+          </div>
+        </div>
+    </header>
+    </div>
+
+   <div class="divider"></div>
+    
+
+   <!-- Home Articles -->
+   <section id='blog'>
+    <div class="container">
+        <h2 class="bg-red mb-1 p-3">
+          Recent Post From Our Blog
+        </h2>
+         <div class="row">
+          <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+            <article class="card h-100 hvr-shadow">
+              <img src="img/aVKlpiiO7u.jpg" alt="Gynecologists" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="gynecologists_When_to_visit.html"
+                    >Gynecologists: When to visit and what to expect</a
+                  >
+                </h5>
+                <p class='text-justify'>
+                 Gynecologists are doctors who specialize in women's health, with a focus on the female reproductive system.
+                </p>
+              </div>
+            </article>
+          </div>
+
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+           <article class="card h-100 hvr-shadow">
+             <img src="img/U87ijiyG3B.jpg" alt="Sperm Count" class="card-img-top"/>
+             <div class="card-body">
+               <h5 class="card-title">
+                 <a href="the_best_ways_to_increase_sperm_count.html"
+                   >What are the best ways to increase sperm count?</a
+                 >
+               </h5>
+               <p class='text-justify'>
+                Sperm count refers to the average number of sperm present in one sample of semen. Fertility doctors assess sperm count during routine semen analyses and consider it to be an important factor for fertility.
+               </p>
+             </div>
+           </article>
+         </div>
+
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+          <article class="card h-100 hvr-shadow">
+            <img src="img/QRFc3GlS0d.jpg" alt="Ovulation Bleeding" class="card-img-top"/>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="ovulation_bleeding.html"
+                  >Ovulation bleeding: What to know</a
+                >
+              </h5>
+              <p class='text-justify'>
+                Ovulation bleeding is vaginal bleeding during or immediately before or after ovulation, which occurs roughly in the middle of a menstrual cycle.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+          <article class="card h-100 hvr-shadow">
+            <img src="img/UkRg6MnAKR.jpg" alt="Onions" class="card-img-top"/>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="why_are_onions_good_for_you.html"
+                  >Why are onions good for you?</a
+                >
+              </h5>
+              <p class='text-justify'>
+                Onions belong to the Allium family of plants, which also includes chives, garlic, and leeks. These vegetables have characteristic pungent flavors and some medicinal properties.
+              </p>
+            </div>
+          </article>
+         </div>
+  
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+           <article class="card h-100 hvr-shadow">
+             <img src="img/ahehIVUjK2.jpg" alt="Breastfeeding Mother" class="card-img-top"/>
+             <div class="card-body">
+               <h5 class="card-title">
+                 <a href="egg_donation_process.html"
+                   >How does the egg donation process work?</a
+                 >
+               </h5>
+               <p class='text-justify'>
+                Egg donation is a process in which a fertile woman donates an egg, or oocyte, to another woman to help her conceive.
+               </p>
+             </div>
+           </article>
+         </div>
+  
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+          <article class="card h-100 hvr-shadow">
+            <img src="img/hLVtZBLVSm.jpg" alt="Symptoms of Infertility" class="card-img-top"/>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="novel_coronavirus.html"
+                  >Novel coronavirus: Your questions, answered</a
+                >
+              </h5>
+              <p class='text-justify'>
+                The current outbreak of infections with a novel type of coronavirus has sparked global anxiety and concern...
+              </p>
+            </div>
+          </article>
+        </div>
+
+       </div>
+   </div>
+   </section>
+  <!-- Home Article End -->
+  
 
   <div class="divider"></div>
+
 
   <!-- Footer Start -->
   <footer id="main-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="col-md-3 my-2 col-sm-6 col-xs-12">
           <div class="row d-flex justify-content-center mb-3">
             <img src="img/svg/st_ives_healthcare2.svg" class="w-50 p-1 bg-light" alt="Styles logo">
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="col-md-3 my-2 col-sm-6 col-xs-12">
           <div class="mb-3">
             <h3>Email Newsletter</h3>
             <p>Subscribe To Our Newsletter.</p>
@@ -234,7 +349,7 @@
             </form>
           </div>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12">
+      <div class="col-md-3 my-2 col-sm-6 col-xs-12">
         <div>
           <h3>Site Map</h3>
           <ul class="list-unstyled">
@@ -281,12 +396,22 @@
   
       <!-- Modal Header -->
       <div class="modal-header">
-         <h4 class="modal-title ">Book Appointment</h4>
+         <h4 class="modal-title">Contact Us</h4>
          <button type="button" class="close" data-dismiss="modal">&times;</button>
        </div>
        <!-- Modal body -->
        <div class="modal-body">
-          <form action="/action_page.php" class="needs-validation" novalidate>
+          <form name="Appointment" method="POST" data-netlify="true">
+            <div class="form-check mb-2 text-danger">
+              <label class="form-check-label" for="check1">
+                <input type="checkbox" class="form-check-input" id="check1" name="blood-donor" value="Blood Donors" checked> For Blood Donors
+              </label>
+            </div>
+            <div class="form-check mb-3 text-danger">
+              <label class="form-check-label" for="check2">
+                <input type="checkbox" class="form-check-input" id="check2" name="hospital" value="For Hospitals"> For Hospitals
+              </label>
+            </div>
             <div class="form-group">
               <div class="input-group input-group-lg">
                 <div class="input-group-prepend">
@@ -294,7 +419,7 @@
                     <i class="fas fa-user"></i>
                   </span>
                 </div>
-                <input type="text" class="form-control" placeholder="Name" required>
+                <input type="text" name="name" class="form-control" placeholder="Name" required>
               </div>
             </div>
             <div class="form-group">
@@ -304,7 +429,7 @@
                     <i class="fas fa-envelope"></i>
                   </span>
                 </div>
-                <input type="email" class="form-control" placeholder="Email" required>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
               </div>
             </div>
             <div class="form-group">
@@ -314,7 +439,7 @@
                     <i class="fas fa-tty"></i>
                   </span>
                 </div>
-                <input type="Phone" class="form-control" placeholder="Phone" required>
+                <input type="Phone" name="phone" class="form-control" placeholder="Phone" required>
               </div>
             </div>
             <div class="form-group">
@@ -324,7 +449,7 @@
                     <i class="fas fa-calendar-check"></i>
                   </span>
                 </div>
-                <input type="date" class="form-control" placeholder="date" required>
+                <input type="date" name="date" class="form-control" placeholder="date" required>
               </div>
             </div>
             <div class="form-group">
@@ -334,30 +459,21 @@
                     <i class="fas fa-building"></i>
                   </span>
                 </div>
-                <select class="form-control bg-dark text-white" name="clinic" required>
+                <select name="query" class="form-control bg-dark text-white" name="clinic" required>
                   <option>
                     Select Branch
                   </option>
-                  <option value="c3f1001adfd30d1681815253191d6b08">
-                    St Ives Specialist Hospital, Opebi, Ikeja, Lagos.
-                  </option>
                   <option value="495129f3f5251d7cffc0579d46acc219">
                     St Ives Specialist Hospital, Maitama Sule, Ikoyi, Lagos.
-                  </option>
-                  <option value="e143f43b5054f4413b5274d44ca09439">
-                    St Ives Family Clinic, Akowonjo, Egbeda, Lagos.
-                </option>
-                 <option value="9d58def3a4fa07c129c4dd934140e999">
-                   St Ives Family Clinic, Ibarra Estate, Abeokuta, Ogun State.
                   </option>
                 </select>
               </div>
             </div>
             <!-- Modal footer -->
         <div class="modal-footer p-0 m-0">
-          <input type="submit" value="Submit" class="btn btn-outline-dark btn-block btn-lg">
+          <input type="submit" value="Submit" class="btn btn-outline-dark btn-block">
         </div>
-          </form> 
+        </form> 
         </div>
      
      </div>
@@ -365,7 +481,8 @@
   </div>
   <!-- Large Modal 1 End -->
   
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -404,28 +521,6 @@
  </script>
  <!-- Header Scroll Ends -->
  
- <script>
-  //Get the button
-  var mybutton = document.getElementById("myBtn");
- 
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
- 
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
- 
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
-  </script>
- 
  
  <script>
  // Disable form submissions if there are invalid fields
@@ -447,12 +542,29 @@
      }, false);
  })();
  </script>
-
-<script>
-  function printPage() {
-    window.print();
+ 
+ <script>
+ //Get the button
+  var mybutton = document.getElementById("myBtn");
+ 
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+ 
+ function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
   }
-</script>
+ }
+ 
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+ }
+  </script>
+
 
 <script>
   const preloader = document.querySelector('.preloader');
@@ -472,14 +584,6 @@ const fadeEffect = setInterval(() => {
 window.addEventListener('load', fadeEffect);
 </script>
 
-<script>
-  (function newFact() {
-  var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '3, Olatunde Abudu Close, Ibarra <br/> Housing Estate, Abeokuta'];
-  var randomFact = Math.floor(Math.random() * facts.length);
-  document.getElementById('factDisplay').innerHTML = facts[randomFact];
-  })();
-</script>
-
 
 <script>
   function openNav() {
@@ -490,7 +594,6 @@ window.addEventListener('load', fadeEffect);
     document.getElementById("mySidenav").style.width = "0";
   }
 </script>
-
 
 
 <!--Start of Tawk.to Script-->
@@ -506,6 +609,5 @@ window.addEventListener('load', fadeEffect);
   })();
   </script>
   <!--End of Tawk.to Script-->
- 
 </body>
 </html>
