@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-  <title>St Ives Healthcare | St Ives Blood Bank</title>
+  <title>St Ives Healthcare | Babatunde Okewale</title>
 </head>
 
 <body id='home' data-spy="scroll" data-target="#mainNav">
@@ -39,7 +39,7 @@
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st_ives_blood1.svg" alt="St Ives Blog" width='100px'/>
+        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
       <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
@@ -47,48 +47,51 @@
     
     
     <ul class="list-unstyled components">
-      <li>
-        <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
-        <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li>
-            <a href="specialist.html">St Ives Specialist</a>
-          </li>
-          <li>
-            <a href="family-clinic.html">Family Clinic</a>
-          </li>
-          <li>
-            <a href="fertility.html">Fertility Unit</a>
-          </li>
-          <li>
-            <a href="pharmacy.html">Saint Ives Pharmacy</a>
-          </li>
-        </ul> 
-      </li>
-      
-      <li>
-        <a href="about.html">About</a>
-      </li>
-      <li>
-        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
-        <ul class="collapse list-unstyled" id="pageSubmenu">
-          <li>
-            <a href="specialist-services.html">Specialist Services</a>
-          </li>
-          <li>
-            <a href="family-services.html">Clinic Services</a>
-          </li>
-          <li>
-            <a href="fertility-services.html">Fertility Services</a>
-          </li>
-        </ul> 
-      </li>
-      <li>
-        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact Us</a>
-      </li>
-    </ul>
+        <li>
+          <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="specialist.html">St Ives Specialist</a>
+            </li>
+            <li>
+              <a href="family-clinic.html">Family Clinic</a>
+            </li>
+            <li>
+              <a href="fertility.html">Fertility Unit</a>
+            </li>
+            <li>
+              <a href="pharmacy.html">Saint Ives Pharmacy</a>
+            </li>
+            <li>
+              <a href="blood-bank.html">St Ives Blood Bank</a>
+            </li>
+          </ul> 
+        </li>
+        
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="specialist-services.html">Specialist Services</a>
+            </li>
+            <li>
+              <a href="family-services.html">Clinic Services</a>
+            </li>
+            <li>
+              <a href="fertility-services.html">Fertility Services</a>
+            </li>
+          </ul> 
+        </li>
+        <li>
+          <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
     
     <ul class="list-unstyled CTAs">
       <li>
@@ -105,7 +108,7 @@
     <nav class="navbar navbar-expand-lg navbar-split py-3">
       <div class="container">
         <a href="blood-bank.html" class="navbar-brand" style="z-index: 3;">
-          <img src="img/svg/st_ives_blood1.svg" class="animated tada" alt="Blood Bank" width='100px'/>
+          <img src="img/svg/st_ives_specialist1.svg" class="animated tada" alt="Blood Bank" width='100px'/>
         </a>
         <div class="navbar-nav text-base d-none d-lg-flex">
           <div class="nav-item px-3">
@@ -113,9 +116,9 @@
               <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2 text-white"></i>
               <div class="media-body text-white">
                 <ul class="list-unstyled">
-                  <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
-                  <p class="mb-1 animated bounce"> 6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi</p>
-                </ul>
+                    <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
+                    <p id="factDisplay" class="mb-1 animated bounce"></p>
+                  </ul>
               </div>
             </div> 
           </div>
@@ -142,12 +145,11 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <nav class="navbar navbar-expand-lg navbar-light py-3">
+          <nav class="navbar navbar-expand-lg py-3">
 
             <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
               <i class="fas fa-long-arrow-alt-right"></i>
             </a>
-
 
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav mx-auto">
@@ -196,22 +198,67 @@
   <!-- End of Second Navigation -->
 
     <!-- Showcase3 -->
-    <div class="container">
-      <header id="showcase3">
-        <div class="container drk">
-          <div class="row showcase3-container">
-            <div class="col-sm-9 ml-auto showcase3-content text-center">
-              <h1 class="animated fadeInUp" style="animation-delay: 1s;">St Ives Blood Bank</h1>
-              <p class="animated fadeInUp lead" style="animation-delay: 2s;"> St Ives Blood Bank is a High-Tech and State of the Art Registered Blood Bank, that Collects, Separate and Stores whole blood and blood components.</p>
-              <hr class="animated fadeInUp" style="animation-delay: 2s;">
-              <p class="lead animated fadeInUp" style="animation-delay: 3s;">“A Single Pint can save Three Lives, a Single Gesture can create a Million Smiles”</p>
-              <button class="animated fadeInUp btn btn-outline-light py-2" data-toggle="modal" data-target=".bd-example-modal-lg" style="animation-delay: 4s;">Start Here</button>
-            </div>
+    <section id="babatunde">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="container">
+            <div class="col bg-light p-5">
+                <img src="img/DrObodoSP1-36h5e97loqeeopybvp648w.png" class="float-left m-4">
+               <h1 class="text-center">
+                Dr. Kingsley Obodo
+               </h1>
+               <p class="text-justify">
+                Dr. Kingsley Obodo is a seasoned Obstetrician and Gynecologist, with a sub-specialty as a fertility expert. He is the Medical Director at the St. Ives Specialist Hospital, Ikeja branch.
+               </p>
+               <p class="text-justify">
+                A 20-year veteran of medical practice having first graduated from the University of Lagos School of Medicine in 1998, Dr. Obodo practiced at such esteemed places as the Nasarawa State Hospital Management Board and The Lagos State University Teaching Hospital (LUTH) amongst others for a combined twelve years before pitching up with The St. Ives healthcare Organization.
+               </p>
+               <p class="text-justify">
+                Dr. Obodo is perhaps the most amiable physician you will ever meet, one reason he is widely loved by both clients and colleagues alike. That is no surprise being that he is so passionate about the profession and is dedicated to helping patients get results.
+               </p>
+               <p class="text-justify">
+                He believes the serene and ambient environment coupled with a great commitment to first class personnel and facilities at St. Ives is among the reasons the hospital has been remarkably successful over the years.
+               </p>
+               <p class="text-justify">
+                Dr. Kingsley loves seeing football matches and movies, as well as listening to gospel music.
+               </p>
+              <div class="d-flex justify-content-end">
+                <div class="px-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                </div>
+                <div class="px-4">
+                  <a href="http://twitter.com">
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                </div>
+                <div class="px-4">
+                  <a href="http://instagram.com">
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                </div>
+    
+              </div>
+              </div>
           </div>
         </div>
-    </header>
-    </div>
 
+        <div class="row mt-3">
+          <div class="col">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Department: Fertility Experts, Medical Personnel, Obstetrics And Gynecology</li>
+              <li class="list-group-item">Position: Medical Director, St. Ives Specialist Hospital Ikeja</li>
+              <li class="list-group-item">Treatments: Fertility, Gynecology, Obstetrician</li>
+              <li class="list-group-item">Degree: MD, FMCOG, FWACS</li>
+              <li class="list-group-item">Office: 12, Salvation road, off Opebi Road, Ikeja, Lagos</li>
+              <li class="list-group-item">Workingdays: Monday, Tuesday, Wednesday, Thursday, Friday</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </section>
    <div class="divider"></div>
     
 
@@ -579,6 +626,14 @@ const fadeEffect = setInterval(() => {
 }, 200);
 
 window.addEventListener('load', fadeEffect);
+</script>
+
+<script>
+    (function newFact() {
+    var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '3, Olatunde Abudu Close, Ibarra <br/> Housing Estate, Abeokuta'];
+    var randomFact = Math.floor(Math.random() * facts.length);
+    document.getElementById('factDisplay').innerHTML = facts[randomFact];
+    })();
 </script>
 
 
