@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway|Staatliches|Ubuntu&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+/>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+  />
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <title>St Ives Healthcare | Babatunde Okewale</title>
+</head>
+
+<body id='home' data-spy="scroll" data-target="#mainNav">
+
+  <!-- Preloader Start -->
+<div class="preloader">
+    
+  <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
+  
+</div>
+<!-- Preloader Ends -->
+
+
+<!-- Side Bar Starts -->
+<div id="mySidenav" class="sidenav" data-simplebar>
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <a style="z-index: 3;">
+        <img src="img/svg/st_ives_specialist1.svg" alt="St Ives Blog" width='100px'/>
+      </a> 
+
+      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()"><i class="fas fa-long-arrow-alt-left"></i></a>
+    </div>
+    
+    
+    <ul class="list-unstyled components">
+        <li>
+          <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="specialist.html">St Ives Specialist</a>
+            </li>
+            <li>
+              <a href="family-clinic.html">Family Clinic</a>
+            </li>
+            <li>
+              <a href="fertility.html">Fertility Unit</a>
+            </li>
+            <li>
+              <a href="pharmacy.html">Saint Ives Pharmacy</a>
+            </li>
+            <li>
+              <a href="blood-bank.html">St Ives Blood Bank</a>
+            </li>
+          </ul> 
+        </li>
+        
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="specialist-services.html">Specialist Services</a>
+            </li>
+            <li>
+              <a href="family-services.html">Clinic Services</a>
+            </li>
+            <li>
+              <a href="fertility-services.html">Fertility Services</a>
+            </li>
+          </ul> 
+        </li>
+        <li>
+          <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    
+    <ul class="list-unstyled CTAs">
+      <li>
+        <a href="blog.html" class="bloger">St Ives Blog</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Side Bar Ends -->
+
+  <!-- First Navigaion -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-split py-3">
+      <div class="container">
+        <a href="blood-bank.html" class="navbar-brand" style="z-index: 3;">
+          <img src="img/svg/st_ives_specialist1.svg" class="animated tada" alt="Blood Bank" width='100px'/>
+        </a>
+        <div class="navbar-nav text-base d-none d-lg-flex">
+          <div class="nav-item px-3">
+            <div class="media">
+              <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2 text-white"></i>
+              <div class="media-body text-white">
+                <ul class="list-unstyled">
+                    <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
+                    <p id="factDisplay" class="mb-1 animated bounce"></p>
+                  </ul>
+              </div>
+            </div> 
+          </div>
+          <div class="animated bounce nav-item border-left px-3">
+            <div class="media">
+              <i class="animated bounce fas fa-mobile-alt fa-1x mr-2 text-white"></i>
+              <div class="media-body text-white">
+                <ul class="list-unstyled">
+                  <li class="animated bounce"><h5 class="fs-0 mb-1">Phone Appointment</h5></li>
+                  <li class="animated bounce nav-item">08039494531</li>
+                  <li class="animated bounce nav-item">07088727358</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End of First Navigaion -->
+
+  <!-- Second Navigation -->
+  <div id="mainNav" class="banner-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg py-3">
+
+            <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="specialist.html" class="nav-link">Specialist</a>
+                </li>
+                <li class="nav-item">
+                  <a href="family-clinic.html" class="nav-link">Clinic</a>
+                </li>
+                <li class="nav-item">
+                  <a href="fertility.html" class="nav-link">Fertility</a>
+                </li>
+                <li class="nav-item">
+                  <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link">Ives Medicare</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="social nav">
+              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
+              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
+              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
+              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
+            </div>
+
+        </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Second Navigation -->
+
+    <!-- Showcase3 -->
+    <section id="babatunde">
+      <div class="container pt-4">
+        <div class="row">
+          <div class="container">
+            <div class="col bg-light p-5">
+                <img src="img/DrOsahonSP-36h5eacb9d73p5o6chu0ow.png" class="float-left mr-4">
+               <h1 class="text-center">
+                Dr. O. Ede-Edokpolor
+               </h1>
+               <p class="text-justify">
+                Dr. Osahon Ede-Edokpolor qualified as a medical doctor from the University of Benin in Edo State and is a Fellow of the West African College of Surgeons.
+               </p>
+               <p class="text-justify">
+                He is strongly passionate about women health and has since built a career as a successful Consultant Obstetrician and Gynecologist with the St. Ives group, where he also doubles as a fertility specialist.
+               </p>
+               <p class="text-justify">
+                He is presently the Medical Director at St. Ives Specialist Hospital in Ikoyi, Lagos.
+               </p>
+              <div class="d-flex justify-content-end">
+                <div class="px-4">
+                  <a href="http://facebook.com">
+                    <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                </div>
+                <div class="px-4">
+                  <a href="http://twitter.com">
+                    <i class="fab fa-twitter fa-2x"></i>
+                  </a>
+                </div>
+                <div class="px-4">
+                  <a href="http://instagram.com">
+                    <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                </div>
+    
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Department: Fertility Experts, OB-GYN</li>
+              <li class="list-group-item">Position: Medical Director St. Ives Specialist Ikoyi</li>
+              <li class="list-group-item">Treatments: Fertility Experts</li>
+              <li class="list-group-item">Office: 6, Maitama Sule street, off Awolowo road, Ikoyi, Lagos.</li>
+              <li class="list-group-item">Workingdays: Monday, Tuesday, Wednesday, Thursday, Friday</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+   <div class="divider"></div>
+    
+
+   <!-- Home Articles -->
+   <section id='blog'>
+    <div class="container">
+        <h2 class="bg-red mb-1 p-3">
+          Recent Post From Our Blog
+        </h2>
+         <div class="row">
+          <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+            <article class="card h-100 hvr-shadow">
+              <img src="img/aVKlpiiO7u.jpg" alt="Gynecologists" class="card-img-top"/>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="gynecologists_When_to_visit.html"
+                    >Gynecologists: When to visit and what to expect</a
+                  >
+                </h5>
+                <p class='text-justify'>
+                 Gynecologists are doctors who specialize in women's health, with a focus on the female reproductive system.
+                </p>
+              </div>
+            </article>
+          </div>
+
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+           <article class="card h-100 hvr-shadow">
+             <img src="img/U87ijiyG3B.jpg" alt="Sperm Count" class="card-img-top"/>
+             <div class="card-body">
+               <h5 class="card-title">
+                 <a href="the_best_ways_to_increase_sperm_count.html"
+                   >What are the best ways to increase sperm count?</a
+                 >
+               </h5>
+               <p class='text-justify'>
+                Sperm count refers to the average number of sperm present in one sample of semen. Fertility doctors assess sperm count during routine semen analyses and consider it to be an important factor for fertility.
+               </p>
+             </div>
+           </article>
+         </div>
+
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+          <article class="card h-100 hvr-shadow">
+            <img src="img/QRFc3GlS0d.jpg" alt="Ovulation Bleeding" class="card-img-top"/>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="ovulation_bleeding.html"
+                  >Ovulation bleeding: What to know</a
+                >
+              </h5>
+              <p class='text-justify'>
+                Ovulation bleeding is vaginal bleeding during or immediately before or after ovulation, which occurs roughly in the middle of a menstrual cycle.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+          <article class="card h-100 hvr-shadow">
+            <img src="img/UkRg6MnAKR.jpg" alt="Onions" class="card-img-top"/>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="why_are_onions_good_for_you.html"
+                  >Why are onions good for you?</a
+                >
+              </h5>
+              <p class='text-justify'>
+                Onions belong to the Allium family of plants, which also includes chives, garlic, and leeks. These vegetables have characteristic pungent flavors and some medicinal properties.
+              </p>
+            </div>
+          </article>
+         </div>
+  
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+           <article class="card h-100 hvr-shadow">
+             <img src="img/ahehIVUjK2.jpg" alt="Breastfeeding Mother" class="card-img-top"/>
+             <div class="card-body">
+               <h5 class="card-title">
+                 <a href="egg_donation_process.html"
+                   >How does the egg donation process work?</a
+                 >
+               </h5>
+               <p class='text-justify'>
+                Egg donation is a process in which a fertile woman donates an egg, or oocyte, to another woman to help her conceive.
+               </p>
+             </div>
+           </article>
+         </div>
+  
+         <div class="col-md-4 col-sm-6 mb-sm-3 my-2">
+          <article class="card h-100 hvr-shadow">
+            <img src="img/hLVtZBLVSm.jpg" alt="Symptoms of Infertility" class="card-img-top"/>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="novel_coronavirus.html"
+                  >Novel coronavirus: Your questions, answered</a
+                >
+              </h5>
+              <p class='text-justify'>
+                The current outbreak of infections with a novel type of coronavirus has sparked global anxiety and concern...
+              </p>
+            </div>
+          </article>
+        </div>
+
+       </div>
+   </div>
+   </section>
+  <!-- Home Article End -->
+  
+
+  <div class="divider"></div>
+
+
+  <!-- Footer Start -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-2 col-sm-6 col-xs-12">
+          <div class="row d-flex justify-content-center mb-3">
+            <img src="img/svg/st_ives_healthcare2.svg" class="w-50 p-1 bg-light" alt="Styles logo">
+          </div>
+        </div>
+        <div class="col-md-3 my-2 col-sm-6 col-xs-12">
+          <div class="mb-3">
+            <h3>Email Newsletter</h3>
+            <p>Subscribe To Our Newsletter.</p>
+            <form name="Subscribe" method="POST" data-netlify="true">
+              <input type="email" name="email" placeholder="Enter Email..." class="form-control">
+              <button type="submit" class="btn mt-3">Subscribe</button>
+            </form>
+          </div>
+      </div>
+      <div class="col-md-3 my-2 col-sm-6 col-xs-12">
+        <div>
+          <h3>Site Map</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html"><i class="fas fa-chevron-right mr-2"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right mr-2"></i> About</a></li>
+            <li><a href="foundation.html"><i class="fas fa-chevron-right mr-2"></i> Foundation</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right mr-2"></i> Contact</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-12">
+      <div>
+        <h3>Services</h3>
+        <ul class="list-unstyled">
+          <li><a href="family-clinic.html"><i class="fas fa-chevron-right mr-2"></i> Family</a></li>
+          <li><a href="fertility-services.html"><i class="fas fa-chevron-right mr-2"></i> Fertility</a></li>
+          <li><a href="pharmacy.html"><i class="fas fa-chevron-right mr-2"></i>Pharmacy</a></li>
+          <li><a href="blood-bank.html"><i class="fas fa-chevron-right mr-2"></i>Blood Bank</a></li>
+        </ul>
+      </div>
+  </div>
+  </div>
+  <div class="row container">
+    <div class="col-lg-8 mx-auto py-2 d-flex justify-content-center">
+      <p id="copyr" class="py-2">Copyright &copy;
+        <span id="year"></span> St Ives Specialist Hospital
+      </p>
+    </div>
+  </div>
+  </div>
+  </footer>
+  <!-- Footer End -->
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+
+  <!-- Large modal 1-->
+
+<div class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content animated fadeInDown" style="animation-duration: 0.1s;">
+  
+      <!-- Modal Header -->
+      <div class="modal-header">
+         <h4 class="modal-title">Contact Us</h4>
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       </div>
+       <!-- Modal body -->
+       <div class="modal-body">
+          <form name="Appointment" method="POST" data-netlify="true">
+            <div class="form-check mb-2 text-danger">
+              <label class="form-check-label" for="check1">
+                <input type="checkbox" class="form-check-input" id="check1" name="blood-donor" value="Blood Donors" checked> For Blood Donors
+              </label>
+            </div>
+            <div class="form-check mb-3 text-danger">
+              <label class="form-check-label" for="check2">
+                <input type="checkbox" class="form-check-input" id="check2" name="hospital" value="For Hospitals"> For Hospitals
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark text-white">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" name="name" class="form-control" placeholder="Name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark text-white">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark text-white">
+                    <i class="fas fa-tty"></i>
+                  </span>
+                </div>
+                <input type="Phone" name="phone" class="form-control" placeholder="Phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark text-white">
+                    <i class="fas fa-calendar-check"></i>
+                  </span>
+                </div>
+                <input type="date" name="date" class="form-control" placeholder="date" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark text-white">
+                    <i class="fas fa-building"></i>
+                  </span>
+                </div>
+                <select name="query" class="form-control bg-dark text-white" name="clinic" required>
+                  <option>
+                    Select Branch
+                  </option>
+                  <option value="495129f3f5251d7cffc0579d46acc219">
+                    St Ives Specialist Hospital, Maitama Sule, Ikoyi, Lagos.
+                  </option>
+                </select>
+              </div>
+            </div>
+            <!-- Modal footer -->
+        <div class="modal-footer p-0 m-0">
+          <input type="submit" value="Submit" class="btn btn-outline-dark btn-block">
+        </div>
+        </form> 
+        </div>
+     
+     </div>
+   </div>
+  </div>
+  <!-- Large Modal 1 End -->
+  
+  
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<!-- Get the current year for the copyright -->
+<script>$('#year').text(new Date().getFullYear())</script>
+
+
+<!-- Header Scroll -->
+<script>
+  $(function(){
+   var mainNav = $('.banner-area');
+       sticky = 'sticky';
+       headerHeight = $('header').height();
+
+ 
+   $(window).scroll(function(){
+     if($(this).scrollTop() > headerHeight){
+       mainNav.addClass(sticky);
+     }else {
+       mainNav.removeClass(sticky);
+     }
+     if($(this).scrollTop() > (headerHeight * 3)) {
+       mainNav.addClass('inView');
+       document.getElementById("navbar-toggler").style.display = "block";
+     }else {
+       mainNav.removeClass('inView');
+       document.getElementById("navbar-toggler").style.display = "none";
+     }
+   })
+  })
+ </script>
+ <!-- Header Scroll Ends -->
+ 
+ 
+ <script>
+ // Disable form submissions if there are invalid fields
+ (function() {
+     'use strict';
+     window.addEventListener('load', function() {
+     // Get the forms we want to add validation styles to
+     var forms = document.getElementsByClassName('needs-validation');
+     // Loop over them and prevent submission
+     var validation = Array.prototype.filter.call(forms, function(form) {
+         form.addEventListener('submit', function(event) {
+         if (form.checkValidity() === false) {
+             event.preventDefault();
+             event.stopPropagation();
+         }
+         form.classList.add('was-validated');
+         }, false);
+     });
+     }, false);
+ })();
+ </script>
+ 
+ <script>
+ //Get the button
+  var mybutton = document.getElementById("myBtn");
+ 
+ // When the user scrolls down 20px from the top of the document, show the button
+ window.onscroll = function() {scrollFunction()};
+ 
+ function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+ }
+ 
+ // When the user clicks on the button, scroll to the top of the document
+ function topFunction() {
+ document.body.scrollTop = 0;
+ document.documentElement.scrollTop = 0;
+ }
+  </script>
+
+
+<script>
+  const preloader = document.querySelector('.preloader');
+
+const fadeEffect = setInterval(() => {
+  // if we don't set opacity 1 in CSS, then   //it will be equaled to "", that's why we   // check it
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 200);
+
+window.addEventListener('load', fadeEffect);
+</script>
+
+<script>
+    (function newFact() {
+    var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '3, Olatunde Abudu Close, Ibarra <br/> Housing Estate, Abeokuta'];
+    var randomFact = Math.floor(Math.random() * facts.length);
+    document.getElementById('factDisplay').innerHTML = facts[randomFact];
+    })();
+</script>
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+</script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5e6046648d24fc226585d6a9/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
