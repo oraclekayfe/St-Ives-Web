@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #d9534f;
+  --primary-color: red;
   --secondary-color: #edf2f9;
   --light-color: #f3f3f3;
   --dark-color: #333;
   --black-color: #292b2c;
-  --dark-primary: #600101;
+  --dark-primary: #ae0202;
 }
 
 * {
@@ -107,7 +107,7 @@ video {
 // Second Navbar
 .banner-area {
   background: var(--secondary-color);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   width: 100%;
@@ -115,11 +115,11 @@ video {
 
   #navbar .navbar-nav .nav-item {
     font-family: "Raleway", serif;
-    margin-right: .5rem;
+    margin-right: .3rem;
 
     & .nav-link {
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 500;
       color: #737373;
       border-bottom: 2px transparent solid;
       transition: all 0.1s;
@@ -135,7 +135,7 @@ video {
 //Navbar Split
 .navbar-split {
   overflow: hidden;
-  background-color: var(--primary-color);
+  background-color: var(--dark-primary);
 }
 
 .navbar-split:after,
@@ -783,7 +783,7 @@ margin-left: 20px;
   align-items: center;
   height: 100vh;
   width: 100%;
-  background: rgb(217,83,79);
+  background: white;
   position: fixed;
   pointer-events: none;
   top: 0;
@@ -921,7 +921,8 @@ margin-left: 20px;
   ul ul a {
       font-size: 0.9em !important;
       padding-left: 30px !important;
-      background: var(--primary-color);
+      color: white;
+      background: var(--dark-primary);
   }
 
   
@@ -935,10 +936,9 @@ margin-left: 20px;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
-  }
-  a.bloger {
-  background: #fff;
-  background: var(--primary-color);
+    color: #fff;
+    background: var(--primary-color);
+    transition: all .1s;
   }
 }
 
@@ -1006,4 +1006,11 @@ margin-left: 20px;
 
 .navbar-light {
   background-color: var(--secondary-color);
+}
+
+.btn-outline-danger {
+  color: red;
+  &:hover {
+    background: red;
+  }
 }

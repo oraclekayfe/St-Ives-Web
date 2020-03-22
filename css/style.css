@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #d9534f;
+  --primary-color: red;
   --secondary-color: #edf2f9;
   --light-color: #f3f3f3;
   --dark-color: #333;
   --black-color: #292b2c;
-  --dark-primary: #600101; }
+  --dark-primary: #ae0202; }
 
 * {
   margin: 0;
@@ -93,17 +93,16 @@ video {
 
 .banner-area {
   background: var(--secondary-color);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1; }
   .banner-area #navbar .navbar-nav .nav-item {
     font-family: "Raleway", serif;
-    margin-right: .5rem; }
+    margin-right: .3rem; }
     .banner-area #navbar .navbar-nav .nav-item .nav-link {
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 500;
       color: #737373;
       border-bottom: 2px transparent solid;
       transition: all 0.1s; }
@@ -113,7 +112,7 @@ video {
 
 .navbar-split {
   overflow: hidden;
-  background-color: var(--primary-color); }
+  background-color: var(--dark-primary); }
 
 .navbar-split:after,
 .navbar-split:before {
@@ -624,7 +623,7 @@ video {
   align-items: center;
   height: 100vh;
   width: 100%;
-  background: #d9534f;
+  background: white;
   position: fixed;
   pointer-events: none;
   top: 0;
@@ -731,7 +730,8 @@ video {
   .sidenav ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: var(--primary-color); }
+    color: white;
+    background: var(--dark-primary); }
   .sidenav ul.CTAs {
     padding: 0px 20px; }
   .sidenav ul.CTAs a {
@@ -739,10 +739,10 @@ video {
     font-size: 0.9em !important;
     display: block;
     border-radius: 5px;
-    margin-bottom: 5px; }
-  .sidenav a.bloger {
-    background: #fff;
-    background: var(--primary-color); }
+    margin-bottom: 5px;
+    color: #fff;
+    background: var(--primary-color);
+    transition: all .1s; }
 
 .sidenav .closebtn .fas {
   font-size: 1.4rem; }
@@ -793,5 +793,10 @@ video {
     font-size: 18px; } }
 .navbar-light {
   background-color: var(--secondary-color); }
+
+.btn-outline-danger {
+  color: red; }
+  .btn-outline-danger:hover {
+    background: red; }
 
 /*# sourceMappingURL=style.css.map */

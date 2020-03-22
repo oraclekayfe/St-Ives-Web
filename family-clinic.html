@@ -40,7 +40,7 @@
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st_ives_family1.svg" alt="St Ives Blog" width='100px'/>
+        <img src="img/svg/st-family-clinic.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
       <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()">
@@ -90,7 +90,10 @@
         <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
       </li>
       <li>
-        <a href="contact.html">Contact Us</a>
+        <a href="http://wfm917.com/" target="_blank">WFM 917</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
       </li>
     </ul>
     
@@ -109,7 +112,7 @@
     <nav class="navbar navbar-expand-lg navbar-split py-3">
       <div class="container">
         <a href="index.html" class="navbar-brand" style="z-index: 3;">
-          <img src="img/svg/st_ives_family1.svg" alt="St Ives Family" class="animated tada" width='100px'/>
+          <img src="img/svg/st-family-clinic.svg" alt="St Ives Family" class="animated tada" width='100px'/>
         </a>
         <div class="navbar-nav text-base d-none d-lg-flex">
           <div class="nav-item px-3">
@@ -153,7 +156,7 @@
             </a>
             
             <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav mx-auto">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
@@ -182,18 +185,13 @@
                   <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link">Ives Medicare</a>
                 </li>
                 <li class="nav-item">
+                  <a href="http://www.wfm917.com/" target="_blank" class="nav-link">WFM 917</a>
+                </li>
+                <li class="nav-item">
                   <a href="contact.html" class="nav-link">Contact</a>
                 </li>
               </ul>
             </div>
-
-            <div class="social nav">
-              <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
-              <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
-              <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
-              <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
-            </div>
-
         </nav>
         </div>
       </div>
@@ -292,7 +290,7 @@
             <div class="row">
               <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
                 <div class="flip-card text-center">
-                <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg">
+                <a href="family-services.html">
                   <div class="flip-card-inner">
                     <div class="flip-card-front bg-primary">
                       <i class="flaticon-chest-pain"></i>
@@ -374,7 +372,7 @@
               </div>
               <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
                 <div class="flip-card">
-                  <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg">
+                  <a href="family-services.html">
                     <div class="flip-card-inner">
                       <div class="flip-card-front bg-warning">
                         <i class="flaticon-ultrasound"></i>
@@ -739,7 +737,7 @@
       <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12 my-2">
           <div class="row d-flex justify-content-center mb-3">
-            <img src="img/svg/st_ives_healthcare2.svg" class="w-50 p-1 bg-light" alt="Styles logo">
+            <img src="img/svg/st-healthcare.svg" class="w-50 p-1 bg-light" alt="Styles logo">
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 my-2">
@@ -776,10 +774,19 @@
   </div>
   </div>
   <div class="row container">
-    <div class="col-lg-8 mx-auto py-2 d-flex justify-content-center">
+    <div class="col-lg-6 col-sm-6 mx-auto py-2 d-flex justify-content-center">
       <p id="copyr" class="py-2">Copyright &copy;
-        <span id="year"></span> St Ives Specialist Hospital
+        <span id="year"></span> St Ives Healthcare.
       </p>
+    </div>
+    <div class="col-lg-6 col-md-6 mx-auto py-2 d-flex justify-content-center">
+      <div class="social nav">
+        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook p-2 mb-1"></i></a>
+        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter p-2 mb-1"></i></a>
+        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram p-2 mb-1"></i></a>
+        <a href="http://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp p-2 mb-1"></i></a>
+      </div>
+
     </div>
   </div>
   </div>
@@ -914,10 +921,8 @@
      }
      if($(this).scrollTop() > (headerHeight * 3)) {
        mainNav.addClass('inView');
-       document.getElementById("navbar-toggler").style.display = "block";
      }else {
        mainNav.removeClass('inView');
-       document.getElementById("navbar-toggler").style.display = "none";
      }
    })
   })
