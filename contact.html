@@ -117,8 +117,8 @@
         <div class="navbar-nav text-base d-none d-lg-flex">
           <div class="nav-item px-3">
             <div class="media">
-              <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2 text-white"></i>
-              <div class="media-body text-white">
+              <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2 text-dark"></i>
+              <div class="media-body text-dark">
                 <ul class="list-unstyled">
                   <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
                   <p id="factDisplay" class="mb-1 animated bounce"></p>
@@ -128,8 +128,8 @@
           </div>
           <div class="animated bounce nav-item border-left px-3">
             <div class="media">
-              <i class="animated bounce fas fa-mobile-alt fa-1x mr-2 text-white"></i>
-              <div class="media-body text-white">
+              <i class="animated bounce fas fa-mobile-alt fa-1x mr-2 text-dark"></i>
+              <div class="media-body text-dark">
                 <ul class="list-unstyled">
                   <li class="animated bounce"><h5 class="fs-0 mb-1">Phone Appointment</h5></li>
                   <li class="animated bounce nav-item">08039494531</li>
@@ -149,7 +149,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <nav class="navbar navbar-expand navbar-light py-3">
 
 
               <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
@@ -162,19 +162,19 @@
                   <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-none d-md-block">
                     <a href="specialist.html" class="nav-link">Specialist</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-none d-md-block">
                     <a href="family-clinic.html" class="nav-link">Clinic</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-none d-md-block">
                     <a href="fertility.html" class="nav-link">Fertility</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-none d-md-block">
                     <a href="pharmacy.html" class="nav-link">Pharmacy</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-none d-lg-block">
                     <a href="blood-bank.html" class="nav-link">Blood Bank</a>
                   </li>
                   <li class="nav-item">
@@ -183,10 +183,10 @@
                   <li class="nav-item">
                     <a href="blog.html" class="nav-link">Blog</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-none d-lg-block">
                     <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link">Ives Medicare</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item d-none d-lg-block">
                     <a href="http://www.wfm917.com/" target="_blank" class="nav-link">WFM 917</a>
                   </li>
                 </ul>
@@ -347,7 +347,7 @@
         <div class="col-md-6">
           <div class="card">
             <h2 class="bg-red p-3">
-              St Ives Clinic, Ibarra.
+              St Ives Clinic, Abeokuta.
             </h2>
             <div class="card-body">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31671.728622412946!2d3.3182603395507813!3d7.129920600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4de4cf59ff7f%3A0x31656d12bba2911b!2sSt%20Ives%20Specialist%20Hospital!5e0!3m2!1sen!2sng!4v1580776034697!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -529,7 +529,7 @@ window.addEventListener('load', fadeEffect);
 
 <script>
   (function newFact() {
-  var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi', '129 Akowonjo Road, Kwara  <br/>Bus-Stop, Egbeda', '3, Olatunde Abudu Close, Ibarra <br/> Housing Estate, Abeokuta'];
+  var facts = ['12 Salvation Road, Opebi,<br /> Ikeja, Lagos.', '6 Maitama Sule Str, off <br/> Awolowo Road, Ikoyi'];
   var randomFact = Math.floor(Math.random() * facts.length);
   document.getElementById('factDisplay').innerHTML = facts[randomFact];
   })();

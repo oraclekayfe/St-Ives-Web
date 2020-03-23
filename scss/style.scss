@@ -115,16 +115,16 @@ video {
 
   #navbar .navbar-nav .nav-item {
     font-family: "Raleway", serif;
-    margin-right: .3rem;
 
     & .nav-link {
       font-size: 1rem;
-      font-weight: 500;
+      font-weight: 550;
       color: #737373;
       border-bottom: 2px transparent solid;
       transition: all 0.1s;
 
       &:hover {
+        font-weight: 600;
         border-bottom: 2px solid var(--primary-color);
         color: var(--primary-color);
       }
@@ -135,7 +135,7 @@ video {
 //Navbar Split
 .navbar-split {
   overflow: hidden;
-  background-color: var(--dark-primary);
+  background-color: white;
 }
 
 .navbar-split:after,
@@ -640,18 +640,6 @@ margin-left: 20px;
 
 // Blog End
 
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
-  background-color: var(--dark-primary) !important;
-  border-color: var(--dark-primary) !important;
-}
-
-
 /* Showcase Start*/
 #showcase {
   color: #fff;
@@ -688,7 +676,7 @@ margin-left: 20px;
 // Showcase End
 
 
-// Tester Start
+// Blog Share btn Start
 
 #tester {
   display: flex;
@@ -762,21 +750,6 @@ margin-left: 20px;
 }
 // Tester End
 
-
-// St Ives Blood Bank Adv
-#blood-bank-adv {
-  background: #CC95C0;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  color: var(--dark-color);
-
-  & .flaticon-blood-bank:before {
-    color: var(--primary-color);
-    font-size: 93px;
-  }
-}
-
 .preloader {
   display: flex;
   justify-content: center;
@@ -791,20 +764,6 @@ margin-left: 20px;
   z-index: 9999;
   transition: opacity 0.3s linear;
 }
-
-#blood-bank-container {
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  & #blood-bank-form {
-    position: absolute;
-    top: 20%;
-    right: 0;
-  }
-}
-
 
 /* Showcase3 Start*/
 #showcase3 {
@@ -833,10 +792,6 @@ margin-left: 20px;
 
 #showcase3 .showcase3-content {
   z-index: 1;
-}
-
-#blood-bank-quote {
-  align-self: flex-end;
 }
 
 
