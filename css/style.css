@@ -92,7 +92,7 @@ video {
   height: auto; }
 
 .banner-area {
-  background: var(--secondary-color);
+  background: white;
   position: sticky;
   top: 0;
   width: 100%;
@@ -106,7 +106,6 @@ video {
       border-bottom: 2px transparent solid;
       transition: all 0.1s; }
       .banner-area #navbar .navbar-nav .nav-item .nav-link:hover {
-        font-weight: 600;
         border-bottom: 2px solid var(--primary-color);
         color: var(--primary-color); }
 
@@ -114,29 +113,6 @@ video {
   overflow: hidden;
   background-color: white; }
 
-.navbar-split:after,
-.navbar-split:before {
-  content: "";
-  position: absolute;
-  top: 0; }
-
-.navbar-split:before {
-  left: 0;
-  width: calc(70% - 100px);
-  height: 100%;
-  background: var(--secondary-color); }
-
-.navbar-split:after {
-  left: calc(70% - 100px);
-  border: 100px solid;
-  border-color: transparent transparent var(--secondary-color) var(--secondary-color); }
-
-@media (min-width: 992px) {
-  .navbar-split:before {
-    width: calc(50% - 100px); }
-
-  .navbar-split:after {
-    left: calc(50% - 100px); } }
 .hvr-shadow {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -639,7 +615,7 @@ video {
   font-size: 1rem;
   font-weight: 500;
   font-family: "Raleway", serif;
-  background: var(--secondary-color);
+  background: white;
   color: var(--dark-color);
   height: 100%;
   width: 0;

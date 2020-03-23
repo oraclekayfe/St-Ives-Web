@@ -106,8 +106,7 @@ video {
 
 // Second Navbar
 .banner-area {
-  background: var(--secondary-color);
-  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
   position: sticky;
   top: 0;
   width: 100%;
@@ -124,7 +123,6 @@ video {
       transition: all 0.1s;
 
       &:hover {
-        font-weight: 600;
         border-bottom: 2px solid var(--primary-color);
         color: var(--primary-color);
       }
@@ -136,36 +134,6 @@ video {
 .navbar-split {
   overflow: hidden;
   background-color: white;
-}
-
-.navbar-split:after,
-.navbar-split:before {
-  content: "";
-  position: absolute;
-  top: 0;
-}
-
-.navbar-split:before {
-  left: 0;
-  width: calc(70% - 100px);
-  height: 100%;
-  background: var(--secondary-color);
-}
-
-.navbar-split:after {
-  left: calc(70% - 100px);
-  border: 100px solid;
-  border-color: transparent transparent var(--secondary-color) var(--secondary-color);
-}
-
-@media (min-width: 992px) {
-  .navbar-split:before {
-    width: calc(50% - 100px);
-  }
-
-  .navbar-split:after {
-    left: calc(50% - 100px);
-  }
 }
 //Navbar Split End
 
@@ -800,7 +768,7 @@ margin-left: 20px;
   font-size: 1rem;
   font-weight: 500;
   font-family: "Raleway", serif;
-  background: var(--secondary-color);
+  background: white;
   color: var(--dark-color);
   height: 100%;
   width: 0;
