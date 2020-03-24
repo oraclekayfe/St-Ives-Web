@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Lato', serif;
+  font-family: 'Open Sans', serif;
   font-size: 1rem;
   line-height: 1.5;
   background: var(--secondary-color);
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Staatliches', cursive;
   margin-bottom: 0.55rem;
   line-height: 1.5;
   font-weight: 500; }
@@ -96,18 +96,16 @@ video {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1; }
-  .banner-area #navbar .navbar-nav .nav-item {
-    font-family: "Raleway", serif; }
-    .banner-area #navbar .navbar-nav .nav-item .nav-link {
-      font-size: .9rem;
-      font-weight: 450;
-      color: var(--secondary-color);
-      border-bottom: 2px transparent solid;
-      transition: all 0.1s; }
-      .banner-area #navbar .navbar-nav .nav-item .nav-link:hover {
-        border-bottom: 2px solid var(--primary-color);
-        color: var(--primary-color); }
+  z-index: 100; }
+  .banner-area #navbar .navbar-nav .nav-item .nav-link {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    border-bottom: 2px transparent solid;
+    transition: all 0.1s; }
+    .banner-area #navbar .navbar-nav .nav-item .nav-link:hover {
+      border-bottom: 2px solid var(--primary-color);
+      color: var(--primary-color); }
 
 .navbar-split {
   overflow: hidden;
@@ -456,7 +454,6 @@ video {
   margin-bottom: 1rem; }
 
 .post-preview > a {
-  font-family: 'Lato', 'Open Sans', serif;
   color: #444; }
 
 .post-preview > a:focus, .post-preview > a:hover {
@@ -469,13 +466,7 @@ video {
   margin-top: 1rem;
   margin-bottom: .8rem; }
 
-.post-preview > a > .post-subtitle {
-  font-family: 'Open Sans', serif;
-  font-weight: 500;
-  margin: 0 0 10px; }
-
 .post-preview > .post-meta {
-  font-family: 'Lato', 'Open Sans', serif;
   font-size: 1.2rem;
   font-style: italic;
   margin-top: 0;
@@ -613,8 +604,6 @@ video {
 
 .sidenav {
   font-size: 1rem;
-  font-weight: 500;
-  font-family: "Raleway", serif;
   background: white;
   color: var(--dark-color);
   height: 100%;
@@ -623,7 +612,7 @@ video {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  transition: all 0.2s;
+  transition: all 0.1s;
   z-index: 900; }
   .sidenav a,
   .sidenav a:hover,
