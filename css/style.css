@@ -92,7 +92,7 @@ video {
   height: auto; }
 
 .banner-area {
-  background: white;
+  background: var(--dark-color);
   position: sticky;
   top: 0;
   width: 100%;
@@ -102,7 +102,7 @@ video {
     .banner-area #navbar .navbar-nav .nav-item .nav-link {
       font-size: 1rem;
       font-weight: 550;
-      color: #737373;
+      color: var(--secondary-color);
       border-bottom: 2px transparent solid;
       transition: all 0.1s; }
       .banner-area #navbar .navbar-nav .nav-item .nav-link:hover {
@@ -672,7 +672,7 @@ video {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     color: white;
-    background: var(--dark-primary); }
+    background: var(--dark-color); }
   .sidenav ul.CTAs {
     padding: 0px 20px; }
   .sidenav ul.CTAs a {

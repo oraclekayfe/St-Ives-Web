@@ -106,7 +106,7 @@ video {
 
 // Second Navbar
 .banner-area {
-  background: white;
+  background: var(--dark-color);
   position: sticky;
   top: 0;
   width: 100%;
@@ -118,7 +118,7 @@ video {
     & .nav-link {
       font-size: 1rem;
       font-weight: 550;
-      color: #737373;
+      color: var(--secondary-color);
       border-bottom: 2px transparent solid;
       transition: all 0.1s;
 
@@ -845,7 +845,7 @@ margin-left: 20px;
       font-size: 0.9em !important;
       padding-left: 30px !important;
       color: white;
-      background: var(--dark-primary);
+      background: var(--dark-color);
   }
 
   
