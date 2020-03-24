@@ -119,6 +119,7 @@ video {
       color: var(--secondary-color);
       border-bottom: 2px transparent solid;
       transition: all 0.1s;
+      text-transform: uppercase;
 
       &:hover {
         border-bottom: 2px solid var(--primary-color);
