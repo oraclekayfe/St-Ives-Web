@@ -725,9 +725,7 @@ video {
 .navbar-light {
   background-color: var(--secondary-color); }
 
-.btn-outline-danger {
+.btn-outline-light:hover i {
   color: red; }
-  .btn-outline-danger:hover {
-    background: red; }
 
 /*# sourceMappingURL=style.css.map */

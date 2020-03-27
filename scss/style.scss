@@ -920,9 +920,8 @@ video {
   background-color: var(--secondary-color);
 }
 
-.btn-outline-danger {
+.btn-outline-light:hover i{
   color: red;
-  &:hover {
-    background: red;
-  }
 }
+
+
