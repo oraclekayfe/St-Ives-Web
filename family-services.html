@@ -42,8 +42,8 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
         <img src="img/svg/st-family-clinic.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()">
-        <i class="fas fa-long-arrow-alt-left"></i>
+      <a  id="close_btn" href="javascript:void(0)" onclick="closeNav()">
+        <i class="far fa-window-close fa-2x"></i>
       </a>
 
     </div>
@@ -51,7 +51,8 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
     
     <ul class="list-unstyled components">
       <li>
-        <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+          <span><i class="fas fa-home"></i> Home</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
           <li>
             <a href="specialist.html">St Ives Specialist</a>
@@ -72,10 +73,11 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
       </li>
       
       <li>
-        <a href="about.html">About</a>
+        <a href="about.html"> <span><i class="fas fa-ambulance"></i> About</a>
       </li>
       <li>
-        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <a href="#pageSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"> 
+          <span><i class="fas fa-stethoscope"></i></span> Services</a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
           <li>
             <a href="specialist-services.html">Specialist Services</a>
@@ -86,19 +88,22 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
         </ul> 
       </li>
       <li>
-        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
-      </li>
-      <li>
-        <a href="http://wfm917.com/" target="_blank">WFM 917</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html"> <span><i class="far fa-address-book"></i></span> Contact</a>
       </li>
     </ul>
     
     <ul class="list-unstyled CTAs">
       <li>
-        <a href="blog.html" class="bloger">St Ives Blog</a>
+        <a href="blog.html" class="bloger"> <span><i class="fas fa-blog"></i></span> St Ives Blog</a>
+      </li>
+    </ul>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+      </li>
+      <li>
+        <a href="http://wfm917.com/" target="_blank">WFM 917</a>
       </li>
     </ul>
   </nav>
