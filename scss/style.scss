@@ -807,10 +807,6 @@ video {
     color: white;
     background: var(--primary-color);
     font-weight: 600;
-
-    & i {
-      transform: rotate(90deg) scale(.8);
-    }
   }
 
   #sidebar ul li.active>a,

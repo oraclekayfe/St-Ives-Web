@@ -644,8 +644,6 @@ video {
     color: white;
     background: var(--primary-color);
     font-weight: 600; }
-    .sidenav #sidebar ul li a:hover i {
-      transform: rotate(90deg) scale(0.8); }
   .sidenav #sidebar ul li.active > a,
   .sidenav a[aria-expanded="true"] {
     color: #fff;
