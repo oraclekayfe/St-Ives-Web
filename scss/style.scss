@@ -777,13 +777,13 @@ video {
   }
 
   & #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 200px;
+    max-width: 200px;
     transition: all 0.3s;
   }
 
   #sidebar.active{
-    margin-left: -250px;
+    margin-left: -200px;
   }  
 
   #sidebar .sidebar-header{
@@ -798,7 +798,6 @@ video {
 
   #sidebar ul li a{
     padding: .8rem;
-    font-size: 1.1em;
     display: block;
     font-weight: 500;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -807,10 +806,6 @@ video {
     color: white;
     background: var(--primary-color);
     font-weight: 600;
-
-    & i {
-      transform: rotate(90deg) scale(.8);
-    }
   }
 
   #sidebar ul li.active>a,
@@ -857,7 +852,7 @@ video {
 
 .sidenav .closebtn {
   & .fas {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   &:hover {
     color: var(--primary-color);
@@ -920,9 +915,15 @@ video {
   background-color: var(--secondary-color);
 }
 
-.btn-outline-danger {
+.btn-outline-light:hover i{
   color: red;
+}
+
+
+#close_btn i {
+  color: var(--dark-color);
+  transition: all .1s;
   &:hover {
-    background: red;
+    color: red;
   }
 }

@@ -43,8 +43,8 @@
         <img src="img/svg/st-fertility.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()">
-        <i class="fas fa-long-arrow-alt-left"></i>
+      <a id="close_btn" href="javascript:void(0)" onclick="closeNav()">
+        <i class="far fa-window-close fa-2x"></i>
       </a>
 
     </div>
@@ -52,7 +52,8 @@
     
     <ul class="list-unstyled components">
       <li>
-        <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+          <span><i class="fas fa-home"></i> Home</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
           <li>
             <a href="specialist.html">St Ives Specialist</a>
@@ -70,10 +71,11 @@
       </li>
       
       <li>
-        <a href="about.html">About</a>
+        <a href="about.html"> <span><i class="fas fa-ambulance"></i> About</a>
       </li>
       <li>
-        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <a href="#pageSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"> 
+          <span><i class="fas fa-stethoscope"></i></span> Services</a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
           <li>
             <a href="specialist-services.html">Specialist Services</a>
@@ -87,19 +89,22 @@
         </ul> 
       </li>
       <li>
-        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
-      </li>
-      <li>
-        <a href="http://wfm917.com/" target="_blank">WFM 917</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html"> <span><i class="far fa-address-book"></i></span> Contact</a>
       </li>
     </ul>
     
     <ul class="list-unstyled CTAs">
       <li>
-        <a href="blog.html" class="bloger">St Ives Blog</a>
+        <a href="blog.html" class="bloger"> <span><i class="fas fa-blog"></i></span> St Ives Blog</a>
+      </li>
+    </ul>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+      </li>
+      <li>
+        <a href="http://wfm917.com/" target="_blank">WFM 917</a>
       </li>
     </ul>
   </nav>
@@ -116,7 +121,7 @@
           <img src="img/svg/st-fertility.svg" class="animated tada" alt="St Ives Fertility" width='100px'/>
         </a>
         <div class="navbar-nav text-base d-flex">
-          <div class="animated bounce border-left nav-item px-3">
+          <div class="animated d-none d-md-block bounce border-left nav-item px-3">
             <div class="media">
               <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2" style="color: red"></i>
               <div class="media-body" style="color: red">
@@ -152,7 +157,7 @@
         <div class="col-12">
           <nav class="navbar navbar-expand navbar-light" style="background: var(--dark-color);">
 
-            <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+            <a href="javascript:void(0)" class="btn btn-outline-light" onclick="openNav()">
               <i class="fas fa-bars"></i>
             </a>
             
@@ -483,7 +488,7 @@
                       <td>260</td>
                     </tr>
                     <tr>
-                      <td>Number of Clinical Pharmacy</td>
+                      <td>Number of Clinical Pregnancy</td>
                       <td>15</td>
                       <td>18</td>
                       <td>15</td>
@@ -534,7 +539,7 @@
                     <td>320</td>
                   </tr>
                   <tr>
-                    <td>Number of Clinical Pharmacy</td>
+                    <td>Number of Clinical Pregnancy</td>
                     <td>20</td>
                     <td>21</td>
                     <td>15</td>
@@ -585,7 +590,7 @@
                   <td>365</td>
                 </tr>
                 <tr>
-                  <td>Number of Clinical Pharmacy</td>
+                  <td>Number of Clinical Pregnancy</td>
                   <td>23</td>
                   <td>21</td>
                   <td>17</td>
@@ -636,7 +641,7 @@
                     <td>428</td>
                   </tr>
                   <tr>
-                    <td>Number of Clinical Pharmacy</td>
+                    <td>Number of Clinical Pregnancy</td>
                     <td>27</td>
                     <td>23</td>
                     <td>23</td>
@@ -688,7 +693,7 @@
                   <td>450</td>
                 </tr>
                 <tr>
-                  <td>Number of Clinical Pharmacy</td>
+                  <td>Number of Clinical Pregnancy</td>
                   <td>28</td>
                   <td>27</td>
                   <td>25</td>
@@ -740,7 +745,7 @@
                   <td>500</td>
                 </tr>
                 <tr>
-                  <td>Number of Clinical Pharmacy</td>
+                  <td>Number of Clinical Pregnancy</td>
                   <td>28</td>
                   <td>35</td>
                   <td>28</td>
@@ -791,7 +796,7 @@
                   <td>541</td>
                 </tr>
                 <tr>
-                  <td>Number of Clinical Pharmacy</td>
+                  <td>Number of Clinical Pregnancy</td>
                   <td>31</td>
                   <td>47</td>
                   <td>50</td>
@@ -842,7 +847,7 @@
                 <td>600</td>
               </tr>
               <tr>
-                <td>Number of Clinical Pharmacy</td>
+                <td>Number of Clinical Pregnancy</td>
                 <td>30</td>
                 <td>44</td>
                 <td>40</td>
@@ -894,7 +899,7 @@
              <td>700</td>
            </tr>
            <tr>
-             <td>Number of Clinical Pharmacy</td>
+             <td>Number of Clinical Pregnancy</td>
              <td>52</td>
              <td>62</td>
              <td>54</td>
@@ -1487,7 +1492,7 @@ window.addEventListener('load', fadeEffect);
 
 <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "200px";
   }
   
   function closeNav() {

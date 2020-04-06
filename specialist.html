@@ -43,16 +43,17 @@
         <img src="img/svg/st-specialist-hospital.svg" alt="St Ives Blog" width='100px'/>
       </a> 
 
-      <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="closeNav()">
-        <i class="fas fa-long-arrow-alt-left"></i>
+      <a id="close_btn" href="javascript:void(0)" onclick="closeNav()">
+        <i class="far fa-window-close fa-2x"></i>
       </a>
-      
+
     </div>
     
     
     <ul class="list-unstyled components">
       <li>
-        <a href="#homeSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
+          <span><i class="fas fa-home"></i> Home</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
           <li>
             <a href="family-clinic.html">Family Clinic</a>
@@ -70,10 +71,11 @@
       </li>
       
       <li>
-        <a href="about.html">About</a>
+        <a href="about.html"> <span><i class="fas fa-ambulance"></i> About</a>
       </li>
       <li>
-        <a href="#pageSubmenu" class="d-flex justify-content-between" data-toggle="collapse" aria-expanded="false">Services <i class="fas p-2 fa-long-arrow-alt-right" style="transition: all .1s;"></i></a>
+        <a href="#pageSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"> 
+          <span><i class="fas fa-stethoscope"></i></span> Services</a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
           <li>
             <a href="specialist-services.html">Specialist Services</a>
@@ -87,19 +89,22 @@
         </ul> 
       </li>
       <li>
-        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
-      </li>
-      <li>
-        <a href="http://wfm917.com/" target="_blank">WFM 917</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html"> <span><i class="far fa-address-book"></i></span> Contact</a>
       </li>
     </ul>
     
     <ul class="list-unstyled CTAs">
       <li>
-        <a href="blog.html" class="bloger">St Ives Blog</a>
+        <a href="blog.html" class="bloger"> <span><i class="fas fa-blog"></i></span> St Ives Blog</a>
+      </li>
+    </ul>
+
+    <ul class="list-unstyled components">
+      <li>
+        <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
+      </li>
+      <li>
+        <a href="http://wfm917.com/" target="_blank">WFM 917</a>
       </li>
     </ul>
   </nav>
@@ -115,7 +120,7 @@
           <img src="img/svg/st-specialist-hospital.svg" class="animated tada" alt="St Ives Specialist Hospital" width='100px'/>
         </a>
         <div class="navbar-nav text-base d-flex">
-          <div class="animated bounce border-left nav-item px-3">
+          <div class="animated d-none d-md-block bounce border-left nav-item px-3">
             <div class="media">
               <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2" style="color: red"></i>
               <div class="media-body" style="color: red">
@@ -151,7 +156,7 @@
         <div class="col-12">
           <nav class="navbar navbar-expand navbar-light" style="background: var(--dark-color);">
 
-            <a href="javascript:void(0)" class="btn btn-outline-danger" onclick="openNav()">
+            <a href="javascript:void(0)" class="btn btn-outline-light" onclick="openNav()">
               <i class="fas fa-bars"></i>
             </a>
 
@@ -561,6 +566,13 @@
                   </div>
                 </a>
               </div>
+              <div class="divider"></div>
+
+            <a href="http://wfm917.com/" target="_blank" style="text-decoration: none;">
+              <div class="hvr-shadow text-center py-4 bg-danger">
+                <img class="w-75" src="img/WhatsApp Image 2020-03-27 at 12.34.34 PM (1).jpeg" alt="Radio Doctor" />
+              </div>            
+            </a>
       
             </div>
             </div>
@@ -979,7 +991,7 @@ window.addEventListener('load', fadeEffect);
 
 <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "200px";
   }
   
   function closeNav() {

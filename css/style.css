@@ -622,11 +622,11 @@ video {
     text-decoration: none;
     transition: all 0.3s; }
   .sidenav #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 200px;
+    max-width: 200px;
     transition: all 0.3s; }
   .sidenav #sidebar.active {
-    margin-left: -250px; }
+    margin-left: -200px; }
   .sidenav #sidebar .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -636,7 +636,6 @@ video {
     padding: 20px 0px; }
   .sidenav #sidebar ul li a {
     padding: .8rem;
-    font-size: 1.1em;
     display: block;
     font-weight: 500;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
@@ -644,8 +643,6 @@ video {
     color: white;
     background: var(--primary-color);
     font-weight: 600; }
-    .sidenav #sidebar ul li a:hover i {
-      transform: rotate(90deg) scale(0.8); }
   .sidenav #sidebar ul li.active > a,
   .sidenav a[aria-expanded="true"] {
     color: #fff;
@@ -676,7 +673,7 @@ video {
     transition: all .1s; }
 
 .sidenav .closebtn .fas {
-  font-size: 1.4rem; }
+  font-size: 1rem; }
 .sidenav .closebtn:hover {
   color: var(--primary-color);
   transform: scaleX(1.2);
@@ -725,9 +722,13 @@ video {
 .navbar-light {
   background-color: var(--secondary-color); }
 
-.btn-outline-danger {
+.btn-outline-light:hover i {
   color: red; }
-  .btn-outline-danger:hover {
-    background: red; }
+
+#close_btn i {
+  color: var(--dark-color);
+  transition: all .1s; }
+  #close_btn i:hover {
+    color: red; }
 
 /*# sourceMappingURL=style.css.map */
