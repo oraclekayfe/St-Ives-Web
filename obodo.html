@@ -39,18 +39,18 @@
   <nav id="sidebar">
     <div class="sidebar-header">
       <a style="z-index: 3;">
-        <img src="img/svg/st-healthcare.svg" alt="St Ives Blog" width='100px'/>
+        <img src="img/svg/st-specialist-hospital.svg" alt="St Ives" height='80px'/>
       </a> 
 
       <a id="close_btn" href="javascript:void(0)" onclick="closeNav()">
-        <i class="far fa-window-close fa-2x"></i>
+        &times;
       </a>
 
     </div>
     
     
     <ul class="list-unstyled components">
-      <li>
+      <li class="shadow">
         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
           <span><i class="fas fa-home"></i> Home</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -72,10 +72,10 @@
         </ul> 
       </li>
       
-      <li>
+      <li class="shadow">
         <a href="about.html"> <span><i class="fas fa-ambulance"></i> About</a>
       </li>
-      <li>
+      <li class="shadow">
         <a href="#pageSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"> 
           <span><i class="fas fa-stethoscope"></i></span> Services</a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -90,7 +90,7 @@
           </li>
         </ul> 
       </li>
-      <li>
+      <li class="shadow">
         <a href="contact.html"> <span><i class="far fa-address-book"></i></span> Contact</a>
       </li>
     </ul>
@@ -102,10 +102,10 @@
     </ul>
 
     <ul class="list-unstyled components">
-      <li>
+      <li class="shadow">
         <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
       </li>
-      <li>
+      <li class="shadow">
         <a href="http://wfm917.com/" target="_blank">WFM 917</a>
       </li>
     </ul>
@@ -114,39 +114,38 @@
 
 <!-- Side Bar Ends -->
 
+
   <!-- First Navigaion -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-split">
-      <div class="container">
-        <a href="blood-bank.html" class="navbar-brand" style="z-index: 3;">
-          <img src="img/svg/st-specialist-hospital.svg" class="animated tada" alt="Blood Bank" width='100px'/>
+  <header class="container">
+    <nav class="navbar navbar-expand d-flex justify-content-between">
+        <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
+          <img src="img/svg/st-specialist-hospital.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
         </a>
-        <div class="navbar-nav text-base d-flex">
-          <div class="animated d-none d-md-block bounce border-left nav-item px-3">
+        <div class="navbar-nav d-flex animated tada">
+          <div class=" border-left nav-item px-3">
             <div class="media">
-              <i class="animated bounce fas fa-map-marker-alt fa-1x mr-2" style="color: red"></i>
-              <div class="media-body" style="color: red">
+              <i class=" fas fa-map-marker-alt fa-1x mr-2"></i>
+              <div class="media-body">
                 <ul class="list-unstyled">
-                    <li class="animated bounce"><h5 class="mb-1">Address:</h5></li>
-                    <p id="factDisplay" class="mb-1 animated bounce"></p>
-                  </ul>
+                  <li><h5 class="fs-0 mb-1">Address</h5></li>
+                  <p id="factDisplay"></p>
+                </ul>
               </div>
             </div> 
           </div>
-          <div class="animated bounce nav-item border-left px-3">
+          <div class=" nav-item border-left px-3 d-none d-md-block">
             <div class="media">
-              <i class="animated bounce fas fa-mobile-alt fa-1x mr-2" style="color: red"></i>
-              <div class="media-body" style="color: red">
+              <i class=" fas fa-mobile-alt fa-1x mr-2"></i>
+              <div class="media-body">
                 <ul class="list-unstyled">
-                  <li class="animated bounce"><h5 class="fs-0 mb-1">Telephone</h5></li>
-                  <li class="animated bounce nav-item">08039494531</li>
-                  <li class="animated bounce nav-item">07088727358</li>
+                  <li><h5 class="fs-0 mb-1">Telephone</h5></li>
+                  <li class=" nav-item">08039494531</li>
+                  <li class=" nav-item">07088727358</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </nav>
   </header>
   <!-- End of First Navigaion -->
@@ -274,7 +273,7 @@
    <!-- Home Articles -->
    <section id='blog'>
     <div class="container">
-        <h2 class="bg-red mb-1 p-3">
+        <h2 class="bg-light shadow mb-1 p-3">
           Recent Post From Our Blog
         </h2>
          <div class="row">

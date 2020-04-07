@@ -26,12 +26,11 @@ body {
   transition: background-color .5s;
 }
 
-.bg-red {
-  background: white;
-  color: var(--dark-color);
-  margin-bottom: 0;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
+// .bg-red {
+//   background: white;
+//   color: var(--dark-color);
+//   margin-bottom: 0;
+// }
 
 .bg-white {
   background: white;
@@ -53,8 +52,7 @@ h5,
 h6 {
   font-family: 'Staatliches', cursive;
   margin-bottom: 0.55rem;
-  line-height: 1.5;
-  font-weight: 500;
+  line-height: 1.3;
 }
 
 
@@ -128,13 +126,6 @@ video {
     }
   }
 }
-
-//Navbar Split
-.navbar-split {
-  overflow: hidden;
-  background-color: white;
-}
-//Navbar Split End
 
 .hvr-shadow {
   -webkit-transition: all 0.2s ease-in-out;
@@ -370,7 +361,10 @@ video {
 
 
 @media only screen and (max-width: 991px) {
- 
+  #contactDetail {
+    display: flex;
+  }
+
   .carousel-caption {
     padding-bottom: 0;
 
@@ -389,6 +383,10 @@ video {
 }
 
 @media only screen and (max-width: 767px) {
+ #contactDetail {
+   display: none;
+ }
+
   .carousel-caption {
     padding-bottom: 0;
 
@@ -800,7 +798,6 @@ video {
     padding: .8rem;
     display: block;
     font-weight: 500;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   #sidebar ul li a:hover {
     color: white;
@@ -867,7 +864,7 @@ video {
 }
 
 @media(maz-width:768px){
-	#sidebar{margin-left: -250px;}
+	#sidebar{margin-left: -200px;}
 	#sidebar.active{
 		margin-left: 0px;
 	}
@@ -920,7 +917,8 @@ video {
 }
 
 
-#close_btn i {
+#close_btn{
+  font-size: 36px;
   color: var(--dark-color);
   transition: all .1s;
   &:hover {
