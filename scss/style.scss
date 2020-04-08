@@ -361,9 +361,6 @@ video {
 
 
 @media only screen and (max-width: 991px) {
-  #contactDetail {
-    display: flex;
-  }
 
   .carousel-caption {
     padding-bottom: 0;
@@ -383,9 +380,6 @@ video {
 }
 
 @media only screen and (max-width: 767px) {
- #contactDetail {
-   display: none;
- }
 
   .carousel-caption {
     padding-bottom: 0;
@@ -558,11 +552,6 @@ video {
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
   color: var(--primary-color);
-}
-
-.post-preview > a > .post-title {
-  margin-top: 1rem;
-  margin-bottom: .8rem;
 }
 
 .post-preview > .post-meta {
