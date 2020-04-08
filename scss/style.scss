@@ -555,24 +555,17 @@ video {
   margin-bottom: 1rem;
 }
 
-.post-preview > a {
-  color: #444;
-}
-
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
   color: var(--primary-color);
 }
 
 .post-preview > a > .post-title {
-  font-size: 1.5rem;
-  font-weight: 500;
   margin-top: 1rem;
   margin-bottom: .8rem;
 }
 
 .post-preview > .post-meta {
-  font-size: 1.2rem;
   font-style: italic;
   margin-top: 0;
   color: var(--dark-color);
@@ -587,12 +580,6 @@ video {
   text-decoration: underline;
   color: white;
   background: var(--dark-color);
-}
-
-@media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
 }
 
 // Blog End
