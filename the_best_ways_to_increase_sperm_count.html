@@ -116,49 +116,49 @@
 
  
    <!-- First Navigaion -->
-   <header class="container-fluid">
-    <nav class="navbar navbar-expand d-flex justify-content-between">
-        <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
-          <img src="img/svg/st-blog.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
-        </a>
-        <div class="navbar-nav d-flex animated tada">
-          <div class=" border-left nav-item px-3">
-            <div class="media">
-              <i class=" fas fa-map-marker-alt fa-1x mr-2"></i>
-              <div class="media-body">
-                <ul class="list-unstyled">
-                  <li><h5 class="fs-0 mb-1">Address</h5></li>
-                  <p id="factDisplay"></p>
-                </ul>
-              </div>
-            </div> 
-          </div>
-          <div class=" nav-item border-left px-3 d-none d-md-block">
-            <div class="media">
-              <i class=" fas fa-mobile-alt fa-1x mr-2"></i>
-              <div class="media-body">
-                <ul class="list-unstyled">
-                  <li><h5 class="fs-0 mb-1">Telephone</h5></li>
-                  <li class=" nav-item">08039494531</li>
-                  <li class=" nav-item">07088727358</li>
-                </ul>
+   <header>
+     <div class="container">
+        <nav class="navbar navbar-expand d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
+            <img src="img/svg/st-blog.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
+          </a>
+          <div class="navbar-nav d-flex animated tada">
+            <div class=" border-left nav-item px-3 border-success">
+              <div class="media">
+                <i class=" fas fa-map-marker-alt fa-1x mr-2 text-success"></i>
+                <div class="media-body">
+                  <ul class="list-unstyled">
+                    <li><h5 class="fs-0 mb-1 text-success">Address</h5></li>
+                    <p id="factDisplay"></p>
+                  </ul>
+                </div>
+              </div> 
+            </div>
+            <div class=" nav-item border-left px-3 d-none d-md-block border-success">
+              <div class="media">
+                <i class=" fas fa-mobile-alt fa-1x mr-2 text-success"></i>
+                <div class="media-body">
+                  <ul class="list-unstyled">
+                    <li><h5 class="fs-0 mb-1 text-success">Phone</h5></li>
+                    <li class=" nav-item">08039494531</li>
+                    <li class=" nav-item">07088727358</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    </nav>
+      </nav>
+     </div>
   </header>
   <!-- End of First Navigaion -->
 
 
     <!-- Second Navigation -->
     <div id="mainNav" class="banner-area">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand navbar-dark" style="background: var(--dark-color);">
+      <div class="container">
+            <nav class="navbar navbar-expand navbar-dark" style="background: white;">
 
-              <a href="javascript:void(0)" class="btn btn-outline-light" onclick="openNav()">
+              <a id="sideBar-Btn" href="javascript:void(0)" onclick="openNav()">
                 <i class="fas fa-bars"></i>
               </a>
 
@@ -203,8 +203,6 @@
                 </ul>
               </div>
           </nav>
-          </div>
-        </div>
       </div>
     </div>
     <!-- End of Second Navigation -->

@@ -116,49 +116,49 @@
 
 
     <!-- First Navigaion -->
-  <header class="container-fluid">
-    <nav class="navbar navbar-expand d-flex justify-content-between">
-        <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
-          <img src="img/svg/st-specialist-hospital.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
-        </a>
-        <div class="navbar-nav d-flex animated tada">
-          <div class=" border-left nav-item px-3">
-            <div class="media">
-              <i class=" fas fa-map-marker-alt fa-1x mr-2"></i>
-              <div class="media-body">
-                <ul class="list-unstyled">
-                  <li><h5 class="fs-0 mb-1">Address</h5></li>
-                  <p id="factDisplay"></p>
-                </ul>
-              </div>
-            </div> 
-          </div>
-          <div class=" nav-item border-left px-3 d-none d-md-block">
-            <div class="media">
-              <i class=" fas fa-mobile-alt fa-1x mr-2"></i>
-              <div class="media-body">
-                <ul class="list-unstyled">
-                  <li><h5 class="fs-0 mb-1">Telephone</h5></li>
-                  <li class=" nav-item">08039494531</li>
-                  <li class=" nav-item">07088727358</li>
-                </ul>
+  <header>
+    <div class="container">
+        <nav class="navbar navbar-expand d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
+            <img src="img/svg/st-specialist-hospital.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
+          </a>
+          <div class="navbar-nav d-flex animated tada">
+            <div class=" border-left nav-item px-3 border-success">
+              <div class="media">
+                <i class=" fas fa-map-marker-alt fa-1x mr-2 text-success"></i>
+                <div class="media-body">
+                  <ul class="list-unstyled">
+                    <li><h5 class="fs-0 mb-1 text-success">Address</h5></li>
+                    <p id="factDisplay"></p>
+                  </ul>
+                </div>
+              </div> 
+            </div>
+            <div class=" nav-item border-left px-3 d-none d-md-block border-success">
+              <div class="media">
+                <i class=" fas fa-mobile-alt fa-1x mr-2 text-success"></i>
+                <div class="media-body">
+                  <ul class="list-unstyled">
+                    <li><h5 class="fs-0 mb-1 text-success">Phone</h5></li>
+                    <li class=" nav-item">08039494531</li>
+                    <li class=" nav-item">07088727358</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <!-- End of First Navigaion -->
   
 
   <!-- Second Navigation -->
   <div id="mainNav" class="banner-area">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand navbar-light" style="background: var(--dark-color);">
+    <div class="container">
+          <nav class="navbar navbar-expand" style="background: white;">
 
-            <a href="javascript:void(0)" class="btn btn-outline-light" onclick="openNav()">
+            <a id="sideBar-Btn" href="javascript:void(0)" onclick="openNav()">
               <i class="fas fa-bars"></i>
             </a>
 
@@ -200,75 +200,65 @@
               </ul>
             </div>
         </nav>
-        </div>
-      </div>
     </div>
   </div>
   <!-- End of Second Navigation -->
 
 
     <!-- Showcase3 -->
-    <section id="babatunde">
+    <section id="babatunde" class="py-5 bg-white">
       <div class="container">
-        <div class="row">
-          <div class="container">
-            <div class="col bg-light p-5">
-                <img src="img/DrAlozieSP-36h5e31ygea6icdm093zls.png" class="float-left mr-4">
-               <h1 class="text-center">
-                Dr. Alozie Ndubuka
-               </h1>
-               <p class="text-justify">
-                Dr. Ndubuka qualified as a medical doctor from the College of Medicine, University of Nigeria, Nsukka. He has since developed into one of the most experienced family health practitioners and a seasoned surgeon.
-               </p>
-               <p class="text-justify">
-                Dr. Ndubuka is a Fellow of the West African College of Surgeons. He has been with St. Ives since 2011, where he is presently the Medical Director at St. Ives Family Clinic in Ikeja, Lagos State.
-               </p>
-               <blockquote class="blockquote text-right">
-                <q class="mb-0">“Seek qualified medical intervention in time and disclose everything to your authorized personnel”.</q>
-                <footer class="blockquote-footer">Dr Alozie Ndubuka</footer>
-              </blockquote>
-              <div class="d-flex justify-content-end">
-                <div class="px-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook fa-2x"></i>
-                  </a>
-                </div>
-                <div class="px-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter fa-2x"></i>
-                  </a>
-                </div>
-                <div class="px-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram fa-2x"></i>
-                  </a>
-                </div>
-    
-              </div>
-              </div>
-          </div>
-        </div>
+            <img src="img/DrAlozieSP-36h5e31ygea6icdm093zls.png" class="float-left mr-4">
+            <h1 class="text-center text-success">
+            Dr. Alozie Ndubuka
+            </h1>
+            <p class="text-justify">
+            Dr. Ndubuka qualified as a medical doctor from the College of Medicine, University of Nigeria, Nsukka. He has since developed into one of the most experienced family health practitioners and a seasoned surgeon.
+            </p>
+            <p class="text-justify">
+            Dr. Ndubuka is a Fellow of the West African College of Surgeons. He has been with St. Ives since 2011, where he is presently the Medical Director at St. Ives Family Clinic in Ikeja, Lagos State.
+            </p>
+            <blockquote class="blockquote text-right">
+            <q class="mb-0">“Seek qualified medical intervention in time and disclose everything to your authorized personnel”.</q>
+            <footer class="blockquote-footer">Dr Alozie Ndubuka</footer>
+           </blockquote>
+           <div class="d-flex justify-content-end">
+            <div class="px-4">
+              <a href="http://facebook.com">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            </div>
+            <div class="px-4">
+              <a href="http://twitter.com">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </div>
+            <div class="px-4">
+              <a href="http://instagram.com">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </div>
 
-        <div class="row mt-3">
-          <div class="col">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Department: Medical Personnel, Surgery</li>
-              <li class="list-group-item">Position: Medical Director, St. Ives Family Clinic Ikeja</li>
-              <li class="list-group-item">Treatments: M.D. FWACS</li>
-              <li class="list-group-item">Office: 129 Akowonjo Road, Kwara
-                Bus-Stop, Egbeda.</li>
-              <li class="list-group-item">Workingdays: Monday, Tuesday, Wednesday, Thursday, Friday</li>
-            </ul>
           </div>
-        </div>
       </div>
-  
     </section>
-   <div class="divider"></div>
+
+    <section class="pb-5 bg-white">
+      <div class="container">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Department: Medical Personnel, Surgery</li>
+          <li class="list-group-item">Position: Medical Director, St. Ives Family Clinic Ikeja</li>
+          <li class="list-group-item">Treatments: M.D. FWACS</li>
+          <li class="list-group-item">Office: 129 Akowonjo Road, Kwara
+            Bus-Stop, Egbeda.</li>
+          <li class="list-group-item">Workingdays: Monday, Tuesday, Wednesday, Thursday, Friday</li>
+        </ul>
+      </div>
+    </section>
     
 
    <!-- Home Articles -->
-   <section id='blog'>
+   <section id='blog' class="bg-white">
     <div class="container">
         <h2 class="shadow bg-light mb-1 p-3">
           Recent Post From Our Blog

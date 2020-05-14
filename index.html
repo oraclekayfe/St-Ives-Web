@@ -117,48 +117,48 @@
 
 
   <!-- First Navigaion -->
-  <header class="container-fluid">
-    <nav class="navbar navbar-expand d-flex justify-content-between">
-        <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
-          <img src="img/svg/st-healthcare.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
-        </a>
-        <div class="navbar-nav d-flex animated tada">
-          <div class=" border-left nav-item px-3">
-            <div class="media">
-              <i class=" fas fa-map-marker-alt fa-1x mr-2"></i>
-              <div class="media-body">
-                <ul class="list-unstyled">
-                  <li><h5 class="fs-0 mb-1">Address</h5></li>
-                  <p id="factDisplay"></p>
-                </ul>
-              </div>
-            </div> 
-          </div>
-          <div class=" nav-item border-left px-3 d-none d-md-block">
-            <div class="media">
-              <i class=" fas fa-mobile-alt fa-1x mr-2"></i>
-              <div class="media-body">
-                <ul class="list-unstyled">
-                  <li><h5 class="fs-0 mb-1">Telephone</h5></li>
-                  <li class=" nav-item">08039494531</li>
-                  <li class=" nav-item">07088727358</li>
-                </ul>
+  <header>
+    <div class="container">
+        <nav class="navbar navbar-expand d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
+            <img src="img/svg/st-healthcare.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
+          </a>
+          <div class="navbar-nav d-flex animated tada">
+            <div class=" border-left nav-item px-3 border-success">
+              <div class="media">
+                <i class=" fas fa-map-marker-alt fa-1x mr-2 text-success"></i>
+                <div class="media-body">
+                  <ul class="list-unstyled">
+                    <li><h5 class="fs-0 mb-1 text-success">Address</h5></li>
+                    <p id="factDisplay"></p>
+                  </ul>
+                </div>
+              </div> 
+            </div>
+            <div class=" nav-item border-left px-3 d-none d-md-block border-success">
+              <div class="media">
+                <i class=" fas fa-mobile-alt fa-1x mr-2 text-success"></i>
+                <div class="media-body">
+                  <ul class="list-unstyled">
+                    <li><h5 class="fs-0 mb-1 text-success">Phone</h5></li>
+                    <li class=" nav-item">08039494531</li>
+                    <li class=" nav-item">07088727358</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <!-- End of First Navigaion -->
 
   <!-- Second Navigation -->
   <div id="mainNav" class="banner-area">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand navbar-light" style="background: var(--dark-color);">
+    <div class="container">
+          <nav class="navbar navbar-expand" style="background: white">
 
-            <a href="javascript:void(0)" class="btn btn-outline-light" onclick="openNav()">
+            <a id="sideBar-Btn" href="javascript:void(0)" onclick="openNav()">
               <i class="fas fa-bars"></i>
             </a>
 
@@ -197,107 +197,103 @@
               </ul>
             </div>
         </nav>
-        </div>
-      </div>
     </div>
   </div>
   <!-- End of Second Navigation -->
 
     <section id="carousel-section">
-      <div class="container">
-        <div id="demos" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#demos" data-slide-to="0" class="active"></li>
-            <li data-target="#demos" data-slide-to="1"></li>
-            <li data-target="#demos" data-slide-to="2"></li>
-            <li data-target="#demos" data-slide-to="3"></li>
-            <li data-target="#demos" data-slide-to="4"></li>
-            <li data-target="#demos" data-slide-to="5"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item drk active">
-              <img src="img/s4oD2A9fNl.jpg" alt="St Ives Home" width="1000" height="500">
-              <div class="carousel-caption">
-                <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                  Welcome to St Ives Healthcare Organization</h3>
-                  <p class="animated fadeInUp" style="animation-delay: 2s;">
-                    We are a leading Multi Specialist Hospital in Nigeria,
-                    Dedicated to Women, Children and Family Health,
-                    With first class Consultants, Processes and Technology.
-                  </p>
-              </div>   
-            </div>
-            <div class="carousel-item drk">
-              <img src="img/hLVtZBLVSm.jpg" alt="St Ives Home" width="1000" height="500">
-              <div class="carousel-caption">
-                <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                  Novel coronavirus: Your questions, answered</h3>
-                  <p class="animated fadeInUp" style="animation-delay: 2s;">
-                    The current outbreak of infections with a novel type of coronavirus has sparked global anxiety and concern...
-                  </p>
-                  <a href="novel_coronavirus.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-              </div>   
-            </div>
-            <div class="carousel-item drk">
-              <img src="img/U87ijiyG3B.jpg" alt="St Ives Home" width="1000" height="500">
-              <div class="carousel-caption">
-                <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                  What are the best ways to increase Sperm Count?</h3>
-                  <p class="animated fadeInUp" style="animation-delay: 2s;">
-                    Sperm count refers to the average number of sperm present in one sample of semen. Fertility doctors assess sperm count during routine semen analyses and consider it to be an important factor for fertility.
-                  </p>
-                  <a href="the_best_ways_to_increase_sperm_count.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-              </div>   
-            </div>
-            <div class="carousel-item drk">
-              <img src="img/UkRg6MnAKR.jpg" alt="St Ives Home" width="1000" height="500">
-              <div class="carousel-caption">
-                <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                  Why are onions good for you?</h3>
-                  <p class="animated fadeInUp" style="animation-delay: 2s;">
-                    Onions belong to the Allium family of plants, which also includes chives, garlic, and leeks. These vegetables have characteristic pungent flavors and some medicinal properties.
-                  </p>
-                  <a href="why_are_onions_good_for_you.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-              </div>   
-            </div>
-            <div class="carousel-item drk">
-              <img src="img/aVKlpiiO7u.jpg" alt="St Ives Home" width="1000" height="500">
-              <div class="carousel-caption">
-                <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                  Gynecologists: When to visit and what to expect</h3>
-                  <p class="animated fadeInUp" style="animation-delay: 2s;">
-                    Gynecologists are doctors who specialize in women's health, with a focus on the female reproductive system.
-                  </p>
-                  <a href="gynecologists_When_to_visit.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-              </div>   
-            </div>
-            <div class="carousel-item drk">
-              <img src="img/QRFc3GlS0d.jpg" alt="Ovulation Bleeding" width="1000" height="500">
-              <div class="carousel-caption">
-                <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                  Ovulation bleeding: What to know</h3>
-                  <p class="animated fadeInUp" style="animation-delay: 2s;">
-                    Ovulation bleeding is vaginal bleeding during or
-                    immediately before or after ovulation, which occurs
-                    roughly in the middle of a menstrual cycle.
-                  </p>
-                  <a href="ovulation_bleeding.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-              </div>   
-            </div>
+      <div id="demos" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demos" data-slide-to="0" class="active"></li>
+          <li data-target="#demos" data-slide-to="1"></li>
+          <li data-target="#demos" data-slide-to="2"></li>
+          <li data-target="#demos" data-slide-to="3"></li>
+          <li data-target="#demos" data-slide-to="4"></li>
+          <li data-target="#demos" data-slide-to="5"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item drk active">
+            <img src="img/s4oD2A9fNl.jpg" alt="St Ives Home" width="1000" height="500">
+            <div class="carousel-caption">
+              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+                Welcome to St Ives Healthcare Organization</h3>
+                <p class="animated fadeInUp" style="animation-delay: 2s;">
+                  We are a leading Multi Specialist Hospital in Nigeria,
+                  Dedicated to Women, Children and Family Health,
+                  With first class Consultants, Processes and Technology.
+                </p>
+            </div>   
           </div>
-          <a class="carousel-control-prev" href="#demos" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demos" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+          <div class="carousel-item drk">
+            <img src="img/hLVtZBLVSm.jpg" alt="St Ives Home" width="1000" height="500">
+            <div class="carousel-caption">
+              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+                Novel coronavirus: Your questions, answered</h3>
+                <p class="animated fadeInUp" style="animation-delay: 2s;">
+                  The current outbreak of infections with a novel type of coronavirus has sparked global anxiety and concern...
+                </p>
+                <a href="novel_coronavirus.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
+            </div>   
+          </div>
+          <div class="carousel-item drk">
+            <img src="img/U87ijiyG3B.jpg" alt="St Ives Home" width="1000" height="500">
+            <div class="carousel-caption">
+              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+                What are the best ways to increase Sperm Count?</h3>
+                <p class="animated fadeInUp" style="animation-delay: 2s;">
+                  Sperm count refers to the average number of sperm present in one sample of semen. Fertility doctors assess sperm count during routine semen analyses and consider it to be an important factor for fertility.
+                </p>
+                <a href="the_best_ways_to_increase_sperm_count.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
+            </div>   
+          </div>
+          <div class="carousel-item drk">
+            <img src="img/UkRg6MnAKR.jpg" alt="St Ives Home" width="1000" height="500">
+            <div class="carousel-caption">
+              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+                Why are onions good for you?</h3>
+                <p class="animated fadeInUp" style="animation-delay: 2s;">
+                  Onions belong to the Allium family of plants, which also includes chives, garlic, and leeks. These vegetables have characteristic pungent flavors and some medicinal properties.
+                </p>
+                <a href="why_are_onions_good_for_you.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
+            </div>   
+          </div>
+          <div class="carousel-item drk">
+            <img src="img/aVKlpiiO7u.jpg" alt="St Ives Home" width="1000" height="500">
+            <div class="carousel-caption">
+              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+                Gynecologists: When to visit and what to expect</h3>
+                <p class="animated fadeInUp" style="animation-delay: 2s;">
+                  Gynecologists are doctors who specialize in women's health, with a focus on the female reproductive system.
+                </p>
+                <a href="gynecologists_When_to_visit.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
+            </div>   
+          </div>
+          <div class="carousel-item drk">
+            <img src="img/QRFc3GlS0d.jpg" alt="Ovulation Bleeding" width="1000" height="500">
+            <div class="carousel-caption">
+              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+                Ovulation bleeding: What to know</h3>
+                <p class="animated fadeInUp" style="animation-delay: 2s;">
+                  Ovulation bleeding is vaginal bleeding during or
+                  immediately before or after ovulation, which occurs
+                  roughly in the middle of a menstrual cycle.
+                </p>
+                <a href="ovulation_bleeding.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
+            </div>   
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#demos" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demos" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
     </section>
     <div class="divider"></div>
 
     <!-- Services Section -->
-   <section id='services' class="d-none d-md-block">
+   <section id='services'>
    <div class="container">
       <h2 class="bg-light p-3 shadow">
         Departments
@@ -306,7 +302,7 @@
 
         <div class="col-md-3 col-sm-6 col-xs-12">
           <a href="family-clinic.html" style="text-decoration: none;">
-            <div class="single-service text-center">
+            <div class="single-service text-center bg-primary">
             <i class="flaticon-hospital"></i>
             <p>We Provide the Best First Line of Care in all Matters of Family Health.
               <br><hr>
@@ -318,7 +314,7 @@
 
         <div class="col-md-3 col-sm-6 col-xs-12">
          <a href="fertility.html" style="text-decoration: none;">
-          <div class="single-service text-center">
+          <div class="single-service text-center bg-success">
             <i class="flaticon-fetus"></i>
             <p>Start with a Fertility Assessment to determine your Fertility Status.
               <br><hr>
@@ -331,7 +327,7 @@
 
         <div class="col-md-3 col-sm-6 col-xs-12">
          <a href="specialist.html" style="text-decoration: none;">
-          <div class="single-service text-center">
+          <div class="single-service text-center bg-warning">
             <i class="flaticon-doctor"></i>
 
             <p>We are Healthcare Professionals commited to the Best Quality of Life.

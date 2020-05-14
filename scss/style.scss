@@ -113,7 +113,7 @@ body {
   font-family: 'Open Sans', serif;
   font-size: 1rem;
   line-height: 1.5;
-  background: var(--secondary-color);
+  background: white;
   transition: background-color 0.5s;
 }
 
@@ -187,17 +187,26 @@ video {
 
 // Second Navbar
 .banner-area {
-  background: var(--light-color);
+  background: white;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 100;
 
+  & #sideBar-Btn i {
+    font-size: 1.6rem;
+    color: #7c7c7c;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
   #navbar .navbar-nav .nav-item {
     & .nav-link {
       font-size: 0.9rem;
       font-weight: 500;
-      color: var(--secondary-color);
+      color: #7c7c7c;
       border-bottom: 2px transparent solid;
       transition: all 0.1s;
       text-transform: uppercase;
@@ -929,3 +938,16 @@ video {
     color: red;
   }
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  color: black;
+}
+
+// @media (max-width: 500px) {
+//   body {
+//   }
+// }
