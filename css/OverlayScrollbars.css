@@ -85,7 +85,7 @@ body.os-dragging * {
 #os-dummy-scrollbar-size {
   position: fixed;
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
   visibility: hidden;
   overflow: scroll;
   height: 500px;
@@ -174,7 +174,7 @@ body.os-dragging * {
 }
 .os-content:before,
 .os-content:after {
-  content: "";
+  content: '';
   display: table;
   width: 0;
   height: 0;
@@ -218,7 +218,7 @@ body.os-dragging * {
   z-index: -1;
   pointer-events: none;
 }
-.os-content > .os-textarea[wrap="off"] {
+.os-content > .os-textarea[wrap='off'] {
   white-space: pre !important;
   margin: 0px !important;
 }
@@ -264,7 +264,7 @@ body.os-dragging * {
   box-sizing: border-box;
 }
 .os-resize-observer-host:after {
-  content: "";
+  content: '';
 }
 .os-resize-observer-host > .os-resize-observer,
 .os-resize-observer-host:after {
@@ -357,7 +357,7 @@ html.os-html > .os-host > .os-scrollbar {
 .os-scrollbar-corner {
   position: absolute;
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
   z-index: 1;
 }
 .os-scrollbar-corner {
@@ -623,7 +623,7 @@ THEMES:
 .os-theme-dark > .os-scrollbar-vertical .os-scrollbar-handle:before,
 .os-theme-light > .os-scrollbar-horizontal .os-scrollbar-handle:before,
 .os-theme-light > .os-scrollbar-vertical .os-scrollbar-handle:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;

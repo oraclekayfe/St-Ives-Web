@@ -4,8 +4,12 @@
   	*/
 @font-face {
   font-family: 'Flaticon';
-  src: url("../font/Flaticon.eot");
-  src: url("../font/Flaticon.eot?#iefix") format("embedded-opentype"), url("../font/Flaticon.woff2") format("woff2"), url("../font/Flaticon.woff") format("woff"), url("../font/Flaticon.ttf") format("truetype"), url("../font/Flaticon.svg#Flaticon") format("svg");
+  src: url('../font/Flaticon.eot');
+  src: url('../font/Flaticon.eot?#iefix') format('embedded-opentype'),
+    url('../font/Flaticon.woff2') format('woff2'),
+    url('../font/Flaticon.woff') format('woff'),
+    url('../font/Flaticon.ttf') format('truetype'),
+    url('../font/Flaticon.svg#Flaticon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +17,7 @@
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'Flaticon';
-    src: url("./Flaticon.svg#Flaticon") format("svg");
+    src: url('./Flaticon.svg#Flaticon') format('svg');
   }
 }
 
@@ -116,7 +120,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -137,7 +141,7 @@ body {
   color: var(--dark-color);
   margin-bottom: 0;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 a {
@@ -196,16 +200,16 @@ ul .cus::before {
   position: fixed;
   top: 0px;
   -webkit-transform: translate(0, -200px);
-          transform: translate(0, -200px);
+  transform: translate(0, -200px);
 }
 
 .inView {
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 video {
@@ -251,9 +255,12 @@ video {
   transition: all 0.2s ease-in-out;
 }
 
-.hvr-shadow:focus, .hvr-shadow:hover {
-  -webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
-  box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
+.hvr-shadow:focus,
+.hvr-shadow:hover {
+  -webkit-box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 7px 14px 0 rgba(59, 65, 94, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
   -webkit-transform: translateY(-0.125rem);
   transform: translateY(-0.125rem);
 }
@@ -390,7 +397,7 @@ video {
 
 #stivesdoctors .fab:hover {
   -webkit-transform: scale(2);
-          transform: scale(2);
+  transform: scale(2);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: var(--black-color);
@@ -461,7 +468,7 @@ video {
   min-width: 170px;
   height: 170px;
   -webkit-perspective: 1000px;
-          perspective: 1000px;
+  perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -474,14 +481,14 @@ video {
   transition: transform 0.6s;
   transition: transform 0.6s, -webkit-transform 0.6s;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flip-card:hover .flip-card-inner {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-card-front,
@@ -490,7 +497,7 @@ video {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .flip-card-front {
@@ -507,11 +514,11 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   padding: 15px;
 }
 
@@ -585,7 +592,7 @@ video {
 
 #showcase2:before {
   content: '';
-  background: url("../img/oYSIeifs4T.jpg") no-repeat center center/cover;
+  background: url('../img/oYSIeifs4T.jpg') no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -594,15 +601,13 @@ video {
 }
 
 #showcase2 .showcase2-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   height: 100vh;
 }
 
@@ -648,7 +653,7 @@ video {
 
 #showcase:before {
   content: '';
-  background: url("../img/DSC_0147edit.JPG") no-repeat center center/cover;
+  background: url('../img/DSC_0147edit.JPG') no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -657,15 +662,13 @@ video {
 }
 
 #showcase .showcase-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   height: 100vh;
 }
 
@@ -682,11 +685,11 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #tester .share-button {
@@ -697,11 +700,11 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -711,13 +714,13 @@ video {
 
 #tester .share-button:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #tester .share-button:hover a {
   opacity: 1;
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 #tester .share-button span {
@@ -735,20 +738,20 @@ video {
 
 #tester .share-button:hover span {
   -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
   -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 #tester .share-button a {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   font-size: 1.5rem;
   color: var(--primary-color);
   text-align: center;
   -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
   opacity: 0;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -756,22 +759,22 @@ video {
 
 #tester .share-button a:nth-of-type(1) {
   -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  transition-delay: 1s;
 }
 
 #tester .share-button a:nth-of-type(2) {
   -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
+  transition-delay: 0.8s;
 }
 
 #tester .share-button a:nth-of-type(3) {
   -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  transition-delay: 0.6s;
 }
 
 #tester .share-button a:nth-of-type(4) {
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .preloader {
@@ -779,11 +782,11 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   background: white;
@@ -806,7 +809,8 @@ video {
 
 #showcase3:before {
   content: '';
-  background: url("../img/blood-donation-4151721_1920.jpg") no-repeat center center/cover;
+  background: url('../img/blood-donation-4151721_1920.jpg') no-repeat center
+    center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -819,11 +823,11 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
 }
 
@@ -871,11 +875,11 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -911,7 +915,7 @@ video {
   top: 50%;
   right: 20px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .sidenav ul ul a {
@@ -944,7 +948,7 @@ video {
 .sidenav .closebtn:hover {
   color: var(--primary-color);
   -webkit-transform: scaleX(1.2);
-          transform: scaleX(1.2);
+  transform: scaleX(1.2);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -980,11 +984,11 @@ video {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   text-decoration: none;
   border-radius: 10%;
@@ -1036,11 +1040,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: white;
   color: black;
 }
