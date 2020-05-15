@@ -569,8 +569,8 @@ video {
 }
 
 /**
-    * Reinstate scrolling for non-JS clients
-    */
+        * Reinstate scrolling for non-JS clients
+        */
 .simplebar-content-wrapper {
   overflow: auto;
 }
