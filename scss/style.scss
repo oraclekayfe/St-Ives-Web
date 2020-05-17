@@ -610,6 +610,7 @@ video {
   background: #333;
   padding: 2rem;
   position: relative;
+  height: 70vh;
 }
 
 #showcase:before {
@@ -627,7 +628,7 @@ video {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   align-items: flex-end;
-  height: 100vh;
+  height: 70vh;
 }
 
 #showcase .showcase-content {
@@ -938,11 +939,6 @@ header {
 @media (max-width: 500px) {
   body {
     font-size: 0.9rem;
-  }
-
-  .container {
-    width: 100vw;
-    height: auto;
   }
 
   header .container {
