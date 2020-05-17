@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
@@ -50,7 +50,7 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
     
     
     <ul class="list-unstyled components">
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
           <span><i class="fas fa-home"></i> Home</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -72,10 +72,10 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
         </ul> 
       </li>
       
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="about.html"> <span><i class="fas fa-ambulance"></i> About</a>
       </li>
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="#pageSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"> 
           <span><i class="fas fa-stethoscope"></i></span> Services</a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -87,7 +87,7 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
           </li>
         </ul> 
       </li>
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="contact.html"> <span><i class="far fa-address-book"></i></span> Contact</a>
       </li>
     </ul>
@@ -99,10 +99,10 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
     </ul>
 
     <ul class="list-unstyled components">
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
       </li>
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="http://wfm917.com/" target="_blank">WFM 917</a>
       </li>
     </ul>
@@ -111,11 +111,11 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
 
 <!-- Side Bar Ends -->
 
-  <!-- First Navigaion -->
-  <header>
+   <!-- First Navigaion -->
+   <header>
     <div class="container">
         <nav class="navbar navbar-expand d-flex justify-content-between">
-          <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
+          <a href="index.html" class="navbar-brand hvr-shadow text center" style="z-index: 3;">
             <img src="img/svg/st-specialist-hospital.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
           </a>
           <div class="navbar-nav d-flex animated tada">
@@ -130,7 +130,7 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
                 </div>
               </div> 
             </div>
-            <div class=" nav-item border-left px-3 d-none d-md-block border-info">
+            <div class=" nav-item border-left px-3 border-info">
               <div class="media">
                 <i class=" fas fa-mobile-alt fa-1x mr-2 text-info"></i>
                 <div class="media-body">
@@ -149,53 +149,61 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
   <!-- End of First Navigaion -->
 
 
-<!-- Second Navigation -->
-<div id="mainNav" class="banner-area">
-  <div class="container">
-        <nav class="navbar navbar-expand" style="background: white;">
+  <!-- Second Navigation -->
+  <div id="mainNav" class="banner-area">
+    <div class="container">
+          <nav class="navbar navbar-expand" style="background: white;">
 
-          <a id="sideBar-Btn" href="javascript:void(0)" onclick="openNav()">
-            <i class="fas fa-bars"></i>
-          </a>
+            <a id="sideBar-Btn" href="javascript:void(0)" onclick="openNav()">
+              <i class="fas fa-bars"></i>
+            </a>
 
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="specialist.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item d-none d-md-block">
-                <a href="family-clinic.html" class="nav-link">Clinic</a>
-              </li>
-              <li class="nav-item d-none d-md-block">
-                <a href="fertility.html" class="nav-link">Fertility</a>
-              </li>
-              <li class="nav-item d-none d-md-block">
-                <a href="pharmacy.html" class="nav-link">Pharmacy</a>
-              </li>
-              <li class="nav-item d-none d-lg-block">
-                <a href="blood-bank.html" class="nav-link">Blood Bank</a>
-              </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link">Blog</a>
-              </li>
-              <li class="nav-item d-none d-lg-block">
-                <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link">Ives Medicare</a>
-              </li>
-              <li class="nav-item d-none d-lg-block">
-                <a href="http://www.wfm917.com/" target="_blank" class="nav-link">WFM 917</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item d-none d-md-block">
+                  <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="specialist-services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="family-clinic.html" class="nav-link">Clinic</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="fertility.html" class="nav-link">Fertility</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a href="blood-bank.html" class="nav-link">Blood Bank</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a href="https://www.ivesmedicare.com/" target="_blank" class="nav-link">Ives Medicare</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a href="http://www.wfm917.com/" target="_blank" class="nav-link">WFM 917</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg" class="apt-btn"><i class="far fa-calendar-check"></i></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
   </div>
-</div>
-<!-- End of Second Navigation -->
+  <!-- End of Second Navigation -->
 
     <!-- Specialist Services -->
     <section class="py-5">
@@ -203,14 +211,16 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
       <div class="row">
       <div class="col-md-8">
       <div class="card border-0">
-          <h3 class="py-3 text-info text-center border border-info">Comprehensive Health Checks</h3>
-          <p class="card-text text-justify">
+          <h3 class="py-3 text-info text-center border border-info">
+            Comprehensive Health Checks
+          </h3>
+          <p class="px-2 card-text text-justify">
             We have a proprietary St. Ives Health Screening Program (SIHSP) is an assortment of essential medical assessment programs that leave no stones unturned in our commitment to helping our patients (corporate and individual) go after their life goals at home or at work with unwavering peace of mind and absolutely no worries.
           </p>
-          <p class="card-text text-justify">
+          <p class="px-2 card-text text-justify">
             Our health checks incorporate tests that provide you with an in-depth profile of your health and wellbeing, comprising of Personal Health Measurements, Iron status, Diabetes check, Cardiovascular profile and Cardiac plus check, hematology profile (i.e. full blood profile), thyroid function test, liver function test pancreatic function test.
           </p>
-          <p class="card-text text-justify">
+          <p class="px-2 card-text text-justify">
             These health checks include the following:
           </p>
           <ul class="list-unstyled px-3">
@@ -240,7 +250,7 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
             </li>
           </ul>
     </div>
-    <div class="card border-0 px-3">
+    <div class="card border-0">
       <img src="img/hm7p1U2qsk.jpg" alt="laboratory" class="card-img-top">
       <div class="card-body">
         <h3 class="py-3 text-info text-center border border-info">
@@ -688,7 +698,7 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
     <div class="container">
       <div class="row">
         <div class="col-md-3 mt-2 text-center">
-          <img src="img/svg/st-healthcare.svg" class="w-50 p-1 bg-light" alt="logo">
+          <img src="img/svg/st-healthcare.svg" class="w-50 rounded bg-light" alt="logo">
         </div>
         <div class="col-md-3 mt-2">
           <div class="mb-3">

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
@@ -51,7 +51,7 @@
     
     
     <ul class="list-unstyled components">
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
           <span><i class="fas fa-home"></i> Home</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -70,10 +70,10 @@
         </ul> 
       </li>
       
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="about.html"> <span><i class="fas fa-ambulance"></i> About</a>
       </li>
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="#pageSubmenu" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false"> 
           <span><i class="fas fa-stethoscope"></i></span> Services</a>
         <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -88,7 +88,7 @@
           </li>
         </ul> 
       </li>
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="contact.html"> <span><i class="far fa-address-book"></i></span> Contact</a>
       </li>
     </ul>
@@ -100,10 +100,10 @@
     </ul>
 
     <ul class="list-unstyled components">
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="https://www.ivesmedicare.com/" target="_blank">Ives Medicare</a>
       </li>
-      <li class="shadow">
+      <li class="border-bottom">
         <a href="http://wfm917.com/" target="_blank">WFM 917</a>
       </li>
     </ul>
@@ -117,7 +117,7 @@
   <header>
     <div class="container">
         <nav class="navbar navbar-expand d-flex justify-content-between">
-          <a href="index.html" class="navbar-brand text center" style="z-index: 3;">
+          <a href="index.html" class="navbar-brand hvr-shadow text center" style="z-index: 3;">
             <img src="img/svg/st-specialist-hospital.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
           </a>
           <div class="navbar-nav d-flex animated tada">
@@ -132,7 +132,7 @@
                 </div>
               </div> 
             </div>
-            <div class=" nav-item border-left px-3 d-none d-md-block border-info">
+            <div class=" nav-item border-left px-3 border-info">
               <div class="media">
                 <i class=" fas fa-mobile-alt fa-1x mr-2 text-info"></i>
                 <div class="media-body">
@@ -162,10 +162,10 @@
 
             <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                   <a href="specialist-services.html" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
@@ -180,7 +180,7 @@
                 <li class="nav-item d-none d-lg-block">
                   <a href="blood-bank.html" class="nav-link">Blood Bank</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                   <a href="about.html" class="nav-link">About</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
@@ -192,8 +192,13 @@
                 <li class="nav-item d-none d-lg-block">
                   <a href="http://www.wfm917.com/" target="_blank" class="nav-link">WFM 917</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                   <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg" class="apt-btn"><i class="far fa-calendar-check"></i></a>
                 </li>
               </ul>
             </div>
@@ -202,207 +207,204 @@
   </div>
   <!-- End of Second Navigation -->
 
-    <section id="carousel-section">
-      <div id="demos" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-          <li data-target="#demos" data-slide-to="0" class="active"></li>
-          <li data-target="#demos" data-slide-to="1"></li>
-          <li data-target="#demos" data-slide-to="2"></li>
-          <li data-target="#demos" data-slide-to="3"></li>
-          <li data-target="#demos" data-slide-to="4"></li>
-          <li data-target="#demos" data-slide-to="5"></li>
-        </ul>
-        <div class="carousel-inner">
-          <div class="carousel-item drk active">
-            <img src="img/r7UmXVy1ks.jpg" alt="St Ives Home" width="1000" height="500">
-            <div class="carousel-caption">
-              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                Welcome to St Ives Specialist Hospital</h3>
-                <p class="animated fadeInUp" style="animation-delay: 2s;">
-                  We are a leading Multi Specialist Hospital in Nigeria,
-                  Dedicated to Women, Children and Family Health,
-                  With first class Consultants, Processes and Technology.
-                </p>
-            </div>   
-          </div>
-          <div class="carousel-item drk">
-            <img src="img/hLVtZBLVSm.jpg" alt="St Ives Home" width="1000" height="500">
-            <div class="carousel-caption">
-              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                Novel coronavirus: Your questions, answered</h3>
-                <p class="animated fadeInUp" style="animation-delay: 2s;">
-                  The current outbreak of infections with a novel type of coronavirus has sparked global anxiety and concern...
-                </p>
-                <a href="novel_coronavirus.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-            </div>   
-          </div>
-          <div class="carousel-item drk">
-            <img src="img/U87ijiyG3B.jpg" alt="St Ives Home" width="1000" height="500">
-            <div class="carousel-caption">
-              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                What are the best ways to increase Sperm Count?</h3>
-                <p class="animated fadeInUp" style="animation-delay: 2s;">
-                  Sperm count refers to the average number of sperm present in one sample of semen. Fertility doctors assess sperm count during routine semen analyses and consider it to be an important factor for fertility.
-                </p>
-                <a href="the_best_ways_to_increase_sperm_count.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-            </div>   
-          </div>
-          <div class="carousel-item drk">
-            <img src="img/UkRg6MnAKR.jpg" alt="St Ives Home" width="1000" height="500">
-            <div class="carousel-caption">
-              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                Why are onions good for you?</h3>
-                <p class="animated fadeInUp" style="animation-delay: 2s;">
-                  Onions belong to the Allium family of plants, which also includes chives, garlic, and leeks. These vegetables have characteristic pungent flavors and some medicinal properties.
-                </p>
-                <a href="why_are_onions_good_for_you.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-            </div>   
-          </div>
-          <div class="carousel-item drk">
-            <img src="img/aVKlpiiO7u.jpg" alt="St Ives Home" width="1000" height="500">
-            <div class="carousel-caption">
-              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                Gynecologists: When to visit and what to expect</h3>
-                <p class="animated fadeInUp" style="animation-delay: 2s;">
-                  Gynecologists are doctors who specialize in women's health, with a focus on the female reproductive system.
-                </p>
-                <a href="gynecologists_When_to_visit.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-            </div>   
-          </div>
-          <div class="carousel-item drk">
-            <img src="img/QRFc3GlS0d.jpg" alt="Ovulation Bleeding" width="1000" height="500">
-            <div class="carousel-caption">
-              <h3 class="animated fadeInUp" style="animation-delay: 1s;">
-                Ovulation bleeding: What to know</h3>
-                <p class="animated fadeInUp" style="animation-delay: 2s;">
-                  Ovulation bleeding is vaginal bleeding during or
-                  immediately before or after ovulation, which occurs
-                  roughly in the middle of a menstrual cycle.
-                </p>
-                <a href="ovulation_bleeding.html" class="animated fadeInUp btn btn-outline-light" style="animation-delay: 3s;">Read More</a>
-            </div>   
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#demos" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demos" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+<!-- Carousel Start -->
+<section id="carousel-section">
+  <div id="demos" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item drk active">
+        <img src="img/r7UmXVy1ks.jpg" alt="St Ives Home" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+            Welcome to St Ives Specialist Hospital</h3>
+            <p class="animated fadeInUp" style="animation-delay: 2s;">
+              We are a leading Multi Specialist Hospital in Nigeria,
+              Dedicated to Women, Children and Family Health,
+              With first class Consultants, Processes and Technology.
+            </p>
+        </div>   
       </div>
-    </section>
+      <div class="carousel-item drk">
+        <img src="img/hLVtZBLVSm.jpg" alt="St Ives Home" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+            Novel coronavirus: Your questions, answered</h3>
+            <p class="animated fadeInUp" style="animation-delay: 2s;">
+              The current outbreak of infections with a novel type of coronavirus has sparked global anxiety and concern...
+            </p>
+            <a href="novel_coronavirus.html" class="animated fadeInUp btn btn-primary btn-lg" style="animation-delay: 3s;">Read More</a>
+        </div>   
+      </div>
+      <div class="carousel-item drk">
+        <img src="img/U87ijiyG3B.jpg" alt="St Ives Home" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+            What are the best ways to increase Sperm Count?</h3>
+            <p class="animated fadeInUp" style="animation-delay: 2s;">
+              Sperm count refers to the average number of sperm present in one sample of semen. Fertility doctors assess sperm count during routine semen analyses and consider it to be an important factor for fertility.
+            </p>
+            <a href="the_best_ways_to_increase_sperm_count.html" class="animated fadeInUp btn btn-primary btn-lg" style="animation-delay: 3s;">Read More</a>
+        </div>   
+      </div>
+      <div class="carousel-item drk">
+        <img src="img/UkRg6MnAKR.jpg" alt="St Ives Home" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+            Why are onions good for you?</h3>
+            <p class="animated fadeInUp" style="animation-delay: 2s;">
+              Onions belong to the Allium family of plants, which also includes chives, garlic, and leeks. These vegetables have characteristic pungent flavors and some medicinal properties.
+            </p>
+            <a href="why_are_onions_good_for_you.html" class="animated fadeInUp btn btn-primary btn-lg" style="animation-delay: 3s;">Read More</a>
+        </div>   
+      </div>
+      <div class="carousel-item drk">
+        <img src="img/aVKlpiiO7u.jpg" alt="St Ives Home" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+            Gynecologists: When to visit and what to expect</h3>
+            <p class="animated fadeInUp" style="animation-delay: 2s;">
+              Gynecologists are doctors who specialize in women's health, with a focus on the female reproductive system.
+            </p>
+            <a href="gynecologists_When_to_visit.html" class="animated fadeInUp btn btn-primary btn-lg" style="animation-delay: 3s;">Read More</a>
+        </div>   
+      </div>
+      <div class="carousel-item drk">
+        <img src="img/QRFc3GlS0d.jpg" alt="Ovulation Bleeding" width="1000" height="500">
+        <div class="carousel-caption">
+          <h3 class="animated fadeInUp" style="animation-delay: 1s;">
+            Ovulation bleeding: What to know</h3>
+            <p class="animated fadeInUp" style="animation-delay: 2s;">
+              Ovulation bleeding is vaginal bleeding during or
+              immediately before or after ovulation, which occurs
+              roughly in the middle of a menstrual cycle.
+            </p>
+            <a href="ovulation_bleeding.html" class="animated fadeInUp btn btn-primary btn-lg" style="animation-delay: 3s;">Read More</a>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demos" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demos" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</section>
+<!-- Carousel End -->
 
     <div class="divider"></div>
 
+    <!-- Flip Card Services -->
     <section id="services" class="d-none d-md-block">
-        <div class="container">
-          <div class="card border-0">
-            <h2 class="py-3 text-info text-center border border-info">
-              Services
-            </h2>
-            <div class="card-body pb-0 pt-3 d-flex justify-content-center align-items-center">
-              <div class="row">
-                <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
-                  <div class="flip-card text-center">
+      <div class="container">
+        <div class="card border-0">
+          <h2 class="py-3 text-info text-center border border-info">
+            Services
+          </h2>
+          <div class="card-body pb-0 pt-3 d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
+                <div class="flip-card text-center">
+                <a href="family-services.html">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front bg-success">
+                      <i class="flaticon-chest-pain"></i>
+                      <h4 class="pt-0 mt-0">Check-Up</h4>
+                    </div>
+                    <div class="flip-card-back bg-primary">
+                      <p>
+                        We have a proprietary St. Ives Health Screening Program (SIHSP).
+                      </p>
+                    </div>
+                  </div></a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
+                <div class="flip-card">
                   <a href="family-services.html">
                     <div class="flip-card-inner">
-                      <div class="flip-card-front bg-success">
-                        <i class="flaticon-chest-pain"></i>
-                        <h4 class="pt-0 mt-0">Check-Up</h4>
+                      <div class="flip-card-front bg-secondary">
+                        <i class="flaticon-nurse"></i>
+                        <h5 class="text-center text-white">
+                          Immunization
+                        </h5>
                       </div>
-                      <div class="flip-card-back bg-primary">
+                      <div class="flip-card-back bg-secondary">
                         <p>
-                          We have a proprietary St. Ives Health Screening Program (SIHSP).
-                        </p>
+                          St. Ives offers the EPI every 1st and 3rd Thursday of every month (9am to 12pm) to children.
+                        </p> 
                       </div>
                     </div></a>
                   </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
-                  <div class="flip-card">
-                    <a href="family-services.html">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front bg-secondary">
-                          <i class="flaticon-nurse"></i>
-                          <h5 class="text-center text-white">
-                            Immunization
-                          </h5>
-                        </div>
-                        <div class="flip-card-back bg-secondary">
-                          <p>
-                            St. Ives offers the EPI every 1st and 3rd Thursday of every month (9am to 12pm) to children.
-                          </p> 
-                        </div>
-                      </div></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
-                  <div class="flip-card">
-                    <a href="fertility-services.html">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front bg-warning">
-                          <i class="flaticon-syringe"></i>
-                          <h5 class="text-center text-white">
-                            ICSI
-                          </h5>
-                        </div>
-                        <div class="flip-card-back bg-info"> 
-                          <p>Intracytoplasmic Sperm Injection is the most successful treatment for male infertility</p>
-                        </div>
-                      </div></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
-                  <div class="flip-card">
-                    <a href="fertility-services.html">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front bg-info">
-                          <i class="flaticon-microscope"></i>
-                          <h5 class="text-center text-white">
-                            PGT
-                          </h5>
-                        </div>
-                        <div class="flip-card-back bg-info">
-                          <p>Preimplantation Genetic Testing helps prevent known genetic abnormalities from being transmitted from parent to child</p>
-                        </div>
-                      </div></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
-                  <div class="flip-card">
-                    <a href="fertility-services.html">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front bg-dark">
-                          <i class="flaticon-insemination"></i>
-                          <h5 class="text-center text-white">
-                            Insemination
-                          </h5>
-                        </div>
-                        <div class="flip-card-back bg-dark">
-                          <p>Intrauterine insemination (IUI) is the placing of sperm into a woman's uterus when she is ovulating.</p>
-                        </div>
-                      </div></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
-                  <div class="flip-card">
-                    <a href="specialist-services.html">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front bg-warning">
-                          <i class="flaticon-ultrasound"></i>
-                          <h5 class="text-center text-white">Ultrasound Scan</h5>
-                        </div>
-                        <div class="flip-card-back bg-warning">
-                          <p>Ultrasound scans are used to evaluate fetal development, and they can detect problems in the body.</p>
-                        </div>
-                      </div></a>
-                    </div>
-                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
+                <div class="flip-card">
+                  <a href="fertility-services.html">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front bg-warning">
+                        <i class="flaticon-syringe"></i>
+                        <h5 class="text-center text-white">
+                          ICSI
+                        </h5>
+                      </div>
+                      <div class="flip-card-back bg-info"> 
+                        <p>Intracytoplasmic Sperm Injection is the most successful treatment for male infertility</p>
+                      </div>
+                    </div></a>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
+                <div class="flip-card">
+                  <a href="fertility-services.html">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front bg-info">
+                        <i class="flaticon-microscope"></i>
+                        <h5 class="text-center text-white">
+                          PGT
+                        </h5>
+                      </div>
+                      <div class="flip-card-back bg-info">
+                        <p>Preimplantation Genetic Testing helps prevent known genetic abnormalities from being transmitted from parent to child</p>
+                      </div>
+                    </div></a>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
+                <div class="flip-card">
+                  <a href="fertility-services.html">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front bg-dark">
+                        <i class="flaticon-insemination"></i>
+                        <h5 class="text-center text-white">
+                          Insemination
+                        </h5>
+                      </div>
+                      <div class="flip-card-back bg-dark">
+                        <p>Intrauterine insemination (IUI) is the placing of sperm into a woman's uterus when she is ovulating.</p>
+                      </div>
+                    </div></a>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-12 col-sm-6 pb-3 pr-2 pl-1">
+                <div class="flip-card">
+                  <a href="specialist-services.html">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front bg-warning">
+                        <i class="flaticon-ultrasound"></i>
+                        <h5 class="text-center text-white">Ultrasound Scan</h5>
+                      </div>
+                      <div class="flip-card-back bg-warning">
+                        <p>Ultrasound scans are used to evaluate fetal development, and they can detect problems in the body.</p>
+                      </div>
+                    </div></a>
+                  </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- Flip Card Services End -->
+
       <div class="divider"></div>
   
             <!-- why st ives fertility -->
@@ -656,7 +658,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 mt-2 text-center">
-            <img src="img/svg/st-healthcare.svg" class="w-50 p-1 bg-light" alt="logo">
+            <img src="img/svg/st-healthcare.svg" class="w-50 rounded bg-light" alt="logo">
           </div>
           <div class="col-md-3 mt-2">
             <div class="mb-3">
