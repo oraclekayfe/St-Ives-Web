@@ -866,7 +866,7 @@ video {
   background-repeat: no-repeat, repeat;
   background-position: center; /* Center the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 
   & .container {
     display: flex;
@@ -884,7 +884,7 @@ video {
   background-repeat: no-repeat, repeat;
   background-position: center; /* Center the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 // Corona Blog Jumbotron
@@ -893,7 +893,7 @@ video {
   background-repeat: no-repeat, repeat;
   background-position: center; /* Center the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 // Ovulation-b Blog Jumbotron
@@ -902,7 +902,7 @@ video {
   background-repeat: no-repeat, repeat;
   background-position: center; /* Center the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 // Increase-s Blog Jumbotron
@@ -911,16 +911,34 @@ video {
   background-repeat: no-repeat, repeat;
   background-position: center; /* Center the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
-// Increase-s Blog Jumbotron
+// Gyne-when Blog Jumbotron
 .gyne-when {
   background-image: url('../img/aVKlpiiO7u.jpg');
   background-repeat: no-repeat, repeat;
   background-position: center; /* Center the image */
   background-size: 100% 100%; /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
+}
+
+// Egg-Don Blog Jumbotron
+.egg-don {
+  background-image: url('../img/ahehIVUjK2.jpg');
+  background-repeat: no-repeat, repeat;
+  background-position: center; /* Center the image */
+  background-size: 100% 100%; /* Resize the background image to cover the entire container */
+  height: 75vh;
+}
+
+// Baby-Breastfeeding Blog Jumbotron
+.babe-feed {
+  background-image: url('../img/breastfeeding-827169_1920.jpg');
+  background-repeat: no-repeat, repeat;
+  background-position: center; /* Center the image */
+  background-size: 100% 100%; /* Resize the background image to cover the entire container */
+  height: 75vh;
 }
 
 // Social Icons
@@ -974,6 +992,9 @@ header {
 }
 
 @media (max-width: 500px) {
+  body {
+    width: 100vw;
+  }
   header .container {
     display: flex;
     font-size: 0.8em;

@@ -952,7 +952,7 @@ video {
   /* Center the image */
   background-size: 100% 100%;
   /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 .jumbotron-fluid .container {
@@ -980,7 +980,7 @@ video {
   /* Center the image */
   background-size: 100% 100%;
   /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 .corona {
@@ -990,7 +990,7 @@ video {
   /* Center the image */
   background-size: 100% 100%;
   /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 .ovulation-b {
@@ -1000,7 +1000,7 @@ video {
   /* Center the image */
   background-size: 100% 100%;
   /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 .increase-s {
@@ -1010,7 +1010,7 @@ video {
   /* Center the image */
   background-size: 100% 100%;
   /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
 }
 
 .gyne-when {
@@ -1020,7 +1020,27 @@ video {
   /* Center the image */
   background-size: 100% 100%;
   /* Resize the background image to cover the entire container */
-  height: 70vh;
+  height: 75vh;
+}
+
+.egg-don {
+  background-image: url("../img/ahehIVUjK2.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  /* Center the image */
+  background-size: 100% 100%;
+  /* Resize the background image to cover the entire container */
+  height: 75vh;
+}
+
+.babe-feed {
+  background-image: url("../img/breastfeeding-827169_1920.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  /* Center the image */
+  background-size: 100% 100%;
+  /* Resize the background image to cover the entire container */
+  height: 75vh;
 }
 
 .social a {
@@ -1086,6 +1106,9 @@ header {
 }
 
 @media (max-width: 500px) {
+  body {
+    width: 100vw;
+  }
   header .container {
     display: -webkit-box;
     display: -ms-flexbox;
