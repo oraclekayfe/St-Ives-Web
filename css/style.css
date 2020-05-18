@@ -124,8 +124,8 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
   line-height: 1.4;
   background: white;
   -webkit-transition: background-color 0.5s;
@@ -995,6 +995,26 @@ video {
 
 .ovulation-b {
   background-image: url("../img/QRFc3GlS0d.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  /* Center the image */
+  background-size: 100% 100%;
+  /* Resize the background image to cover the entire container */
+  height: 70vh;
+}
+
+.increase-s {
+  background-image: url("../img/U87ijiyG3B.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  /* Center the image */
+  background-size: 100% 100%;
+  /* Resize the background image to cover the entire container */
+  height: 70vh;
+}
+
+.gyne-when {
+  background-image: url("../img/aVKlpiiO7u.jpg");
   background-repeat: no-repeat, repeat;
   background-position: center;
   /* Center the image */
