@@ -179,7 +179,7 @@ video {
   & #sideBar-Btn i,
   .apt-btn {
     font-size: 1.6rem;
-    color: #7c7c7c;
+    color: var(--dark-color);
 
     &:hover {
       color: var(--primary-color);
@@ -190,7 +190,7 @@ video {
     & .nav-link {
       font-size: 0.9rem;
       font-weight: 500;
-      color: #7c7c7c;
+      color: var(--dark-color);
       border-bottom: 2px transparent solid;
       transition: all 0.1s;
       text-transform: normal;

@@ -205,7 +205,7 @@ video {
 .banner-area #sideBar-Btn i,
 .banner-area .apt-btn {
   font-size: 1.6rem;
-  color: #7c7c7c;
+  color: var(--dark-color);
 }
 
 .banner-area #sideBar-Btn i:hover,
@@ -216,7 +216,7 @@ video {
 .banner-area #navbar .navbar-nav .nav-item .nav-link {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #7c7c7c;
+  color: var(--dark-color);
   border-bottom: 2px transparent solid;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
