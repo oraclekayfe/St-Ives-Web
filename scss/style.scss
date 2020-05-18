@@ -155,16 +155,6 @@ ul .cus::before {
   height: 30px;
 }
 
-.card-footer {
-  background: white;
-  color: var(--dark-color);
-  &:hover {
-    background: var(--dark-color);
-    color: white;
-    transition: all 0.1s;
-  }
-}
-
 .sticky {
   position: fixed;
   top: 0px;
@@ -244,7 +234,7 @@ video {
   left: 0;
   right: 0;
   background: #000;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 // Dark Overlay End
 
@@ -536,8 +526,8 @@ video {
 }
 
 /**
-            * Reinstate scrolling for non-JS clients
-            */
+  * Reinstate scrolling for non-JS clients
+  */
 .simplebar-content-wrapper {
   overflow: auto;
 }
@@ -735,12 +725,15 @@ video {
   background: #333;
   padding: 2rem;
   position: relative;
+  height: 75vh;
 }
 
 #showcase3:before {
   content: '';
-  background: url('../img/blood-donation-4151721_1920.jpg') no-repeat center
-    center/cover;
+  background-image: url('../img/blood-donation-4151721_1920.jpg');
+  background-repeat: no-repeat, repeat;
+  background-position: center; /* Center the image */
+  background-size: 100% 100%; /* Resize the background image to cover the entire container */
   position: absolute;
   top: 0;
   left: 0;
@@ -752,7 +745,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 75vh;
 }
 
 #showcase3 .showcase3-content {
@@ -872,6 +865,24 @@ video {
   }
 }
 
+// Jumbotron
+.jumbotron-fluid {
+  background-image: url('../img/01-landing-copy.jpg');
+  background-repeat: no-repeat, repeat;
+  background-position: center; /* Center the image */
+  background-size: 100% 100%; /* Resize the background image to cover the entire container */
+  height: 70vh;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    height: 100%;
+  }
+}
+
 // Social Icons
 .social {
   & a {
@@ -929,11 +940,6 @@ header {
   align-items: center;
   background: white;
   color: black;
-}
-
-#st-ives-hero {
-  width: 100vw;
-  height: 80vh;
 }
 
 @media (max-width: 500px) {

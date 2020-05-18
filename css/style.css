@@ -176,18 +176,6 @@ ul .cus::before {
   height: 30px;
 }
 
-.card-footer {
-  background: white;
-  color: var(--dark-color);
-}
-
-.card-footer:hover {
-  background: var(--dark-color);
-  color: white;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-}
-
 .sticky {
   position: fixed;
   top: 0px;
@@ -265,7 +253,7 @@ video {
   left: 0;
   right: 0;
   background: #000;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 /* Footer */
@@ -565,8 +553,8 @@ video {
 }
 
 /**
-            * Reinstate scrolling for non-JS clients
-            */
+  * Reinstate scrolling for non-JS clients
+  */
 .simplebar-content-wrapper {
   overflow: auto;
 }
@@ -800,11 +788,17 @@ video {
   background: #333;
   padding: 2rem;
   position: relative;
+  height: 75vh;
 }
 
 #showcase3:before {
   content: '';
-  background: url("../img/blood-donation-4151721_1920.jpg") no-repeat center center/cover;
+  background-image: url("../img/blood-donation-4151721_1920.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  /* Center the image */
+  background-size: 100% 100%;
+  /* Resize the background image to cover the entire container */
   position: absolute;
   top: 0;
   left: 0;
@@ -822,7 +816,7 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 75vh;
 }
 
 #showcase3 .showcase3-content {
@@ -956,6 +950,34 @@ video {
   }
 }
 
+.jumbotron-fluid {
+  background-image: url("../img/01-landing-copy.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  /* Center the image */
+  background-size: 100% 100%;
+  /* Resize the background image to cover the entire container */
+  height: 70vh;
+}
+
+.jumbotron-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: white;
+  height: 100%;
+}
+
 .social a {
   text-decoration: none;
 }
@@ -1025,11 +1047,6 @@ header {
           align-items: center;
   background: white;
   color: black;
-}
-
-#st-ives-hero {
-  width: 100vw;
-  height: 80vh;
 }
 
 @media (max-width: 500px) {
