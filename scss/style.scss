@@ -128,8 +128,13 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Roboto Slab', sans-serif;
   margin-bottom: 0.55rem;
-  line-height: 1.3;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 *:focus {
