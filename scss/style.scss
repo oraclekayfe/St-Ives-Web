@@ -294,7 +294,6 @@ video {
 
 // Services
 .single-service {
-  background: var(--dark-color);
   color: white;
   padding: 20px;
   height: 400px;
@@ -335,11 +334,11 @@ video {
   }
   &:hover {
     background: var(--light-color);
-    color: var(--primary-color);
+    color: white;
   }
 
   &:hover h3 a {
-    color: var(--primary-color);
+    color: white;
   }
 }
 

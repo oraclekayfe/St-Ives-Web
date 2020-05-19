@@ -314,7 +314,6 @@ video {
 }
 
 .single-service {
-  background: var(--dark-color);
   color: white;
   padding: 20px;
   height: 400px;
@@ -360,11 +359,11 @@ video {
 
 .single-service:hover {
   background: var(--light-color);
-  color: var(--primary-color);
+  color: white;
 }
 
 .single-service:hover h3 a {
-  color: var(--primary-color);
+  color: white;
 }
 
 @media only screen and (max-width: 767px) {
