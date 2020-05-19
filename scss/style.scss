@@ -324,13 +324,11 @@ video {
 
   &:hover p {
     display: block;
-    color: var(--black-color);
   }
 
   &:hover i:before {
     font-size: 120px;
     transition: 0.4s;
-    color: var(--black-color);
   }
   &:hover {
     background: var(--light-color);

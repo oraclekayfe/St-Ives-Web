@@ -347,14 +347,12 @@ video {
 
 .single-service:hover p {
   display: block;
-  color: var(--black-color);
 }
 
 .single-service:hover i:before {
   font-size: 120px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  color: var(--black-color);
 }
 
 .single-service:hover {
