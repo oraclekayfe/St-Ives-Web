@@ -413,28 +413,8 @@ video {
   height: 100%;
 }
 
-@media only screen and (max-width: 991px) {
-  .carousel-item .carousel-caption {
-    padding-bottom: 0;
-  }
-  .carousel-item .carousel-caption h4 {
-    font-size: 18px;
-  }
-  .carousel-item .carousel-caption p {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .carousel-item .carousel-caption {
-    padding-bottom: 0;
-  }
-  .carousel-item .carousel-caption h4 {
-    font-size: 15px;
-  }
-  .carousel-item .carousel-caption p {
-    font-size: 14px;
-  }
+.carousel-item h2 {
+  font-size: 32px;
 }
 
 #services .container .row .card-body:nth-child(odd) .flip-card-front {
