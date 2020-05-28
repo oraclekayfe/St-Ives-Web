@@ -970,13 +970,11 @@ header {
 }
 
 @media (max-width: 500px) {
-  body {
-    width: 100vw;
-  }
-  header .container {
+  #first-nav {
     display: flex;
     font-size: 0.8em;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
   }
 }

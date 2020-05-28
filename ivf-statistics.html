@@ -120,11 +120,11 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
    <header>
     <div class="container">
         <nav class="navbar navbar-expand d-flex justify-content-between">
-          <a href="index.html" class="navbar-brand hvr-shadow text center" style="z-index: 3;">
+          <a href="index.html" class="navbar-brand hvr-shadow" style="z-index: 3;">
             <img src="img/svg/st-fertility.svg" class="animated tada" alt="St Ives Specialist Hospital" height='80px'/>
           </a>
           <div class="navbar-nav d-flex animated tada">
-            <div class=" border-left nav-item px-3 border-info">
+            <div class=" border-left nav-item px-3 border-info d-none d-md-block">
               <div class="media">
                 <i class=" fas fa-map-marker-alt fa-1x mr-2 text-info"></i>
                 <div class="media-body">
@@ -135,7 +135,7 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
                 </div>
               </div> 
             </div>
-            <div class=" nav-item border-left px-3 d-none d-md-block border-info">
+            <div class=" nav-item border-left px-3 border-info">
               <div class="media">
                 <i class=" fas fa-mobile-alt fa-1x mr-2 text-info"></i>
                 <div class="media-body">
@@ -184,10 +184,10 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
                 <li class="nav-item d-none d-lg-block">
                   <a href="blood-bank.html" class="nav-link">Blood Bank</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                   <a href="about.html" class="nav-link">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                   <a href="blog.html" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item  d-none d-lg-block">
@@ -196,8 +196,13 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
                 <li class="nav-item  d-none d-lg-block">
                   <a href="http://www.wfm917.com/" target="_blank" class="nav-link">WFM 917</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                   <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg" class="apt-btn"><i class="far fa-calendar-check"></i></a>
                 </li>
               </ul>
             </div>
@@ -212,25 +217,25 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
     
     <section>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-8">
-            <h2 class="py-3 text-info text-center border border-info">
+        <div class="row px-3">
+          <div class="col-md-8">
+            <h3 class="py-3 text-info text-center border border-info">
               St Ives Fertility Unit IVF Statistics From 2007
-            </h2>
-          <div class="card p-3 border-0">
+            </h3>
+          <div class="card border-0">
           <img class="card-img-top" src="img/QmTYdeF04V.jpg" alt="St Ives Family Clinic" />
           <div class="card-body">
-              <p class="text-justify px-2">
+              <p class="text-justify">
                   In Vitro Fertilization is the process of fertilizing eggs with sperm in the laboratory (instead of inside the fallopian tube) and allowing it grow over two to five days before moving the fertilized embryo into the woman’s uterus through a simple procedure called embryo transfer.
               </p>
-              <p class="text-justify px-2">
+              <p class="text-justify">
                   This explains the hitherto popular term, “test tube baby” as reference to babies conceived via this method. It should be noted that though IVF is the most popular, it is not the only fertility solutions there is. It is only one of many other effective options. And it is not for everyone.
               </p>
               
               
               <h3 class="py-3 text-info text-center border border-info">When IVF is an option</h3>
 
-              <p class="text-justify px-2">
+              <p class="text-justify">
                   IVF becomes an option in the following situations:
                   <ul class="px-3 list-unstyled">
                       <li class="cus">Woman with blocked or damaged fallopian tubes.</li>
@@ -245,11 +250,11 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
               
 
               <h3 class="py-3 text-info text-center border border-info">IVF Procedure</h3>
-              <p class="text-justify px-2">
+              <p class="text-justify">
                   IVF treatments are customized for each individual or couple as it involves a set of protocols usually developed to fit the characteristics of the particular client as determined by the findings from the assessments, physical examination and other medical investigations.
               </p>
 
-              <p class="text-justify px-2">
+              <p class="text-justify">
                 IVF treatment therefore involves a set of carefully managed processes including:
               </p>
               <ul class="px-3 list-unstyled">
@@ -749,14 +754,14 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
         </div>
       </div>
 
-      <div class="col-sm-12 col-md-4">
+      <div class="col-md-4">
         <div class="divider d-none d-md-none"></div>
 
-        <div class="card border-0hvr-shadow shadow">
+        <div class="card border-0 hvr-shadow shadow">
           <img src="img/ivf-promo.jpg" class="card-img-top" alt="Request Appointment">
           <div class="card-body">
             <h5>
-              <a class="text-decoration-none" href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg"  style="color: #b45454">IVF Promo</a>
+              <a class="text-decoration-none" href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg"  style="color: #b45454">St Ives IVF Promo</a>
             </h5>
             <p class="card-text">Register for our IVF promo and the bundle of joy you desire could soon be in your loving arms</p>
           </div>
@@ -869,10 +874,11 @@ href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
         <div class="divider"></div>
     
         <a href="http://wfm917.com/" target="_blank" style="text-decoration: none;">
-          <img class="img-fluid" src="img/WhatsApp Image 2020-03-27 at 12.34.34 PM (1).jpeg" alt="Radio Doctor" />          
+          <img class="img-fluid hvr-shadow" src="img/WhatsApp Image 2020-03-27 at 12.34.34 PM (1).jpeg" alt="Radio Doctor" />          
         </a>
     
        </div>
+      </div>
       </div>
     </section>
 
